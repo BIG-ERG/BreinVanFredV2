@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1746521420 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\fuse.c
+	<avr/io.h>
+
+1746521862 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\main.c
+	<avr/io.h>
+	"main.h"
+
+1746521794 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\ultrasoon.c
+	<avr/io.h>
+	<avr/interrupt.h>
+	"ultrasoon.h"
+
+1746522654 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\ultrasoon.h
+	"main.h"
+
+1746522613 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\main.h
+	"navigatieLogica.h"
+	"ultrasoon.h"
+	"noodstop.h"
+	"stepperDriver.h"
+
+1746522655 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\navigatielogica.h
+	"main.h"
+
+1746521966 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\stepperdriver.c
+	<avr/io.h>
+	<avr/interrupt.h>
+	"stepperDriver.h"
+
+1746522655 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\stepperdriver.h
+	"main.h"
+
+1746522655 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\noodstop.h
+	"main.h"
+
