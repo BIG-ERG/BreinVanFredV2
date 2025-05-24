@@ -20,7 +20,7 @@
 	"noodstop.h"
 	"stepperDriver.h"
 
-1746522655 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\navigatielogica.h
+1748091991 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\navigatielogica.h
 	"main.h"
 
 1746521966 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\stepperdriver.c
@@ -34,7 +34,7 @@
 1746547441 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\noodstop.h
 	"main.h"
 
-1746547273 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\navigatielogica.c
+1748091991 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\navigatielogica.c
 	<avr/io.h>
 	<math.h>
 	<util/delay.h>
@@ -45,4 +45,11 @@
 	"navigatieLogica.h"
 	<avr/interrupt.h>
 	<avr/io.h>
+
+1748087736 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\uart.c
+	"UART.h"
+	<avr/io.h>
+	<util/delay.h>
+
+1748086101 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\uart.h
 

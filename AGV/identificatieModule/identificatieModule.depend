@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1748091981 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\fuse.c
+	<avr/io.h>
+
+1748092804 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\main.c
+	"main.h"
+	<avr/io.h>
+
+1748092804 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\main.h
+	"UART.h"
+	"metaalDetector.h"
+	"interface.h"
+	"donk.h"
+
+1748092804 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\uart.h
+
+1748096164 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\metaaldetector.h
+
+1748092804 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\interface.h
+
+1748096164 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\donk.h
+
+1748092804 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\uart.c
+	"UART.h"
+	<avr/io.h>
+
+1748096164 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\donk.c
+	"donk.h"
+	<avr/io.h>
+
+1748096164 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\metaaldetector.c
+	"metaalDetector.h"
+	<avr/io.h>
+	<util/delay.h>
+
+1748095950 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\segmentendisplay.c
+
