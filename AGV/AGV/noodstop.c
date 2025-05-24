@@ -19,7 +19,8 @@ ISR(INT0_vect){
             stop();
         }
         if(!(PIN_knop&(1<<start))){
-            uitvoer2();
+            //uitvoer();
+            break;
         }
     }
 }

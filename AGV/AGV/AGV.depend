@@ -31,6 +31,18 @@
 1746522655 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\stepperdriver.h
 	"main.h"
 
-1746522655 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\noodstop.h
+1746547441 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\noodstop.h
 	"main.h"
+
+1746547273 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\navigatielogica.c
+	<avr/io.h>
+	<math.h>
+	<util/delay.h>
+	"navigatieLogica.h"
+
+1746547465 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\noodstop.c
+	"noodstop.h"
+	"navigatieLogica.h"
+	<avr/interrupt.h>
+	<avr/io.h>
 

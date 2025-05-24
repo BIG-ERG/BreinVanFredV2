@@ -34,33 +34,20 @@ int ramping(int originalValue , int value){
 }
 
 void rechtdoor(void){
-    int temp = tel;
     //while agv binnen het pad is
     while((distance_right<30)||(distance_left<30)){
-        telblokje();
-        if(tel==temp){
-            if (distance_right==distance_left) {
-                    speedStepperLeft(1150);
-                    speedStepperRight(1150);
-            }
-            else{
-                if (distance_right < distance_left){
-                        speedStepperLeft(ramping(1650, 1150));
-                        speedStepperRight(ramping(1150, 1650));
-                }
-                if(distance_left < distance_right){
-                        speedStepperRight(ramping(1650, 1150));
-                        speedStepperLeft(ramping(1150, 1650));
-                }
-            }
+        if (distance_right==distance_left) {
+                speedStepperLeft(1150);
+                speedStepperRight(1150);
         }
         else{
-            stop();
-            _delay_ms(1000);
-            temp = tel;
-            if(tel==pakjes){
-                disableStepper();
-                break;
+            if (distance_right < distance_left){
+                speedStepperLeft(ramping(1650, 1150));
+                speedStepperRight(ramping(1150, 1650));
+            }
+            if(distance_left < distance_right){
+                speedStepperRight(ramping(1650, 1150));
+                speedStepperLeft(ramping(1150, 1650));
             }
         }
     }
