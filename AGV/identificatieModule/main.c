@@ -1,16 +1,22 @@
 /*
  */
+#include <avr/interrupt.h>
+#include <avr/io.h>
 #include "main.h"
 
-#include <avr/io.h>
+int main(void){
+    sei();
+    initUsart();
+    flushUsart2Buffer();
+    initDonkInterrupt();
 
-int main(void)
-{
+    _delay_ms(2000); //genoeg tijd geven aan AVR om UART op te stellen
 
-    // Insert code
+    volgendeOpdracht();
 
     while(1)
-    ;
+        _delay_ms(10);
 
-    return 0;
+    return 1;
+}
 }

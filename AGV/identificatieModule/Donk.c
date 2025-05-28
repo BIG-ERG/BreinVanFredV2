@@ -17,6 +17,6 @@ void initDonkInterrupt(void){
 
 unsigned int aantalGedectecteerd = 0;
 
-ISR(INT0_vect){
+ISR(INT1_vect){
     aantalGedectecteerd++;
 }

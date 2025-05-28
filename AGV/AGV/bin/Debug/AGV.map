@@ -137,7 +137,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000      0x83c
+.text           0x0000000000000000      0x856
  *(.vectors)
  .vectors       0x0000000000000000       0xe4 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr6/crtatmega2560.o
                 0x0000000000000000                __vector_default
@@ -249,110 +249,110 @@ END GROUP
  .text          0x000000000000012a        0x0 obj\Debug\fuse.o
  .text          0x000000000000012a       0x98 obj\Debug\interface.o
                 0x000000000000012a                interpreter
- .text          0x00000000000001c2        0x2 obj\Debug\main.o
+ .text          0x00000000000001c2       0x1c obj\Debug\main.o
                 0x00000000000001c2                main
- .text          0x00000000000001c4      0x276 obj\Debug\navigatieLogica.o
-                0x00000000000001c4                metingPadbreedte
-                0x00000000000001e4                vooruit
-                0x00000000000001f6                stop
-                0x0000000000000208                ramping
-                0x000000000000021e                rechtdoor
-                0x0000000000000298                achteruit
-                0x000000000000029a                linksom
-                0x000000000000036c                rechtsom
- .text          0x000000000000043a       0x70 obj\Debug\noodstop.o
-                0x000000000000043a                initNoodstop
-                0x000000000000044e                __vector_1
- .text          0x00000000000004aa      0x17e obj\Debug\stepperDriver.o
-                0x00000000000004aa                initPinsStepper
-                0x00000000000004d4                disableStepper
-                0x00000000000004e8                initTimer3Stepper
-                0x0000000000000504                initTimer4Stepper
-                0x0000000000000520                initStepper
-                0x000000000000052e                speedStepperRight
-                0x000000000000053c                speedStepperLeft
-                0x000000000000054a                toggleStepperDirectionRight
-                0x000000000000056e                toggleStepperDirectionLeft
-                0x00000000000005a2                __vector_45
-                0x00000000000005c6                __vector_35
-                0x00000000000005ea                clearStepCnt
-                0x00000000000005fc                enableStepCnt
-                0x0000000000000612                disableStepCnt
- .text          0x0000000000000628       0x6c obj\Debug\UART.o
-                0x0000000000000628                initUsartReceive
-                0x0000000000000640                flushUsart2Buffer
-                0x000000000000065a                receiveByte
-                0x000000000000066c                receiveCommand
- .text          0x0000000000000694      0x186 obj\Debug\ultrasoon.o
-                0x0000000000000694                init_timer5
-                0x00000000000006ca                init_pins_ultrasoon
-                0x00000000000006f2                init_ultrasoon
-                0x00000000000006fc                __vector_50
-                0x0000000000000724                __vector_46
- .text          0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
- .text          0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
- .text          0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
- .text          0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
-                0x000000000000081a                . = ALIGN (0x2)
+ .text          0x00000000000001de      0x276 obj\Debug\navigatieLogica.o
+                0x00000000000001de                metingPadbreedte
+                0x00000000000001fe                vooruit
+                0x0000000000000210                stop
+                0x0000000000000222                ramping
+                0x0000000000000238                rechtdoor
+                0x00000000000002b2                achteruit
+                0x00000000000002b4                linksom
+                0x0000000000000386                rechtsom
+ .text          0x0000000000000454       0x70 obj\Debug\noodstop.o
+                0x0000000000000454                initNoodstop
+                0x0000000000000468                __vector_1
+ .text          0x00000000000004c4      0x17e obj\Debug\stepperDriver.o
+                0x00000000000004c4                initPinsStepper
+                0x00000000000004ee                disableStepper
+                0x0000000000000502                initTimer3Stepper
+                0x000000000000051e                initTimer4Stepper
+                0x000000000000053a                initStepper
+                0x0000000000000548                speedStepperRight
+                0x0000000000000556                speedStepperLeft
+                0x0000000000000564                toggleStepperDirectionRight
+                0x0000000000000588                toggleStepperDirectionLeft
+                0x00000000000005bc                __vector_45
+                0x00000000000005e0                __vector_35
+                0x0000000000000604                clearStepCnt
+                0x0000000000000616                enableStepCnt
+                0x000000000000062c                disableStepCnt
+ .text          0x0000000000000642       0x6c obj\Debug\UART.o
+                0x0000000000000642                initUsartReceive
+                0x000000000000065a                flushUsart2Buffer
+                0x0000000000000674                receiveByte
+                0x0000000000000686                receiveCommand
+ .text          0x00000000000006ae      0x186 obj\Debug\ultrasoon.o
+                0x00000000000006ae                init_timer5
+                0x00000000000006e4                init_pins_ultrasoon
+                0x000000000000070c                init_ultrasoon
+                0x0000000000000716                __vector_50
+                0x000000000000073e                __vector_46
+ .text          0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
+ .text          0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
+ .text          0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
+ .text          0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
+                0x0000000000000834                . = ALIGN (0x2)
  *(.text.*)
  .text.libgcc.mul
-                0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
+                0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
  .text.libgcc.div
-                0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
- .text.libgcc   0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
+                0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
  .text.libgcc.prologue
-                0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
+                0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
  .text.libgcc.builtins
-                0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
+                0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
  .text.libgcc.fmul
-                0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
+                0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
  .text.libgcc.fixed
-                0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
+                0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
  .text.libgcc.mul
-                0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
+                0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
  .text.libgcc.div
-                0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
- .text.libgcc   0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
+                0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
  .text.libgcc.prologue
-                0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
+                0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
  .text.libgcc.builtins
-                0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
+                0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
  .text.libgcc.fmul
-                0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
+                0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
  .text.libgcc.fixed
-                0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
+                0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
  .text.libgcc.mul
-                0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
+                0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
  .text.libgcc.div
-                0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
- .text.libgcc   0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
+                0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
  .text.libgcc.prologue
-                0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
+                0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
  .text.libgcc.builtins
-                0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
+                0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
  .text.libgcc.fmul
-                0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
+                0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
  .text.libgcc.fixed
-                0x000000000000081a        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
+                0x0000000000000834        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
  .text.libgcc.mul
-                0x000000000000081a       0x1e c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
-                0x000000000000081a                __umulhisi3
+                0x0000000000000834       0x1e c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
+                0x0000000000000834                __umulhisi3
  .text.libgcc.div
-                0x0000000000000838        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
- .text.libgcc   0x0000000000000838        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
+                0x0000000000000852        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x0000000000000852        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
  .text.libgcc.prologue
-                0x0000000000000838        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
+                0x0000000000000852        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
  .text.libgcc.builtins
-                0x0000000000000838        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
+                0x0000000000000852        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
  .text.libgcc.fmul
-                0x0000000000000838        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
+                0x0000000000000852        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
  .text.libgcc.fixed
-                0x0000000000000838        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
-                0x0000000000000838                . = ALIGN (0x2)
+                0x0000000000000852        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
+                0x0000000000000852                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000000000000838        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
-                0x0000000000000838                _exit
-                0x0000000000000838                exit
+ .fini9         0x0000000000000852        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
+                0x0000000000000852                _exit
+                0x0000000000000852                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -371,17 +371,17 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000000000000838        0x4 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
+ .fini0         0x0000000000000852        0x4 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
  *(.fini0)
  *(.hightext)
  *(.hightext*)
  *(.progmemx.*)
-                0x000000000000083c                . = ALIGN (0x2)
+                0x0000000000000856                . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
-                0x000000000000083c                _etext = .
+                0x0000000000000856                _etext = .
 
-.data           0x0000000000800200        0x2 load address 0x000000000000083c
+.data           0x0000000000800200        0x2 load address 0x0000000000000856
                 0x0000000000800200                PROVIDE (__data_start = .)
  *(.data)
  .data          0x0000000000800200        0x0 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr6/crtatmega2560.o
@@ -434,8 +434,8 @@ END GROUP
  *(.bss*)
  *(COMMON)
                 0x000000000080021c                PROVIDE (__bss_end = .)
-                0x000000000000083c                __data_load_start = LOADADDR (.data)
-                0x000000000000083e                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000000000000856                __data_load_start = LOADADDR (.data)
+                0x0000000000000858                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x000000000080021c        0x0
                 [!provide]                        PROVIDE (__noinit_start = .)
@@ -542,53 +542,53 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0x178f
+.debug_info     0x0000000000000000     0x186b
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000      0xbbc c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr6/crtatmega2560.o
  .debug_info    0x0000000000000bbc       0xa2 obj\Debug\fuse.o
  .debug_info    0x0000000000000c5e      0x10a obj\Debug\interface.o
- .debug_info    0x0000000000000d68       0x75 obj\Debug\main.o
- .debug_info    0x0000000000000ddd      0x3e4 obj\Debug\navigatieLogica.o
- .debug_info    0x00000000000011c1       0xa5 obj\Debug\noodstop.o
- .debug_info    0x0000000000001266      0x205 obj\Debug\stepperDriver.o
- .debug_info    0x000000000000146b      0x13d obj\Debug\UART.o
- .debug_info    0x00000000000015a8      0x157 obj\Debug\ultrasoon.o
- .debug_info    0x00000000000016ff       0x24 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
- .debug_info    0x0000000000001723       0x24 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
- .debug_info    0x0000000000001747       0x24 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
- .debug_info    0x000000000000176b       0x24 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
+ .debug_info    0x0000000000000d68      0x151 obj\Debug\main.o
+ .debug_info    0x0000000000000eb9      0x3e4 obj\Debug\navigatieLogica.o
+ .debug_info    0x000000000000129d       0xa5 obj\Debug\noodstop.o
+ .debug_info    0x0000000000001342      0x205 obj\Debug\stepperDriver.o
+ .debug_info    0x0000000000001547      0x13d obj\Debug\UART.o
+ .debug_info    0x0000000000001684      0x157 obj\Debug\ultrasoon.o
+ .debug_info    0x00000000000017db       0x24 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
+ .debug_info    0x00000000000017ff       0x24 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
+ .debug_info    0x0000000000001823       0x24 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
+ .debug_info    0x0000000000001847       0x24 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
 
-.debug_abbrev   0x0000000000000000     0x1166
+.debug_abbrev   0x0000000000000000     0x123a
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000      0xb1a c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr6/crtatmega2560.o
  .debug_abbrev  0x0000000000000b1a       0x7b obj\Debug\fuse.o
  .debug_abbrev  0x0000000000000b95       0xa4 obj\Debug\interface.o
- .debug_abbrev  0x0000000000000c39       0x45 obj\Debug\main.o
- .debug_abbrev  0x0000000000000c7e      0x134 obj\Debug\navigatieLogica.o
- .debug_abbrev  0x0000000000000db2       0x89 obj\Debug\noodstop.o
- .debug_abbrev  0x0000000000000e3b       0xcd obj\Debug\stepperDriver.o
- .debug_abbrev  0x0000000000000f08      0x126 obj\Debug\UART.o
- .debug_abbrev  0x000000000000102e       0xe8 obj\Debug\ultrasoon.o
- .debug_abbrev  0x0000000000001116       0x14 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
- .debug_abbrev  0x000000000000112a       0x14 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
- .debug_abbrev  0x000000000000113e       0x14 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
- .debug_abbrev  0x0000000000001152       0x14 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
+ .debug_abbrev  0x0000000000000c39      0x119 obj\Debug\main.o
+ .debug_abbrev  0x0000000000000d52      0x134 obj\Debug\navigatieLogica.o
+ .debug_abbrev  0x0000000000000e86       0x89 obj\Debug\noodstop.o
+ .debug_abbrev  0x0000000000000f0f       0xcd obj\Debug\stepperDriver.o
+ .debug_abbrev  0x0000000000000fdc      0x126 obj\Debug\UART.o
+ .debug_abbrev  0x0000000000001102       0xe8 obj\Debug\ultrasoon.o
+ .debug_abbrev  0x00000000000011ea       0x14 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
+ .debug_abbrev  0x00000000000011fe       0x14 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
+ .debug_abbrev  0x0000000000001212       0x14 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
+ .debug_abbrev  0x0000000000001226       0x14 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
 
-.debug_line     0x0000000000000000     0x116a
+.debug_line     0x0000000000000000     0x11e5
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x0000000000000000       0x1d c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr6/crtatmega2560.o
  .debug_line    0x000000000000001d       0x3f obj\Debug\fuse.o
  .debug_line    0x000000000000005c      0x153 obj\Debug\interface.o
- .debug_line    0x00000000000001af       0x5e obj\Debug\main.o
- .debug_line    0x000000000000020d      0x3c1 obj\Debug\navigatieLogica.o
- .debug_line    0x00000000000005ce      0x103 obj\Debug\noodstop.o
- .debug_line    0x00000000000006d1      0x41f obj\Debug\stepperDriver.o
- .debug_line    0x0000000000000af0      0x1b9 obj\Debug\UART.o
- .debug_line    0x0000000000000ca9      0x2c9 obj\Debug\ultrasoon.o
- .debug_line    0x0000000000000f72       0x51 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
- .debug_line    0x0000000000000fc3       0x93 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
- .debug_line    0x0000000000001056       0x75 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
- .debug_line    0x00000000000010cb       0x9f c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
+ .debug_line    0x00000000000001af       0xd9 obj\Debug\main.o
+ .debug_line    0x0000000000000288      0x3c1 obj\Debug\navigatieLogica.o
+ .debug_line    0x0000000000000649      0x103 obj\Debug\noodstop.o
+ .debug_line    0x000000000000074c      0x41f obj\Debug\stepperDriver.o
+ .debug_line    0x0000000000000b6b      0x1b9 obj\Debug\UART.o
+ .debug_line    0x0000000000000d24      0x2c9 obj\Debug\ultrasoon.o
+ .debug_line    0x0000000000000fed       0x51 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
+ .debug_line    0x000000000000103e       0x93 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
+ .debug_line    0x00000000000010d1       0x75 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
+ .debug_line    0x0000000000001146       0x9f c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
 
 .debug_frame    0x0000000000000000      0x370
  *(.debug_frame)
@@ -600,29 +600,29 @@ END GROUP
  .debug_frame   0x0000000000000268       0x68 obj\Debug\UART.o
  .debug_frame   0x00000000000002d0       0xa0 obj\Debug\ultrasoon.o
 
-.debug_str      0x0000000000000000      0x792
+.debug_str      0x0000000000000000      0x7e2
  *(.debug_str)
  .debug_str     0x0000000000000000      0x3e9 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr6/crtatmega2560.o
  .debug_str     0x00000000000003e9       0xa8 obj\Debug\fuse.o
                                          0xdc (size before relaxing)
  .debug_str     0x0000000000000491       0x6d obj\Debug\interface.o
                                         0x130 (size before relaxing)
- .debug_str     0x00000000000004fe        0x5 obj\Debug\main.o
-                                         0xc3 (size before relaxing)
- .debug_str     0x0000000000000503       0xd4 obj\Debug\navigatieLogica.o
+ .debug_str     0x00000000000004fe       0x69 obj\Debug\main.o
+                                        0x127 (size before relaxing)
+ .debug_str     0x0000000000000567       0xcc obj\Debug\navigatieLogica.o
                                         0x1d9 (size before relaxing)
- .debug_str     0x00000000000005d7       0x20 obj\Debug\noodstop.o
+ .debug_str     0x0000000000000633       0x20 obj\Debug\noodstop.o
                                          0xe3 (size before relaxing)
- .debug_str     0x00000000000005f7       0x98 obj\Debug\stepperDriver.o
+ .debug_str     0x0000000000000653       0x8c obj\Debug\stepperDriver.o
                                         0x1f2 (size before relaxing)
- .debug_str     0x000000000000068f       0x3a obj\Debug\UART.o
+ .debug_str     0x00000000000006df       0x3a obj\Debug\UART.o
                                         0x128 (size before relaxing)
- .debug_str     0x00000000000006c9       0x6a obj\Debug\ultrasoon.o
+ .debug_str     0x0000000000000719       0x6a obj\Debug\ultrasoon.o
                                         0x156 (size before relaxing)
- .debug_str     0x0000000000000733       0x5f c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
- .debug_str     0x0000000000000792       0x5f c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
- .debug_str     0x0000000000000792       0x5f c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
- .debug_str     0x0000000000000792       0x5f c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
+ .debug_str     0x0000000000000783       0x5f c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
+ .debug_str     0x00000000000007e2       0x5f c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
+ .debug_str     0x00000000000007e2       0x5f c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
+ .debug_str     0x00000000000007e2       0x5f c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
 
 .debug_loc
  *(.debug_loc)
@@ -652,7 +652,7 @@ END GROUP
  *(.debug_addr)
 
 .debug_line_str
-                0x0000000000000000      0x1c9
+                0x0000000000000000      0x20f
  *(.debug_line_str)
  .debug_line_str
                 0x0000000000000000       0xb3 obj\Debug\fuse.o
@@ -661,42 +661,44 @@ END GROUP
                 0x00000000000000b3       0x31 obj\Debug\interface.o
                                         0x127 (size before relaxing)
  .debug_line_str
-                0x00000000000000e4        0x7 obj\Debug\main.o
-                                         0xf3 (size before relaxing)
+                0x00000000000000e4       0x98 obj\Debug\main.o
+                                        0x196 (size before relaxing)
  .debug_line_str
-                0x00000000000000eb       0x22 obj\Debug\navigatieLogica.o
+                0x000000000000017c       0x12 obj\Debug\navigatieLogica.o
                                         0x130 (size before relaxing)
  .debug_line_str
-                0x000000000000010d       0x46 obj\Debug\noodstop.o
+                0x000000000000018e        0xb obj\Debug\noodstop.o
                                         0x14c (size before relaxing)
  .debug_line_str
-                0x0000000000000153       0x10 obj\Debug\stepperDriver.o
+                0x0000000000000199       0x10 obj\Debug\stepperDriver.o
                                         0x159 (size before relaxing)
  .debug_line_str
-                0x0000000000000163        0x7 obj\Debug\UART.o
+                0x00000000000001a9        0x7 obj\Debug\UART.o
                                         0x135 (size before relaxing)
  .debug_line_str
-                0x000000000000016a        0xc obj\Debug\ultrasoon.o
+                0x00000000000001b0        0xc obj\Debug\ultrasoon.o
                                         0x149 (size before relaxing)
  .debug_line_str
-                0x0000000000000176       0x53 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
+                0x00000000000001bc       0x53 c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_exit.o)
                                          0x5f (size before relaxing)
  .debug_line_str
-                0x00000000000001c9       0x5f c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
+                0x000000000000020f       0x5f c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_copy_data.o)
  .debug_line_str
-                0x00000000000001c9       0x5f c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
+                0x000000000000020f       0x5f c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_clear_bss.o)
  .debug_line_str
-                0x00000000000001c9       0x5f c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
+                0x000000000000020f       0x5f c:/program files (x86)/avr-gcc-12.0.1/bin/../lib/gcc/avr/12.1.0/avr6\libgcc.a(_umulhisi3.o)
 
 .debug_loclists
-                0x0000000000000000       0x63
+                0x0000000000000000       0x96
  *(.debug_loclists)
  .debug_loclists
-                0x0000000000000000       0x25 obj\Debug\navigatieLogica.o
+                0x0000000000000000       0x33 obj\Debug\main.o
  .debug_loclists
-                0x0000000000000025       0x15 obj\Debug\UART.o
+                0x0000000000000033       0x25 obj\Debug\navigatieLogica.o
  .debug_loclists
-                0x000000000000003a       0x29 obj\Debug\ultrasoon.o
+                0x0000000000000058       0x15 obj\Debug\UART.o
+ .debug_loclists
+                0x000000000000006d       0x29 obj\Debug\ultrasoon.o
 
 .debug_macro
  *(.debug_macro)
@@ -825,6 +827,7 @@ flushUsart2Buffer                                 obj\Debug\UART.o
 initNoodstop                                      obj\Debug\noodstop.o
 initPinsStepper                                   obj\Debug\stepperDriver.o
 initStepper                                       obj\Debug\stepperDriver.o
+                                                  obj\Debug\main.o
 initTimer3Stepper                                 obj\Debug\stepperDriver.o
 initTimer4Stepper                                 obj\Debug\stepperDriver.o
 initUsartReceive                                  obj\Debug\UART.o
@@ -863,3 +866,4 @@ toggleStepperDirectionLeft                        obj\Debug\stepperDriver.o
 toggleStepperDirectionRight                       obj\Debug\stepperDriver.o
                                                   obj\Debug\navigatieLogica.o
 vooruit                                           obj\Debug\navigatieLogica.o
+                                                  obj\Debug\main.o

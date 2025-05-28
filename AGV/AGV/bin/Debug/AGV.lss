@@ -3,40 +3,40 @@ bin\Debug\AGV.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .data         00000002  00800200  0000083c  000008f0  2**0
+  0 .data         00000002  00800200  00000856  0000090a  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  1 .text         0000083c  00000000  00000000  000000b4  2**1
+  1 .text         00000856  00000000  00000000  000000b4  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .bss          0000001a  00800202  00800202  000008f2  2**0
+  2 .bss          0000001a  00800202  00800202  0000090c  2**0
                   ALLOC
-  3 .fuse         00000003  00820000  00820000  000008f2  2**0
+  3 .fuse         00000003  00820000  00820000  0000090c  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  4 .comment      00000012  00000000  00000000  000008f5  2**0
+  4 .comment      00000012  00000000  00000000  0000090f  2**0
                   CONTENTS, READONLY
-  5 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000908  2**2
+  5 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000924  2**2
                   CONTENTS, READONLY, OCTETS
-  6 .debug_aranges 00000178  00000000  00000000  00000948  2**3
+  6 .debug_aranges 00000178  00000000  00000000  00000968  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
-  7 .debug_info   0000178f  00000000  00000000  00000ac0  2**0
+  7 .debug_info   0000186b  00000000  00000000  00000ae0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
-  8 .debug_abbrev 00001166  00000000  00000000  0000224f  2**0
+  8 .debug_abbrev 0000123a  00000000  00000000  0000234b  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
-  9 .debug_line   0000116a  00000000  00000000  000033b5  2**0
+  9 .debug_line   000011e5  00000000  00000000  00003585  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 10 .debug_frame  00000370  00000000  00000000  00004520  2**2
+ 10 .debug_frame  00000370  00000000  00000000  0000476c  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 11 .debug_str    00000792  00000000  00000000  00004890  2**0
+ 11 .debug_str    000007e2  00000000  00000000  00004adc  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 12 .debug_line_str 000001c9  00000000  00000000  00005022  2**0
+ 12 .debug_line_str 0000020f  00000000  00000000  000052be  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_loclists 00000063  00000000  00000000  000051eb  2**0
+ 13 .debug_loclists 00000096  00000000  00000000  000054cd  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
 
 00000000 <__vectors>:
    0:	0c 94 72 00 	jmp	0xe4	; 0xe4 <__ctors_end>
-   4:	0c 94 27 02 	jmp	0x44e	; 0x44e <__vector_1>
+   4:	0c 94 34 02 	jmp	0x468	; 0x468 <__vector_1>
    8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
    c:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
   10:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
@@ -70,7 +70,7 @@ Disassembly of section .text:
   80:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
   84:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
   88:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
-  8c:	0c 94 e3 02 	jmp	0x5c6	; 0x5c6 <__vector_35>
+  8c:	0c 94 f0 02 	jmp	0x5e0	; 0x5e0 <__vector_35>
   90:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
   94:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
   98:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
@@ -80,12 +80,12 @@ Disassembly of section .text:
   a8:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
   ac:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
   b0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
-  b4:	0c 94 d1 02 	jmp	0x5a2	; 0x5a2 <__vector_45>
-  b8:	0c 94 92 03 	jmp	0x724	; 0x724 <__vector_46>
+  b4:	0c 94 de 02 	jmp	0x5bc	; 0x5bc <__vector_45>
+  b8:	0c 94 9f 03 	jmp	0x73e	; 0x73e <__vector_46>
   bc:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
   c0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
   c4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
-  c8:	0c 94 7e 03 	jmp	0x6fc	; 0x6fc <__vector_50>
+  c8:	0c 94 8b 03 	jmp	0x716	; 0x716 <__vector_50>
   cc:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
   d0:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
   d4:	0c 94 93 00 	jmp	0x126	; 0x126 <__bad_interrupt>
@@ -113,7 +113,7 @@ Disassembly of section .text:
   f8:	b2 e0       	ldi	r27, 0x02	; 2
 
 000000fa <.Loc.3>:
-  fa:	ec e3       	ldi	r30, 0x3C	; 60
+  fa:	e6 e5       	ldi	r30, 0x56	; 86
 
 000000fc <.Loc.4>:
   fc:	f8 e0       	ldi	r31, 0x08	; 8
@@ -168,7 +168,7 @@ Disassembly of section .text:
 
 0000011e <L0^A>:
  11e:	0e 94 e1 00 	call	0x1c2	; 0x1c2 <main>
- 122:	0c 94 1c 04 	jmp	0x838	; 0x838 <_exit>
+ 122:	0c 94 29 04 	jmp	0x852	; 0x852 <_exit>
 
 00000126 <__bad_interrupt>:
  126:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
@@ -185,7 +185,7 @@ void interpreter(){
 
 0000012e <.Loc.1>:
     receiveCommand();   //this function may have to be called more often within the while to be able to update if any new information comes in
- 12e:	0e 94 36 03 	call	0x66c	; 0x66c <receiveCommand>
+ 12e:	0e 94 43 03 	call	0x686	; 0x686 <receiveCommand>
 
 00000132 <.LVL0>:
     if(serialOntvangen[0]==0x01){    //commmando bewegen
@@ -270,21 +270,21 @@ void interpreter(){
 
 0000018c <.L13>:
                 rechtdoor();
- 18c:	0e 94 0f 01 	call	0x21e	; 0x21e <rechtdoor>
+ 18c:	0e 94 1c 01 	call	0x238	; 0x238 <rechtdoor>
 
 00000190 <.LVL1>:
  190:	e6 cf       	rjmp	.-52     	; 0x15e <.L4>
 
 00000192 <.L14>:
                 achteruit();
- 192:	0e 94 4c 01 	call	0x298	; 0x298 <achteruit>
+ 192:	0e 94 59 01 	call	0x2b2	; 0x2b2 <achteruit>
 
 00000196 <.LVL2>:
  196:	e8 cf       	rjmp	.-48     	; 0x168 <.L5>
 
 00000198 <.L15>:
                 stop();
- 198:	0e 94 fb 00 	call	0x1f6	; 0x1f6 <stop>
+ 198:	0e 94 08 01 	call	0x210	; 0x210 <stop>
 
 0000019c <.LVL3>:
  19c:	ea cf       	rjmp	.-44     	; 0x172 <.L6>
@@ -305,7 +305,7 @@ void interpreter(){
 
 000001b6 <.Loc.27>:
             rechtsom();
- 1b6:	0e 94 b6 01 	call	0x36c	; 0x36c <rechtsom>
+ 1b6:	0e 94 c3 01 	call	0x386	; 0x386 <rechtsom>
 
 000001ba <.LVL4>:
 }
@@ -313,1547 +313,1580 @@ void interpreter(){
 
 000001bc <.L16>:
             linksom();
- 1bc:	0e 94 4d 01 	call	0x29a	; 0x29a <linksom>
+ 1bc:	0e 94 5a 01 	call	0x2b4	; 0x2b4 <linksom>
 
 000001c0 <.LVL5>:
  1c0:	f4 cf       	rjmp	.-24     	; 0x1aa <.L9>
 
 000001c2 <main>:
+#include "main.h"
+
 int main(void)
 {
+    //initNoodstop();
+    initStepper();
+ 1c2:	0e 94 9d 02 	call	0x53a	; 0x53a <initStepper>
 
-    // Insert code
+000001c6 <.LBB4>:
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
 
-    while(1)
- 1c2:	ff cf       	rjmp	.-2      	; 0x1c2 <main>
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 1c6:	2f ef       	ldi	r18, 0xFF	; 255
+ 1c8:	87 ea       	ldi	r24, 0xA7	; 167
+ 1ca:	91 e6       	ldi	r25, 0x61	; 97
 
-000001c4 <metingPadbreedte>:
+000001cc <.L1^B1>:
+ 1cc:	21 50       	subi	r18, 0x01	; 1
+ 1ce:	80 40       	sbci	r24, 0x00	; 0
+ 1d0:	90 40       	sbci	r25, 0x00	; 0
+ 1d2:	e1 f7       	brne	.-8      	; 0x1cc <.L1^B1>
+ 1d4:	00 c0       	rjmp	.+0      	; 0x1d6 <L0^A>
+
+000001d6 <L0^A>:
+	...
+
+000001d8 <.L2>:
+    //init_ultrasoon();
+
+    _delay_ms(2000);
+    while(1){
+        vooruit();
+ 1d8:	0e 94 ff 00 	call	0x1fe	; 0x1fe <vooruit>
+
+000001dc <.LVL2>:
+    while(1){
+ 1dc:	fd cf       	rjmp	.-6      	; 0x1d8 <.L2>
+
+000001de <metingPadbreedte>:
 
 int padbreedte;
 
 void metingPadbreedte(void){
     //neemt afmeting van de breedte van het pad in cm
     padbreedte = distance_left + distance_right + 13;
- 1c4:	80 91 16 02 	lds	r24, 0x0216	; 0x800216 <distance_left>
- 1c8:	90 91 17 02 	lds	r25, 0x0217	; 0x800217 <distance_left+0x1>
- 1cc:	20 91 18 02 	lds	r18, 0x0218	; 0x800218 <distance_right>
- 1d0:	30 91 19 02 	lds	r19, 0x0219	; 0x800219 <distance_right+0x1>
- 1d4:	82 0f       	add	r24, r18
- 1d6:	93 1f       	adc	r25, r19
+ 1de:	80 91 16 02 	lds	r24, 0x0216	; 0x800216 <distance_left>
+ 1e2:	90 91 17 02 	lds	r25, 0x0217	; 0x800217 <distance_left+0x1>
+ 1e6:	20 91 18 02 	lds	r18, 0x0218	; 0x800218 <distance_right>
+ 1ea:	30 91 19 02 	lds	r19, 0x0219	; 0x800219 <distance_right+0x1>
+ 1ee:	82 0f       	add	r24, r18
+ 1f0:	93 1f       	adc	r25, r19
 
-000001d8 <.Loc.3>:
- 1d8:	0d 96       	adiw	r24, 0x0d	; 13
+000001f2 <.Loc.3>:
+ 1f2:	0d 96       	adiw	r24, 0x0d	; 13
 
-000001da <.Loc.4>:
- 1da:	90 93 03 02 	sts	0x0203, r25	; 0x800203 <padbreedte+0x1>
- 1de:	80 93 02 02 	sts	0x0202, r24	; 0x800202 <padbreedte>
+000001f4 <.Loc.4>:
+ 1f4:	90 93 03 02 	sts	0x0203, r25	; 0x800203 <padbreedte+0x1>
+ 1f8:	80 93 02 02 	sts	0x0202, r24	; 0x800202 <padbreedte>
 
-000001e2 <.Loc.5>:
+000001fc <.Loc.5>:
 }
- 1e2:	08 95       	ret
+ 1fc:	08 95       	ret
 
-000001e4 <vooruit>:
+000001fe <vooruit>:
 
 void vooruit(void){
     //agv rijdt ongecontroleerd vooruit
     speedStepperLeft(1150);
- 1e4:	8e e7       	ldi	r24, 0x7E	; 126
- 1e6:	94 e0       	ldi	r25, 0x04	; 4
- 1e8:	0e 94 9e 02 	call	0x53c	; 0x53c <speedStepperLeft>
+ 1fe:	8e e7       	ldi	r24, 0x7E	; 126
+ 200:	94 e0       	ldi	r25, 0x04	; 4
+ 202:	0e 94 ab 02 	call	0x556	; 0x556 <speedStepperLeft>
 
-000001ec <.LVL0>:
+00000206 <.LVL0>:
     speedStepperRight(1150);
- 1ec:	8e e7       	ldi	r24, 0x7E	; 126
- 1ee:	94 e0       	ldi	r25, 0x04	; 4
- 1f0:	0e 94 97 02 	call	0x52e	; 0x52e <speedStepperRight>
+ 206:	8e e7       	ldi	r24, 0x7E	; 126
+ 208:	94 e0       	ldi	r25, 0x04	; 4
+ 20a:	0e 94 a4 02 	call	0x548	; 0x548 <speedStepperRight>
 
-000001f4 <.LVL1>:
+0000020e <.LVL1>:
 }
- 1f4:	08 95       	ret
+ 20e:	08 95       	ret
 
-000001f6 <stop>:
+00000210 <stop>:
 
 void stop(void){
     //agv stopt met rijden
     speedStepperLeft(0);
- 1f6:	80 e0       	ldi	r24, 0x00	; 0
- 1f8:	90 e0       	ldi	r25, 0x00	; 0
- 1fa:	0e 94 9e 02 	call	0x53c	; 0x53c <speedStepperLeft>
+ 210:	80 e0       	ldi	r24, 0x00	; 0
+ 212:	90 e0       	ldi	r25, 0x00	; 0
+ 214:	0e 94 ab 02 	call	0x556	; 0x556 <speedStepperLeft>
 
-000001fe <.LVL2>:
+00000218 <.LVL2>:
     speedStepperRight(0);
- 1fe:	80 e0       	ldi	r24, 0x00	; 0
- 200:	90 e0       	ldi	r25, 0x00	; 0
- 202:	0e 94 97 02 	call	0x52e	; 0x52e <speedStepperRight>
+ 218:	80 e0       	ldi	r24, 0x00	; 0
+ 21a:	90 e0       	ldi	r25, 0x00	; 0
+ 21c:	0e 94 a4 02 	call	0x548	; 0x548 <speedStepperRight>
 
-00000206 <.LVL3>:
+00000220 <.LVL3>:
 }
- 206:	08 95       	ret
+ 220:	08 95       	ret
 
-00000208 <ramping>:
+00000222 <ramping>:
 
 int ramping(int originalValue , int value){
- 208:	26 2f       	mov	r18, r22
- 20a:	37 2f       	mov	r19, r23
+ 222:	26 2f       	mov	r18, r22
+ 224:	37 2f       	mov	r19, r23
 
-0000020c <.Loc.16>:
+00000226 <.Loc.16>:
     if(originalValue > value){
- 20c:	28 17       	cp	r18, r24
- 20e:	39 07       	cpc	r19, r25
- 210:	0c f4       	brge	.+2      	; 0x214 <.L5>
+ 226:	28 17       	cp	r18, r24
+ 228:	39 07       	cpc	r19, r25
+ 22a:	0c f4       	brge	.+2      	; 0x22e <.L5>
 
-00000212 <.Loc.18>:
+0000022c <.Loc.18>:
             originalValue --;
- 212:	01 97       	sbiw	r24, 0x01	; 1
+ 22c:	01 97       	sbiw	r24, 0x01	; 1
 
-00000214 <.L5>:
+0000022e <.L5>:
     }
     if(originalValue < value){
- 214:	82 17       	cp	r24, r18
- 216:	93 07       	cpc	r25, r19
- 218:	0c f4       	brge	.+2      	; 0x21c <.L6>
+ 22e:	82 17       	cp	r24, r18
+ 230:	93 07       	cpc	r25, r19
+ 232:	0c f4       	brge	.+2      	; 0x236 <.L6>
 
-0000021a <.Loc.22>:
+00000234 <.Loc.22>:
             originalValue ++;
- 21a:	01 96       	adiw	r24, 0x01	; 1
+ 234:	01 96       	adiw	r24, 0x01	; 1
 
-0000021c <.L6>:
+00000236 <.L6>:
     }
     return originalValue;
 }
- 21c:	08 95       	ret
+ 236:	08 95       	ret
 
-0000021e <rechtdoor>:
+00000238 <rechtdoor>:
 
 void rechtdoor(void){
     //while agv binnen het pad is
     if (distance_right==distance_left) {
- 21e:	20 91 18 02 	lds	r18, 0x0218	; 0x800218 <distance_right>
- 222:	30 91 19 02 	lds	r19, 0x0219	; 0x800219 <distance_right+0x1>
- 226:	80 91 16 02 	lds	r24, 0x0216	; 0x800216 <distance_left>
- 22a:	90 91 17 02 	lds	r25, 0x0217	; 0x800217 <distance_left+0x1>
+ 238:	20 91 18 02 	lds	r18, 0x0218	; 0x800218 <distance_right>
+ 23c:	30 91 19 02 	lds	r19, 0x0219	; 0x800219 <distance_right+0x1>
+ 240:	80 91 16 02 	lds	r24, 0x0216	; 0x800216 <distance_left>
+ 244:	90 91 17 02 	lds	r25, 0x0217	; 0x800217 <distance_left+0x1>
 
-0000022e <.Loc.29>:
- 22e:	28 17       	cp	r18, r24
- 230:	39 07       	cpc	r19, r25
- 232:	b9 f0       	breq	.+46     	; 0x262 <.L11>
+00000248 <.Loc.29>:
+ 248:	28 17       	cp	r18, r24
+ 24a:	39 07       	cpc	r19, r25
+ 24c:	b9 f0       	breq	.+46     	; 0x27c <.L11>
 
-00000234 <.Loc.30>:
+0000024e <.Loc.30>:
         speedStepperLeft(1150);
         speedStepperRight(1150);
     }
     else{
         if (distance_right < distance_left){
- 234:	20 91 18 02 	lds	r18, 0x0218	; 0x800218 <distance_right>
- 238:	30 91 19 02 	lds	r19, 0x0219	; 0x800219 <distance_right+0x1>
- 23c:	80 91 16 02 	lds	r24, 0x0216	; 0x800216 <distance_left>
- 240:	90 91 17 02 	lds	r25, 0x0217	; 0x800217 <distance_left+0x1>
+ 24e:	20 91 18 02 	lds	r18, 0x0218	; 0x800218 <distance_right>
+ 252:	30 91 19 02 	lds	r19, 0x0219	; 0x800219 <distance_right+0x1>
+ 256:	80 91 16 02 	lds	r24, 0x0216	; 0x800216 <distance_left>
+ 25a:	90 91 17 02 	lds	r25, 0x0217	; 0x800217 <distance_left+0x1>
 
-00000244 <.Loc.32>:
- 244:	28 17       	cp	r18, r24
- 246:	39 07       	cpc	r19, r25
- 248:	ac f0       	brlt	.+42     	; 0x274 <.L12>
+0000025e <.Loc.32>:
+ 25e:	28 17       	cp	r18, r24
+ 260:	39 07       	cpc	r19, r25
+ 262:	ac f0       	brlt	.+42     	; 0x28e <.L12>
 
-0000024a <.L10>:
+00000264 <.L10>:
             speedStepperLeft(ramping(1650, 1150));
             speedStepperRight(ramping(1150, 1650));
         }
         if(distance_left < distance_right){
- 24a:	20 91 16 02 	lds	r18, 0x0216	; 0x800216 <distance_left>
- 24e:	30 91 17 02 	lds	r19, 0x0217	; 0x800217 <distance_left+0x1>
- 252:	80 91 18 02 	lds	r24, 0x0218	; 0x800218 <distance_right>
- 256:	90 91 19 02 	lds	r25, 0x0219	; 0x800219 <distance_right+0x1>
+ 264:	20 91 16 02 	lds	r18, 0x0216	; 0x800216 <distance_left>
+ 268:	30 91 17 02 	lds	r19, 0x0217	; 0x800217 <distance_left+0x1>
+ 26c:	80 91 18 02 	lds	r24, 0x0218	; 0x800218 <distance_right>
+ 270:	90 91 19 02 	lds	r25, 0x0219	; 0x800219 <distance_right+0x1>
 
-0000025a <.Loc.35>:
- 25a:	28 17       	cp	r18, r24
- 25c:	39 07       	cpc	r19, r25
- 25e:	9c f0       	brlt	.+38     	; 0x286 <.L13>
+00000274 <.Loc.35>:
+ 274:	28 17       	cp	r18, r24
+ 276:	39 07       	cpc	r19, r25
+ 278:	9c f0       	brlt	.+38     	; 0x2a0 <.L13>
 
-00000260 <.L7>:
+0000027a <.L7>:
             speedStepperRight(ramping(1650, 1150));
             speedStepperLeft(ramping(1150, 1650));
         }
     }
     //stop driving
 }
- 260:	08 95       	ret
+ 27a:	08 95       	ret
 
-00000262 <.L11>:
+0000027c <.L11>:
         speedStepperLeft(1150);
- 262:	8e e7       	ldi	r24, 0x7E	; 126
- 264:	94 e0       	ldi	r25, 0x04	; 4
- 266:	0e 94 9e 02 	call	0x53c	; 0x53c <speedStepperLeft>
-
-0000026a <.LVL7>:
-        speedStepperRight(1150);
- 26a:	8e e7       	ldi	r24, 0x7E	; 126
- 26c:	94 e0       	ldi	r25, 0x04	; 4
- 26e:	0e 94 97 02 	call	0x52e	; 0x52e <speedStepperRight>
-
-00000272 <.LVL8>:
- 272:	08 95       	ret
-
-00000274 <.L12>:
-            speedStepperLeft(ramping(1650, 1150));
- 274:	81 e7       	ldi	r24, 0x71	; 113
- 276:	96 e0       	ldi	r25, 0x06	; 6
- 278:	0e 94 9e 02 	call	0x53c	; 0x53c <speedStepperLeft>
-
-0000027c <.LVL9>:
-            speedStepperRight(ramping(1150, 1650));
- 27c:	8f e7       	ldi	r24, 0x7F	; 127
+ 27c:	8e e7       	ldi	r24, 0x7E	; 126
  27e:	94 e0       	ldi	r25, 0x04	; 4
- 280:	0e 94 97 02 	call	0x52e	; 0x52e <speedStepperRight>
+ 280:	0e 94 ab 02 	call	0x556	; 0x556 <speedStepperLeft>
 
-00000284 <.LVL10>:
- 284:	e2 cf       	rjmp	.-60     	; 0x24a <.L10>
+00000284 <.LVL7>:
+        speedStepperRight(1150);
+ 284:	8e e7       	ldi	r24, 0x7E	; 126
+ 286:	94 e0       	ldi	r25, 0x04	; 4
+ 288:	0e 94 a4 02 	call	0x548	; 0x548 <speedStepperRight>
 
-00000286 <.L13>:
+0000028c <.LVL8>:
+ 28c:	08 95       	ret
+
+0000028e <.L12>:
+            speedStepperLeft(ramping(1650, 1150));
+ 28e:	81 e7       	ldi	r24, 0x71	; 113
+ 290:	96 e0       	ldi	r25, 0x06	; 6
+ 292:	0e 94 ab 02 	call	0x556	; 0x556 <speedStepperLeft>
+
+00000296 <.LVL9>:
+            speedStepperRight(ramping(1150, 1650));
+ 296:	8f e7       	ldi	r24, 0x7F	; 127
+ 298:	94 e0       	ldi	r25, 0x04	; 4
+ 29a:	0e 94 a4 02 	call	0x548	; 0x548 <speedStepperRight>
+
+0000029e <.LVL10>:
+ 29e:	e2 cf       	rjmp	.-60     	; 0x264 <.L10>
+
+000002a0 <.L13>:
             speedStepperRight(ramping(1650, 1150));
- 286:	81 e7       	ldi	r24, 0x71	; 113
- 288:	96 e0       	ldi	r25, 0x06	; 6
- 28a:	0e 94 97 02 	call	0x52e	; 0x52e <speedStepperRight>
+ 2a0:	81 e7       	ldi	r24, 0x71	; 113
+ 2a2:	96 e0       	ldi	r25, 0x06	; 6
+ 2a4:	0e 94 a4 02 	call	0x548	; 0x548 <speedStepperRight>
 
-0000028e <.LVL11>:
+000002a8 <.LVL11>:
             speedStepperLeft(ramping(1150, 1650));
- 28e:	8f e7       	ldi	r24, 0x7F	; 127
- 290:	94 e0       	ldi	r25, 0x04	; 4
- 292:	0e 94 9e 02 	call	0x53c	; 0x53c <speedStepperLeft>
+ 2a8:	8f e7       	ldi	r24, 0x7F	; 127
+ 2aa:	94 e0       	ldi	r25, 0x04	; 4
+ 2ac:	0e 94 ab 02 	call	0x556	; 0x556 <speedStepperLeft>
 
-00000296 <.LVL12>:
+000002b0 <.LVL12>:
 }
- 296:	e4 cf       	rjmp	.-56     	; 0x260 <.L7>
+ 2b0:	e4 cf       	rjmp	.-56     	; 0x27a <.L7>
 
-00000298 <achteruit>:
+000002b2 <achteruit>:
 
 void achteruit(void){
 
 }
- 298:	08 95       	ret
+ 2b2:	08 95       	ret
 
-0000029a <linksom>:
+000002b4 <linksom>:
 
 void linksom(void){
     enableStepCnt();
- 29a:	0e 94 fe 02 	call	0x5fc	; 0x5fc <enableStepCnt>
+ 2b4:	0e 94 0b 03 	call	0x616	; 0x616 <enableStepCnt>
 
-0000029e <.LVL13>:
+000002b8 <.LVL13>:
     clearStepCnt();
- 29e:	0e 94 f5 02 	call	0x5ea	; 0x5ea <clearStepCnt>
+ 2b8:	0e 94 02 03 	call	0x604	; 0x604 <clearStepCnt>
 
-000002a2 <.LVL14>:
+000002bc <.LVL14>:
     while(stepCounterLeft<4100){      //agv rijdt ietsjes verder buiten het pad
- 2a2:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
- 2a6:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
- 2aa:	84 30       	cpi	r24, 0x04	; 4
- 2ac:	90 41       	sbci	r25, 0x10	; 16
- 2ae:	48 f4       	brcc	.+18     	; 0x2c2 <.L16>
+ 2bc:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
+ 2c0:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
+ 2c4:	84 30       	cpi	r24, 0x04	; 4
+ 2c6:	90 41       	sbci	r25, 0x10	; 16
+ 2c8:	48 f4       	brcc	.+18     	; 0x2dc <.L16>
 
-000002b0 <.L17>:
+000002ca <.L17>:
         vooruit();
- 2b0:	0e 94 f2 00 	call	0x1e4	; 0x1e4 <vooruit>
+ 2ca:	0e 94 ff 00 	call	0x1fe	; 0x1fe <vooruit>
 
-000002b4 <.LVL15>:
+000002ce <.LVL15>:
     while(stepCounterLeft<4100){      //agv rijdt ietsjes verder buiten het pad
- 2b4:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
- 2b8:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
- 2bc:	84 30       	cpi	r24, 0x04	; 4
- 2be:	90 41       	sbci	r25, 0x10	; 16
- 2c0:	b8 f3       	brcs	.-18     	; 0x2b0 <.L17>
+ 2ce:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
+ 2d2:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
+ 2d6:	84 30       	cpi	r24, 0x04	; 4
+ 2d8:	90 41       	sbci	r25, 0x10	; 16
+ 2da:	b8 f3       	brcs	.-18     	; 0x2ca <.L17>
 
-000002c2 <.L16>:
+000002dc <.L16>:
     }
     clearStepCnt();
- 2c2:	0e 94 f5 02 	call	0x5ea	; 0x5ea <clearStepCnt>
+ 2dc:	0e 94 02 03 	call	0x604	; 0x604 <clearStepCnt>
 
-000002c6 <.LVL16>:
+000002e0 <.LVL16>:
     toggleStepperDirectionRight();
- 2c6:	0e 94 a5 02 	call	0x54a	; 0x54a <toggleStepperDirectionRight>
+ 2e0:	0e 94 b2 02 	call	0x564	; 0x564 <toggleStepperDirectionRight>
 
-000002ca <.LVL17>:
+000002e4 <.LVL17>:
     while(stepCounterLeft<2200){   //agv draait 90 graden
- 2ca:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
- 2ce:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
- 2d2:	88 39       	cpi	r24, 0x98	; 152
- 2d4:	98 40       	sbci	r25, 0x08	; 8
- 2d6:	48 f4       	brcc	.+18     	; 0x2ea <.L18>
+ 2e4:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
+ 2e8:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
+ 2ec:	88 39       	cpi	r24, 0x98	; 152
+ 2ee:	98 40       	sbci	r25, 0x08	; 8
+ 2f0:	48 f4       	brcc	.+18     	; 0x304 <.L18>
 
-000002d8 <.L19>:
+000002f2 <.L19>:
         vooruit();
- 2d8:	0e 94 f2 00 	call	0x1e4	; 0x1e4 <vooruit>
+ 2f2:	0e 94 ff 00 	call	0x1fe	; 0x1fe <vooruit>
 
-000002dc <.LVL18>:
+000002f6 <.LVL18>:
     while(stepCounterLeft<2200){   //agv draait 90 graden
- 2dc:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
- 2e0:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
- 2e4:	88 39       	cpi	r24, 0x98	; 152
- 2e6:	98 40       	sbci	r25, 0x08	; 8
- 2e8:	b8 f3       	brcs	.-18     	; 0x2d8 <.L19>
+ 2f6:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
+ 2fa:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
+ 2fe:	88 39       	cpi	r24, 0x98	; 152
+ 300:	98 40       	sbci	r25, 0x08	; 8
+ 302:	b8 f3       	brcs	.-18     	; 0x2f2 <.L19>
 
-000002ea <.L18>:
+00000304 <.L18>:
     }
     toggleStepperDirectionRight();
- 2ea:	0e 94 a5 02 	call	0x54a	; 0x54a <toggleStepperDirectionRight>
+ 304:	0e 94 b2 02 	call	0x564	; 0x564 <toggleStepperDirectionRight>
 
-000002ee <.LVL19>:
+00000308 <.LVL19>:
     clearStepCnt();
- 2ee:	0e 94 f5 02 	call	0x5ea	; 0x5ea <clearStepCnt>
+ 308:	0e 94 02 03 	call	0x604	; 0x604 <clearStepCnt>
 
-000002f2 <.LVL20>:
+0000030c <.LVL20>:
     while(stepCounterLeft<(5500)){    //agv rijdt naar volgende pad
- 2f2:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
- 2f6:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
- 2fa:	8c 37       	cpi	r24, 0x7C	; 124
- 2fc:	95 41       	sbci	r25, 0x15	; 21
- 2fe:	48 f4       	brcc	.+18     	; 0x312 <.L20>
+ 30c:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
+ 310:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
+ 314:	8c 37       	cpi	r24, 0x7C	; 124
+ 316:	95 41       	sbci	r25, 0x15	; 21
+ 318:	48 f4       	brcc	.+18     	; 0x32c <.L20>
 
-00000300 <.L21>:
+0000031a <.L21>:
         vooruit();
- 300:	0e 94 f2 00 	call	0x1e4	; 0x1e4 <vooruit>
+ 31a:	0e 94 ff 00 	call	0x1fe	; 0x1fe <vooruit>
 
-00000304 <.LVL21>:
+0000031e <.LVL21>:
     while(stepCounterLeft<(5500)){    //agv rijdt naar volgende pad
- 304:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
- 308:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
- 30c:	8c 37       	cpi	r24, 0x7C	; 124
- 30e:	95 41       	sbci	r25, 0x15	; 21
- 310:	b8 f3       	brcs	.-18     	; 0x300 <.L21>
+ 31e:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
+ 322:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
+ 326:	8c 37       	cpi	r24, 0x7C	; 124
+ 328:	95 41       	sbci	r25, 0x15	; 21
+ 32a:	b8 f3       	brcs	.-18     	; 0x31a <.L21>
 
-00000312 <.L20>:
+0000032c <.L20>:
     }
     toggleStepperDirectionRight();      //agv draati 90 graden
- 312:	0e 94 a5 02 	call	0x54a	; 0x54a <toggleStepperDirectionRight>
+ 32c:	0e 94 b2 02 	call	0x564	; 0x564 <toggleStepperDirectionRight>
 
-00000316 <.LVL22>:
+00000330 <.LVL22>:
     clearStepCnt();
- 316:	0e 94 f5 02 	call	0x5ea	; 0x5ea <clearStepCnt>
+ 330:	0e 94 02 03 	call	0x604	; 0x604 <clearStepCnt>
 
-0000031a <.LVL23>:
+00000334 <.LVL23>:
     while(stepCounterLeft<(2200)){
- 31a:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
- 31e:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
- 322:	88 39       	cpi	r24, 0x98	; 152
- 324:	98 40       	sbci	r25, 0x08	; 8
- 326:	48 f4       	brcc	.+18     	; 0x33a <.L22>
+ 334:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
+ 338:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
+ 33c:	88 39       	cpi	r24, 0x98	; 152
+ 33e:	98 40       	sbci	r25, 0x08	; 8
+ 340:	48 f4       	brcc	.+18     	; 0x354 <.L22>
 
-00000328 <.L23>:
+00000342 <.L23>:
         vooruit();
- 328:	0e 94 f2 00 	call	0x1e4	; 0x1e4 <vooruit>
+ 342:	0e 94 ff 00 	call	0x1fe	; 0x1fe <vooruit>
 
-0000032c <.LVL24>:
+00000346 <.LVL24>:
     while(stepCounterLeft<(2200)){
- 32c:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
- 330:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
- 334:	88 39       	cpi	r24, 0x98	; 152
- 336:	98 40       	sbci	r25, 0x08	; 8
- 338:	b8 f3       	brcs	.-18     	; 0x328 <.L23>
+ 346:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
+ 34a:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
+ 34e:	88 39       	cpi	r24, 0x98	; 152
+ 350:	98 40       	sbci	r25, 0x08	; 8
+ 352:	b8 f3       	brcs	.-18     	; 0x342 <.L23>
 
-0000033a <.L22>:
+00000354 <.L22>:
     }
     toggleStepperDirectionRight();
- 33a:	0e 94 a5 02 	call	0x54a	; 0x54a <toggleStepperDirectionRight>
+ 354:	0e 94 b2 02 	call	0x564	; 0x564 <toggleStepperDirectionRight>
 
-0000033e <.LVL25>:
+00000358 <.LVL25>:
     clearStepCnt();
- 33e:	0e 94 f5 02 	call	0x5ea	; 0x5ea <clearStepCnt>
+ 358:	0e 94 02 03 	call	0x604	; 0x604 <clearStepCnt>
 
-00000342 <.LVL26>:
+0000035c <.LVL26>:
     vooruit();
- 342:	0e 94 f2 00 	call	0x1e4	; 0x1e4 <vooruit>
+ 35c:	0e 94 ff 00 	call	0x1fe	; 0x1fe <vooruit>
 
-00000346 <.LVL27>:
+00000360 <.LVL27>:
     while(distance_left>15){           //agv is in het volgende pad
- 346:	80 91 16 02 	lds	r24, 0x0216	; 0x800216 <distance_left>
- 34a:	90 91 17 02 	lds	r25, 0x0217	; 0x800217 <distance_left+0x1>
- 34e:	40 97       	sbiw	r24, 0x10	; 16
- 350:	44 f0       	brlt	.+16     	; 0x362 <.L24>
+ 360:	80 91 16 02 	lds	r24, 0x0216	; 0x800216 <distance_left>
+ 364:	90 91 17 02 	lds	r25, 0x0217	; 0x800217 <distance_left+0x1>
+ 368:	40 97       	sbiw	r24, 0x10	; 16
+ 36a:	44 f0       	brlt	.+16     	; 0x37c <.L24>
 
-00000352 <.L25>:
+0000036c <.L25>:
         vooruit();
- 352:	0e 94 f2 00 	call	0x1e4	; 0x1e4 <vooruit>
+ 36c:	0e 94 ff 00 	call	0x1fe	; 0x1fe <vooruit>
 
-00000356 <.LVL28>:
+00000370 <.LVL28>:
     while(distance_left>15){           //agv is in het volgende pad
- 356:	80 91 16 02 	lds	r24, 0x0216	; 0x800216 <distance_left>
- 35a:	90 91 17 02 	lds	r25, 0x0217	; 0x800217 <distance_left+0x1>
- 35e:	40 97       	sbiw	r24, 0x10	; 16
- 360:	c4 f7       	brge	.-16     	; 0x352 <.L25>
+ 370:	80 91 16 02 	lds	r24, 0x0216	; 0x800216 <distance_left>
+ 374:	90 91 17 02 	lds	r25, 0x0217	; 0x800217 <distance_left+0x1>
+ 378:	40 97       	sbiw	r24, 0x10	; 16
+ 37a:	c4 f7       	brge	.-16     	; 0x36c <.L25>
 
-00000362 <.L24>:
+0000037c <.L24>:
     }
     stop();
- 362:	0e 94 fb 00 	call	0x1f6	; 0x1f6 <stop>
+ 37c:	0e 94 08 01 	call	0x210	; 0x210 <stop>
 
-00000366 <.LVL29>:
+00000380 <.LVL29>:
     disableStepCnt();
- 366:	0e 94 09 03 	call	0x612	; 0x612 <disableStepCnt>
+ 380:	0e 94 16 03 	call	0x62c	; 0x62c <disableStepCnt>
 
-0000036a <.LVL30>:
+00000384 <.LVL30>:
 }
- 36a:	08 95       	ret
+ 384:	08 95       	ret
 
-0000036c <rechtsom>:
+00000386 <rechtsom>:
 
 void rechtsom(void){
     enableStepCnt();
- 36c:	0e 94 fe 02 	call	0x5fc	; 0x5fc <enableStepCnt>
+ 386:	0e 94 0b 03 	call	0x616	; 0x616 <enableStepCnt>
 
-00000370 <.LVL31>:
+0000038a <.LVL31>:
     clearStepCnt();
- 370:	0e 94 f5 02 	call	0x5ea	; 0x5ea <clearStepCnt>
+ 38a:	0e 94 02 03 	call	0x604	; 0x604 <clearStepCnt>
 
-00000374 <.LVL32>:
+0000038e <.LVL32>:
     while(stepCounterLeft<4100){      //agv rijdt ietsjes verder buiten het pad
- 374:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
- 378:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
- 37c:	84 30       	cpi	r24, 0x04	; 4
- 37e:	90 41       	sbci	r25, 0x10	; 16
- 380:	48 f4       	brcc	.+18     	; 0x394 <.L32>
+ 38e:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
+ 392:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
+ 396:	84 30       	cpi	r24, 0x04	; 4
+ 398:	90 41       	sbci	r25, 0x10	; 16
+ 39a:	48 f4       	brcc	.+18     	; 0x3ae <.L32>
 
-00000382 <.L33>:
+0000039c <.L33>:
         vooruit();
- 382:	0e 94 f2 00 	call	0x1e4	; 0x1e4 <vooruit>
+ 39c:	0e 94 ff 00 	call	0x1fe	; 0x1fe <vooruit>
 
-00000386 <.LVL33>:
+000003a0 <.LVL33>:
     while(stepCounterLeft<4100){      //agv rijdt ietsjes verder buiten het pad
- 386:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
- 38a:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
- 38e:	84 30       	cpi	r24, 0x04	; 4
- 390:	90 41       	sbci	r25, 0x10	; 16
- 392:	b8 f3       	brcs	.-18     	; 0x382 <.L33>
+ 3a0:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
+ 3a4:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
+ 3a8:	84 30       	cpi	r24, 0x04	; 4
+ 3aa:	90 41       	sbci	r25, 0x10	; 16
+ 3ac:	b8 f3       	brcs	.-18     	; 0x39c <.L33>
 
-00000394 <.L32>:
+000003ae <.L32>:
     }
     clearStepCnt();
- 394:	0e 94 f5 02 	call	0x5ea	; 0x5ea <clearStepCnt>
+ 3ae:	0e 94 02 03 	call	0x604	; 0x604 <clearStepCnt>
 
-00000398 <.LVL34>:
+000003b2 <.LVL34>:
     toggleStepperDirectionLeft();
- 398:	0e 94 b7 02 	call	0x56e	; 0x56e <toggleStepperDirectionLeft>
+ 3b2:	0e 94 c4 02 	call	0x588	; 0x588 <toggleStepperDirectionLeft>
 
-0000039c <.LVL35>:
+000003b6 <.LVL35>:
     while(stepCounterLeft<2200){   //agv draait 90 graden
- 39c:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
- 3a0:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
- 3a4:	88 39       	cpi	r24, 0x98	; 152
- 3a6:	98 40       	sbci	r25, 0x08	; 8
- 3a8:	48 f4       	brcc	.+18     	; 0x3bc <.L34>
+ 3b6:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
+ 3ba:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
+ 3be:	88 39       	cpi	r24, 0x98	; 152
+ 3c0:	98 40       	sbci	r25, 0x08	; 8
+ 3c2:	48 f4       	brcc	.+18     	; 0x3d6 <.L34>
 
-000003aa <.L35>:
+000003c4 <.L35>:
         vooruit();
- 3aa:	0e 94 f2 00 	call	0x1e4	; 0x1e4 <vooruit>
+ 3c4:	0e 94 ff 00 	call	0x1fe	; 0x1fe <vooruit>
 
-000003ae <.LVL36>:
+000003c8 <.LVL36>:
     while(stepCounterLeft<2200){   //agv draait 90 graden
- 3ae:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
- 3b2:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
- 3b6:	88 39       	cpi	r24, 0x98	; 152
- 3b8:	98 40       	sbci	r25, 0x08	; 8
- 3ba:	b8 f3       	brcs	.-18     	; 0x3aa <.L35>
+ 3c8:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
+ 3cc:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
+ 3d0:	88 39       	cpi	r24, 0x98	; 152
+ 3d2:	98 40       	sbci	r25, 0x08	; 8
+ 3d4:	b8 f3       	brcs	.-18     	; 0x3c4 <.L35>
 
-000003bc <.L34>:
+000003d6 <.L34>:
     }
     toggleStepperDirectionLeft();
- 3bc:	0e 94 b7 02 	call	0x56e	; 0x56e <toggleStepperDirectionLeft>
+ 3d6:	0e 94 c4 02 	call	0x588	; 0x588 <toggleStepperDirectionLeft>
 
-000003c0 <.LVL37>:
+000003da <.LVL37>:
     clearStepCnt();
- 3c0:	0e 94 f5 02 	call	0x5ea	; 0x5ea <clearStepCnt>
+ 3da:	0e 94 02 03 	call	0x604	; 0x604 <clearStepCnt>
 
-000003c4 <.LVL38>:
+000003de <.LVL38>:
     while(stepCounterLeft<(5500)){    //agv rijdt naar volgende pad
- 3c4:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
- 3c8:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
- 3cc:	8c 37       	cpi	r24, 0x7C	; 124
- 3ce:	95 41       	sbci	r25, 0x15	; 21
- 3d0:	48 f4       	brcc	.+18     	; 0x3e4 <.L36>
+ 3de:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
+ 3e2:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
+ 3e6:	8c 37       	cpi	r24, 0x7C	; 124
+ 3e8:	95 41       	sbci	r25, 0x15	; 21
+ 3ea:	48 f4       	brcc	.+18     	; 0x3fe <.L36>
 
-000003d2 <.L37>:
+000003ec <.L37>:
         vooruit();
- 3d2:	0e 94 f2 00 	call	0x1e4	; 0x1e4 <vooruit>
+ 3ec:	0e 94 ff 00 	call	0x1fe	; 0x1fe <vooruit>
 
-000003d6 <.LVL39>:
+000003f0 <.LVL39>:
     while(stepCounterLeft<(5500)){    //agv rijdt naar volgende pad
- 3d6:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
- 3da:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
- 3de:	8c 37       	cpi	r24, 0x7C	; 124
- 3e0:	95 41       	sbci	r25, 0x15	; 21
- 3e2:	b8 f3       	brcs	.-18     	; 0x3d2 <.L37>
+ 3f0:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
+ 3f4:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
+ 3f8:	8c 37       	cpi	r24, 0x7C	; 124
+ 3fa:	95 41       	sbci	r25, 0x15	; 21
+ 3fc:	b8 f3       	brcs	.-18     	; 0x3ec <.L37>
 
-000003e4 <.L36>:
+000003fe <.L36>:
     }
     toggleStepperDirectionLeft();      //agv draati 90 graden
- 3e4:	0e 94 b7 02 	call	0x56e	; 0x56e <toggleStepperDirectionLeft>
+ 3fe:	0e 94 c4 02 	call	0x588	; 0x588 <toggleStepperDirectionLeft>
 
-000003e8 <.LVL40>:
+00000402 <.LVL40>:
     clearStepCnt();
- 3e8:	0e 94 f5 02 	call	0x5ea	; 0x5ea <clearStepCnt>
+ 402:	0e 94 02 03 	call	0x604	; 0x604 <clearStepCnt>
 
-000003ec <.LVL41>:
+00000406 <.LVL41>:
     while(stepCounterLeft<(2200)){
- 3ec:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
- 3f0:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
- 3f4:	88 39       	cpi	r24, 0x98	; 152
- 3f6:	98 40       	sbci	r25, 0x08	; 8
- 3f8:	48 f4       	brcc	.+18     	; 0x40c <.L38>
+ 406:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
+ 40a:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
+ 40e:	88 39       	cpi	r24, 0x98	; 152
+ 410:	98 40       	sbci	r25, 0x08	; 8
+ 412:	48 f4       	brcc	.+18     	; 0x426 <.L38>
 
-000003fa <.L39>:
+00000414 <.L39>:
         vooruit();
- 3fa:	0e 94 f2 00 	call	0x1e4	; 0x1e4 <vooruit>
+ 414:	0e 94 ff 00 	call	0x1fe	; 0x1fe <vooruit>
 
-000003fe <.LVL42>:
+00000418 <.LVL42>:
     while(stepCounterLeft<(2200)){
- 3fe:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
- 402:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
- 406:	88 39       	cpi	r24, 0x98	; 152
- 408:	98 40       	sbci	r25, 0x08	; 8
- 40a:	b8 f3       	brcs	.-18     	; 0x3fa <.L39>
+ 418:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
+ 41c:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
+ 420:	88 39       	cpi	r24, 0x98	; 152
+ 422:	98 40       	sbci	r25, 0x08	; 8
+ 424:	b8 f3       	brcs	.-18     	; 0x414 <.L39>
 
-0000040c <.L38>:
+00000426 <.L38>:
     }
     toggleStepperDirectionLeft();
- 40c:	0e 94 b7 02 	call	0x56e	; 0x56e <toggleStepperDirectionLeft>
+ 426:	0e 94 c4 02 	call	0x588	; 0x588 <toggleStepperDirectionLeft>
 
-00000410 <.LVL43>:
+0000042a <.LVL43>:
     disableStepCnt();
- 410:	0e 94 09 03 	call	0x612	; 0x612 <disableStepCnt>
+ 42a:	0e 94 16 03 	call	0x62c	; 0x62c <disableStepCnt>
 
-00000414 <.LVL44>:
+0000042e <.LVL44>:
     vooruit();
- 414:	0e 94 f2 00 	call	0x1e4	; 0x1e4 <vooruit>
+ 42e:	0e 94 ff 00 	call	0x1fe	; 0x1fe <vooruit>
 
-00000418 <.LVL45>:
+00000432 <.LVL45>:
     while(distance_left>15){           //agv is in het volgende pad
- 418:	80 91 16 02 	lds	r24, 0x0216	; 0x800216 <distance_left>
- 41c:	90 91 17 02 	lds	r25, 0x0217	; 0x800217 <distance_left+0x1>
- 420:	40 97       	sbiw	r24, 0x10	; 16
- 422:	44 f0       	brlt	.+16     	; 0x434 <.L40>
+ 432:	80 91 16 02 	lds	r24, 0x0216	; 0x800216 <distance_left>
+ 436:	90 91 17 02 	lds	r25, 0x0217	; 0x800217 <distance_left+0x1>
+ 43a:	40 97       	sbiw	r24, 0x10	; 16
+ 43c:	44 f0       	brlt	.+16     	; 0x44e <.L40>
 
-00000424 <.L41>:
+0000043e <.L41>:
         vooruit();
- 424:	0e 94 f2 00 	call	0x1e4	; 0x1e4 <vooruit>
+ 43e:	0e 94 ff 00 	call	0x1fe	; 0x1fe <vooruit>
 
-00000428 <.LVL46>:
+00000442 <.LVL46>:
     while(distance_left>15){           //agv is in het volgende pad
- 428:	80 91 16 02 	lds	r24, 0x0216	; 0x800216 <distance_left>
- 42c:	90 91 17 02 	lds	r25, 0x0217	; 0x800217 <distance_left+0x1>
- 430:	40 97       	sbiw	r24, 0x10	; 16
- 432:	c4 f7       	brge	.-16     	; 0x424 <.L41>
+ 442:	80 91 16 02 	lds	r24, 0x0216	; 0x800216 <distance_left>
+ 446:	90 91 17 02 	lds	r25, 0x0217	; 0x800217 <distance_left+0x1>
+ 44a:	40 97       	sbiw	r24, 0x10	; 16
+ 44c:	c4 f7       	brge	.-16     	; 0x43e <.L41>
 
-00000434 <.L40>:
+0000044e <.L40>:
     }
     stop();
- 434:	0e 94 fb 00 	call	0x1f6	; 0x1f6 <stop>
+ 44e:	0e 94 08 01 	call	0x210	; 0x210 <stop>
 
-00000438 <.LVL47>:
+00000452 <.LVL47>:
 }
- 438:	08 95       	ret
+ 452:	08 95       	ret
 
-0000043a <initNoodstop>:
+00000454 <initNoodstop>:
 
 #include <avr/interrupt.h>
 #include <avr/io.h>
 
 void initNoodstop(void){
     DDR_NOOD &= ~(1<<NOODKNOP);
- 43a:	50 98       	cbi	0x0a, 0	; 10
+ 454:	50 98       	cbi	0x0a, 0	; 10
 
-0000043c <.Loc.3>:
+00000456 <.Loc.3>:
     PORT_NOOD |= (1<<NOODKNOP);
- 43c:	58 9a       	sbi	0x0b, 0	; 11
+ 456:	58 9a       	sbi	0x0b, 0	; 11
 
-0000043e <.Loc.5>:
+00000458 <.Loc.5>:
 
     EIMSK |= (1<<INT0);       //ENABLE HARDWARE INTERRUPT ON PD0
- 43e:	e8 9a       	sbi	0x1d, 0	; 29
+ 458:	e8 9a       	sbi	0x1d, 0	; 29
 
-00000440 <.Loc.7>:
+0000045a <.Loc.7>:
     EICRA |= (0<<ISC01) | (1<<ISC00);   //Any edge of INTn generates asynchronously an interrupt request
- 440:	e9 e6       	ldi	r30, 0x69	; 105
- 442:	f0 e0       	ldi	r31, 0x00	; 0
- 444:	80 81       	ld	r24, Z
+ 45a:	e9 e6       	ldi	r30, 0x69	; 105
+ 45c:	f0 e0       	ldi	r31, 0x00	; 0
+ 45e:	80 81       	ld	r24, Z
 
-00000446 <.Loc.8>:
- 446:	81 60       	ori	r24, 0x01	; 1
- 448:	80 83       	st	Z, r24
+00000460 <.Loc.8>:
+ 460:	81 60       	ori	r24, 0x01	; 1
+ 462:	80 83       	st	Z, r24
 
-0000044a <.Loc.9>:
+00000464 <.Loc.9>:
     sei();
- 44a:	78 94       	sei
+ 464:	78 94       	sei
 
-0000044c <.Loc.10>:
+00000466 <.Loc.10>:
 }
- 44c:	08 95       	ret
+ 466:	08 95       	ret
 
-0000044e <__vector_1>:
+00000468 <__vector_1>:
 
 ISR(INT0_vect){
- 44e:	1f 92       	push	r1
- 450:	0f 92       	push	r0
- 452:	0f b6       	in	r0, 0x3f	; 63
- 454:	0f 92       	push	r0
- 456:	11 24       	eor	r1, r1
- 458:	0b b6       	in	r0, 0x3b	; 59
- 45a:	0f 92       	push	r0
- 45c:	2f 93       	push	r18
- 45e:	3f 93       	push	r19
- 460:	4f 93       	push	r20
- 462:	5f 93       	push	r21
- 464:	6f 93       	push	r22
- 466:	7f 93       	push	r23
- 468:	8f 93       	push	r24
- 46a:	9f 93       	push	r25
- 46c:	af 93       	push	r26
- 46e:	bf 93       	push	r27
- 470:	ef 93       	push	r30
- 472:	ff 93       	push	r31
+ 468:	1f 92       	push	r1
+ 46a:	0f 92       	push	r0
+ 46c:	0f b6       	in	r0, 0x3f	; 63
+ 46e:	0f 92       	push	r0
+ 470:	11 24       	eor	r1, r1
+ 472:	0b b6       	in	r0, 0x3b	; 59
+ 474:	0f 92       	push	r0
+ 476:	2f 93       	push	r18
+ 478:	3f 93       	push	r19
+ 47a:	4f 93       	push	r20
+ 47c:	5f 93       	push	r21
+ 47e:	6f 93       	push	r22
+ 480:	7f 93       	push	r23
+ 482:	8f 93       	push	r24
+ 484:	9f 93       	push	r25
+ 486:	af 93       	push	r26
+ 488:	bf 93       	push	r27
+ 48a:	ef 93       	push	r30
+ 48c:	ff 93       	push	r31
 
-00000474 <.L5>:
+0000048e <.L5>:
     while(1){
         while((PIN_NOOD & (1<<NOODKNOP))){//while noodknop ingedrukt en start niet ingedrukt is (twee handeling voor noodstop)
- 474:	48 9b       	sbis	0x09, 0	; 9
- 476:	04 c0       	rjmp	.+8      	; 0x480 <.L3>
+ 48e:	48 9b       	sbis	0x09, 0	; 9
+ 490:	04 c0       	rjmp	.+8      	; 0x49a <.L3>
 
-00000478 <.L4>:
+00000492 <.L4>:
             stop();
- 478:	0e 94 fb 00 	call	0x1f6	; 0x1f6 <stop>
+ 492:	0e 94 08 01 	call	0x210	; 0x210 <stop>
 
-0000047c <.LVL0>:
+00000496 <.LVL0>:
         while((PIN_NOOD & (1<<NOODKNOP))){//while noodknop ingedrukt en start niet ingedrukt is (twee handeling voor noodstop)
- 47c:	48 99       	sbic	0x09, 0	; 9
- 47e:	fc cf       	rjmp	.-8      	; 0x478 <.L4>
+ 496:	48 99       	sbic	0x09, 0	; 9
+ 498:	fc cf       	rjmp	.-8      	; 0x492 <.L4>
 
-00000480 <.L3>:
+0000049a <.L3>:
         }
         if(!(PIN_knop&(1<<start))){
- 480:	06 99       	sbic	0x00, 6	; 0
- 482:	f8 cf       	rjmp	.-16     	; 0x474 <.L5>
+ 49a:	06 99       	sbic	0x00, 6	; 0
+ 49c:	f8 cf       	rjmp	.-16     	; 0x48e <.L5>
 
-00000484 <.Loc.19>:
+0000049e <.Loc.19>:
             //uitvoer();
             break;
         }
     }
 }
- 484:	ff 91       	pop	r31
- 486:	ef 91       	pop	r30
- 488:	bf 91       	pop	r27
- 48a:	af 91       	pop	r26
- 48c:	9f 91       	pop	r25
- 48e:	8f 91       	pop	r24
- 490:	7f 91       	pop	r23
- 492:	6f 91       	pop	r22
- 494:	5f 91       	pop	r21
- 496:	4f 91       	pop	r20
- 498:	3f 91       	pop	r19
- 49a:	2f 91       	pop	r18
- 49c:	0f 90       	pop	r0
- 49e:	0b be       	out	0x3b, r0	; 59
- 4a0:	0f 90       	pop	r0
- 4a2:	0f be       	out	0x3f, r0	; 63
- 4a4:	0f 90       	pop	r0
- 4a6:	1f 90       	pop	r1
- 4a8:	18 95       	reti
+ 49e:	ff 91       	pop	r31
+ 4a0:	ef 91       	pop	r30
+ 4a2:	bf 91       	pop	r27
+ 4a4:	af 91       	pop	r26
+ 4a6:	9f 91       	pop	r25
+ 4a8:	8f 91       	pop	r24
+ 4aa:	7f 91       	pop	r23
+ 4ac:	6f 91       	pop	r22
+ 4ae:	5f 91       	pop	r21
+ 4b0:	4f 91       	pop	r20
+ 4b2:	3f 91       	pop	r19
+ 4b4:	2f 91       	pop	r18
+ 4b6:	0f 90       	pop	r0
+ 4b8:	0b be       	out	0x3b, r0	; 59
+ 4ba:	0f 90       	pop	r0
+ 4bc:	0f be       	out	0x3f, r0	; 63
+ 4be:	0f 90       	pop	r0
+ 4c0:	1f 90       	pop	r1
+ 4c2:	18 95       	reti
 
-000004aa <initPinsStepper>:
+000004c4 <initPinsStepper>:
 #include <avr/interrupt.h>
 #include "stepperDriver.h"
 
 void initPinsStepper (void){
 	// Config pins as output
 	DDR_STEP_R |= (1<<STEPPER_RIGHT);
- 4aa:	6b 9a       	sbi	0x0d, 3	; 13
+ 4c4:	6b 9a       	sbi	0x0d, 3	; 13
 
-000004ac <.Loc.3>:
+000004c6 <.Loc.3>:
 	DDR_STEP_L |= (1<<STEPPER_LEFT);
- 4ac:	e1 e0       	ldi	r30, 0x01	; 1
- 4ae:	f1 e0       	ldi	r31, 0x01	; 1
- 4b0:	80 81       	ld	r24, Z
+ 4c6:	e1 e0       	ldi	r30, 0x01	; 1
+ 4c8:	f1 e0       	ldi	r31, 0x01	; 1
+ 4ca:	80 81       	ld	r24, Z
 
-000004b2 <.Loc.4>:
- 4b2:	88 60       	ori	r24, 0x08	; 8
- 4b4:	80 83       	st	Z, r24
+000004cc <.Loc.4>:
+ 4cc:	88 60       	ori	r24, 0x08	; 8
+ 4ce:	80 83       	st	Z, r24
 
-000004b6 <.Loc.5>:
+000004d0 <.Loc.5>:
 	DDR_DIR_R |= (1<<DIRECTION_R);
- 4b6:	9d 9a       	sbi	0x13, 5	; 19
+ 4d0:	9d 9a       	sbi	0x13, 5	; 19
 
-000004b8 <.Loc.7>:
+000004d2 <.Loc.7>:
 	DDR_DIR_L |= (1<<DIRECTION_L);
- 4b8:	80 81       	ld	r24, Z
+ 4d2:	80 81       	ld	r24, Z
 
-000004ba <.Loc.8>:
- 4ba:	80 61       	ori	r24, 0x10	; 16
- 4bc:	80 83       	st	Z, r24
+000004d4 <.Loc.8>:
+ 4d4:	80 61       	ori	r24, 0x10	; 16
+ 4d6:	80 83       	st	Z, r24
 
-000004be <.Loc.10>:
+000004d8 <.Loc.10>:
 
 	// Output low
 	PORT_STEP_R &= ~(1<<STEPPER_RIGHT);
- 4be:	73 98       	cbi	0x0e, 3	; 14
+ 4d8:	73 98       	cbi	0x0e, 3	; 14
 
-000004c0 <.Loc.11>:
+000004da <.Loc.11>:
 	PORT_STEP_L &= ~(1<<STEPPER_LEFT);
- 4c0:	e2 e0       	ldi	r30, 0x02	; 2
- 4c2:	f1 e0       	ldi	r31, 0x01	; 1
- 4c4:	80 81       	ld	r24, Z
- 4c6:	87 7f       	andi	r24, 0xF7	; 247
- 4c8:	80 83       	st	Z, r24
+ 4da:	e2 e0       	ldi	r30, 0x02	; 2
+ 4dc:	f1 e0       	ldi	r31, 0x01	; 1
+ 4de:	80 81       	ld	r24, Z
+ 4e0:	87 7f       	andi	r24, 0xF7	; 247
+ 4e2:	80 83       	st	Z, r24
 
-000004ca <.Loc.13>:
-	PORT_DIR_R &= ~(1<<DIRECTION_R);
- 4ca:	a5 98       	cbi	0x14, 5	; 20
+000004e4 <.Loc.13>:
+	PORT_DIR_R |= (1<<DIRECTION_R);
+ 4e4:	a5 9a       	sbi	0x14, 5	; 20
 
-000004cc <.Loc.15>:
+000004e6 <.Loc.15>:
 	PORT_DIR_L &= ~(1<<DIRECTION_L);
- 4cc:	80 81       	ld	r24, Z
- 4ce:	8f 7e       	andi	r24, 0xEF	; 239
- 4d0:	80 83       	st	Z, r24
+ 4e6:	80 81       	ld	r24, Z
+ 4e8:	8f 7e       	andi	r24, 0xEF	; 239
+ 4ea:	80 83       	st	Z, r24
 
-000004d2 <.Loc.17>:
+000004ec <.Loc.17>:
 }
- 4d2:	08 95       	ret
+ 4ec:	08 95       	ret
 
-000004d4 <disableStepper>:
+000004ee <disableStepper>:
 
 void disableStepper(void){
         TCCR3A = (0<<WGM31) | (0<<WGM30) | (0<<COM3A1) | (0<<COM3A0);
- 4d4:	10 92 90 00 	sts	0x0090, r1	; 0x800090 <__TEXT_REGION_LENGTH__+0x700090>
+ 4ee:	10 92 90 00 	sts	0x0090, r1	; 0x800090 <__TEXT_REGION_LENGTH__+0x700090>
 
-000004d8 <.Loc.21>:
+000004f2 <.Loc.21>:
         TCCR3B = (0<<WGM33) | (0<<WGM32) | (0<<CS32) | (1<<CS31) | (0<<CS30);
- 4d8:	82 e0       	ldi	r24, 0x02	; 2
- 4da:	80 93 91 00 	sts	0x0091, r24	; 0x800091 <__TEXT_REGION_LENGTH__+0x700091>
+ 4f2:	82 e0       	ldi	r24, 0x02	; 2
+ 4f4:	80 93 91 00 	sts	0x0091, r24	; 0x800091 <__TEXT_REGION_LENGTH__+0x700091>
 
-000004de <.Loc.23>:
+000004f8 <.Loc.23>:
         TCCR4A = (0<<WGM41) | (0<<WGM40) | (0<<COM4A1) | (0<<COM4A0);
- 4de:	10 92 a0 00 	sts	0x00A0, r1	; 0x8000a0 <__TEXT_REGION_LENGTH__+0x7000a0>
+ 4f8:	10 92 a0 00 	sts	0x00A0, r1	; 0x8000a0 <__TEXT_REGION_LENGTH__+0x7000a0>
 
-000004e2 <.Loc.25>:
+000004fc <.Loc.25>:
         TCCR4B = (0<<WGM43) | (0<<WGM42) | (0<<CS42) | (1<<CS41) | (0<<CS40);
- 4e2:	80 93 a1 00 	sts	0x00A1, r24	; 0x8000a1 <__TEXT_REGION_LENGTH__+0x7000a1>
+ 4fc:	80 93 a1 00 	sts	0x00A1, r24	; 0x8000a1 <__TEXT_REGION_LENGTH__+0x7000a1>
 
-000004e6 <.Loc.27>:
+00000500 <.Loc.27>:
 }
- 4e6:	08 95       	ret
+ 500:	08 95       	ret
 
-000004e8 <initTimer3Stepper>:
+00000502 <initTimer3Stepper>:
 
 //stepper right
 void initTimer3Stepper(void){
     // Use mode 14, prescaler = 256
     TCCR3A = (1<<WGM31) | (0<<WGM30) | (1<<COM3A1) | (0<<COM3A0);
- 4e8:	82 e8       	ldi	r24, 0x82	; 130
- 4ea:	80 93 90 00 	sts	0x0090, r24	; 0x800090 <__TEXT_REGION_LENGTH__+0x700090>
+ 502:	82 e8       	ldi	r24, 0x82	; 130
+ 504:	80 93 90 00 	sts	0x0090, r24	; 0x800090 <__TEXT_REGION_LENGTH__+0x700090>
 
-000004ee <.Loc.31>:
+00000508 <.Loc.31>:
     TCCR3B = (1<<WGM33) | (1<<WGM32) | (0<<CS32) | (1<<CS31) | (0<<CS30);
- 4ee:	8a e1       	ldi	r24, 0x1A	; 26
- 4f0:	80 93 91 00 	sts	0x0091, r24	; 0x800091 <__TEXT_REGION_LENGTH__+0x700091>
+ 508:	8a e1       	ldi	r24, 0x1A	; 26
+ 50a:	80 93 91 00 	sts	0x0091, r24	; 0x800091 <__TEXT_REGION_LENGTH__+0x700091>
 
-000004f4 <.Loc.33>:
+0000050e <.Loc.33>:
 
 	//define top value
     OCR3A = STEPVALUE;
- 4f4:	81 e0       	ldi	r24, 0x01	; 1
- 4f6:	90 e0       	ldi	r25, 0x00	; 0
- 4f8:	90 93 99 00 	sts	0x0099, r25	; 0x800099 <__TEXT_REGION_LENGTH__+0x700099>
- 4fc:	80 93 98 00 	sts	0x0098, r24	; 0x800098 <__TEXT_REGION_LENGTH__+0x700098>
+ 50e:	81 e0       	ldi	r24, 0x01	; 1
+ 510:	90 e0       	ldi	r25, 0x00	; 0
+ 512:	90 93 99 00 	sts	0x0099, r25	; 0x800099 <__TEXT_REGION_LENGTH__+0x700099>
+ 516:	80 93 98 00 	sts	0x0098, r24	; 0x800098 <__TEXT_REGION_LENGTH__+0x700098>
 
-00000500 <.Loc.35>:
+0000051a <.Loc.35>:
     sei();
- 500:	78 94       	sei
+ 51a:	78 94       	sei
 
-00000502 <.Loc.36>:
+0000051c <.Loc.36>:
 }
- 502:	08 95       	ret
+ 51c:	08 95       	ret
 
-00000504 <initTimer4Stepper>:
+0000051e <initTimer4Stepper>:
 
 //stepper left
 void initTimer4Stepper(void){
     // Use mode 14, prescaler = 256
     TCCR4A = (1<<WGM41) | (0<<WGM40) | (1<<COM4A1) | (0<<COM4A0);
- 504:	82 e8       	ldi	r24, 0x82	; 130
- 506:	80 93 a0 00 	sts	0x00A0, r24	; 0x8000a0 <__TEXT_REGION_LENGTH__+0x7000a0>
+ 51e:	82 e8       	ldi	r24, 0x82	; 130
+ 520:	80 93 a0 00 	sts	0x00A0, r24	; 0x8000a0 <__TEXT_REGION_LENGTH__+0x7000a0>
 
-0000050a <.Loc.40>:
+00000524 <.Loc.40>:
     TCCR4B = (1<<WGM43) | (1<<WGM42) | (0<<CS42) | (1<<CS41) | (0<<CS40);
- 50a:	8a e1       	ldi	r24, 0x1A	; 26
- 50c:	80 93 a1 00 	sts	0x00A1, r24	; 0x8000a1 <__TEXT_REGION_LENGTH__+0x7000a1>
+ 524:	8a e1       	ldi	r24, 0x1A	; 26
+ 526:	80 93 a1 00 	sts	0x00A1, r24	; 0x8000a1 <__TEXT_REGION_LENGTH__+0x7000a1>
 
-00000510 <.Loc.42>:
+0000052a <.Loc.42>:
 
 	//define top value
     OCR4A = STEPVALUE;
- 510:	81 e0       	ldi	r24, 0x01	; 1
- 512:	90 e0       	ldi	r25, 0x00	; 0
- 514:	90 93 a9 00 	sts	0x00A9, r25	; 0x8000a9 <__TEXT_REGION_LENGTH__+0x7000a9>
- 518:	80 93 a8 00 	sts	0x00A8, r24	; 0x8000a8 <__TEXT_REGION_LENGTH__+0x7000a8>
+ 52a:	81 e0       	ldi	r24, 0x01	; 1
+ 52c:	90 e0       	ldi	r25, 0x00	; 0
+ 52e:	90 93 a9 00 	sts	0x00A9, r25	; 0x8000a9 <__TEXT_REGION_LENGTH__+0x7000a9>
+ 532:	80 93 a8 00 	sts	0x00A8, r24	; 0x8000a8 <__TEXT_REGION_LENGTH__+0x7000a8>
 
-0000051c <.Loc.44>:
+00000536 <.Loc.44>:
     sei();
- 51c:	78 94       	sei
+ 536:	78 94       	sei
 
-0000051e <.Loc.45>:
+00000538 <.Loc.45>:
 }
- 51e:	08 95       	ret
+ 538:	08 95       	ret
 
-00000520 <initStepper>:
+0000053a <initStepper>:
 
 
 void initStepper(void){
     initTimer4Stepper();
- 520:	0e 94 82 02 	call	0x504	; 0x504 <initTimer4Stepper>
+ 53a:	0e 94 8f 02 	call	0x51e	; 0x51e <initTimer4Stepper>
 
-00000524 <.LVL0>:
+0000053e <.LVL0>:
     initTimer3Stepper();
- 524:	0e 94 74 02 	call	0x4e8	; 0x4e8 <initTimer3Stepper>
+ 53e:	0e 94 81 02 	call	0x502	; 0x502 <initTimer3Stepper>
 
-00000528 <.LVL1>:
+00000542 <.LVL1>:
     initPinsStepper();
- 528:	0e 94 55 02 	call	0x4aa	; 0x4aa <initPinsStepper>
+ 542:	0e 94 62 02 	call	0x4c4	; 0x4c4 <initPinsStepper>
 
-0000052c <.LVL2>:
+00000546 <.LVL2>:
 }
- 52c:	08 95       	ret
+ 546:	08 95       	ret
 
-0000052e <speedStepperRight>:
+00000548 <speedStepperRight>:
 
 void speedStepperRight(int PWMRight){
- 52e:	28 2f       	mov	r18, r24
- 530:	39 2f       	mov	r19, r25
+ 548:	28 2f       	mov	r18, r24
+ 54a:	39 2f       	mov	r19, r25
 
-00000532 <.Loc.53>:
+0000054c <.Loc.53>:
     ICR3 = PWMRight;
- 532:	30 93 97 00 	sts	0x0097, r19	; 0x800097 <__TEXT_REGION_LENGTH__+0x700097>
- 536:	20 93 96 00 	sts	0x0096, r18	; 0x800096 <__TEXT_REGION_LENGTH__+0x700096>
+ 54c:	30 93 97 00 	sts	0x0097, r19	; 0x800097 <__TEXT_REGION_LENGTH__+0x700097>
+ 550:	20 93 96 00 	sts	0x0096, r18	; 0x800096 <__TEXT_REGION_LENGTH__+0x700096>
 
-0000053a <.Loc.55>:
+00000554 <.Loc.55>:
 }
- 53a:	08 95       	ret
+ 554:	08 95       	ret
 
-0000053c <speedStepperLeft>:
+00000556 <speedStepperLeft>:
 
 void speedStepperLeft(int PWMLeft){
- 53c:	28 2f       	mov	r18, r24
- 53e:	39 2f       	mov	r19, r25
+ 556:	28 2f       	mov	r18, r24
+ 558:	39 2f       	mov	r19, r25
 
-00000540 <.Loc.58>:
+0000055a <.Loc.58>:
     ICR4 = PWMLeft;
- 540:	30 93 a7 00 	sts	0x00A7, r19	; 0x8000a7 <__TEXT_REGION_LENGTH__+0x7000a7>
- 544:	20 93 a6 00 	sts	0x00A6, r18	; 0x8000a6 <__TEXT_REGION_LENGTH__+0x7000a6>
+ 55a:	30 93 a7 00 	sts	0x00A7, r19	; 0x8000a7 <__TEXT_REGION_LENGTH__+0x7000a7>
+ 55e:	20 93 a6 00 	sts	0x00A6, r18	; 0x8000a6 <__TEXT_REGION_LENGTH__+0x7000a6>
 
-00000548 <.Loc.60>:
+00000562 <.Loc.60>:
 }
- 548:	08 95       	ret
+ 562:	08 95       	ret
 
-0000054a <toggleStepperDirectionRight>:
+00000564 <toggleStepperDirectionRight>:
 
 void toggleStepperDirectionRight(void){
     static int state = 0;
     if(state == 0){
- 54a:	80 91 0a 02 	lds	r24, 0x020A	; 0x80020a <state.1>
- 54e:	90 91 0b 02 	lds	r25, 0x020B	; 0x80020b <state.1+0x1>
- 552:	89 2b       	or	r24, r25
- 554:	41 f4       	brne	.+16     	; 0x566 <.L9>
+ 564:	80 91 0a 02 	lds	r24, 0x020A	; 0x80020a <state.1>
+ 568:	90 91 0b 02 	lds	r25, 0x020B	; 0x80020b <state.1+0x1>
+ 56c:	89 2b       	or	r24, r25
+ 56e:	41 f4       	brne	.+16     	; 0x580 <.L9>
 
-00000556 <.Loc.65>:
-        PORT_DIR_R |= (1<<DIRECTION_R);
- 556:	a5 9a       	sbi	0x14, 5	; 20
+00000570 <.Loc.65>:
+        PORT_DIR_R &= ~(1<<DIRECTION_R);
+ 570:	a5 98       	cbi	0x14, 5	; 20
 
-00000558 <.Loc.67>:
+00000572 <.Loc.67>:
         state = 1;
- 558:	81 e0       	ldi	r24, 0x01	; 1
- 55a:	90 e0       	ldi	r25, 0x00	; 0
+ 572:	81 e0       	ldi	r24, 0x01	; 1
+ 574:	90 e0       	ldi	r25, 0x00	; 0
 
-0000055c <.L10>:
- 55c:	90 93 0b 02 	sts	0x020B, r25	; 0x80020b <state.1+0x1>
- 560:	80 93 0a 02 	sts	0x020A, r24	; 0x80020a <state.1>
+00000576 <.L10>:
+ 576:	90 93 0b 02 	sts	0x020B, r25	; 0x80020b <state.1+0x1>
+ 57a:	80 93 0a 02 	sts	0x020A, r24	; 0x80020a <state.1>
 
-00000564 <.Loc.69>:
+0000057e <.Loc.69>:
     }
     else{
-        PORT_DIR_R &= ~(1<<DIRECTION_R);
+        PORT_DIR_R |= (1<<DIRECTION_R);
         state = 0;
     }
 }
- 564:	08 95       	ret
+ 57e:	08 95       	ret
 
-00000566 <.L9>:
-        PORT_DIR_R &= ~(1<<DIRECTION_R);
- 566:	a5 98       	cbi	0x14, 5	; 20
+00000580 <.L9>:
+        PORT_DIR_R |= (1<<DIRECTION_R);
+ 580:	a5 9a       	sbi	0x14, 5	; 20
 
-00000568 <.Loc.72>:
- 568:	80 e0       	ldi	r24, 0x00	; 0
- 56a:	90 e0       	ldi	r25, 0x00	; 0
- 56c:	f7 cf       	rjmp	.-18     	; 0x55c <.L10>
+00000582 <.Loc.72>:
+ 582:	80 e0       	ldi	r24, 0x00	; 0
+ 584:	90 e0       	ldi	r25, 0x00	; 0
+ 586:	f7 cf       	rjmp	.-18     	; 0x576 <.L10>
 
-0000056e <toggleStepperDirectionLeft>:
+00000588 <toggleStepperDirectionLeft>:
 
 void toggleStepperDirectionLeft(void){
     static int state = 0;
     if(state == 0){
- 56e:	80 91 08 02 	lds	r24, 0x0208	; 0x800208 <state.0>
- 572:	90 91 09 02 	lds	r25, 0x0209	; 0x800209 <state.0+0x1>
- 576:	89 2b       	or	r24, r25
- 578:	61 f4       	brne	.+24     	; 0x592 <.L12>
+ 588:	80 91 08 02 	lds	r24, 0x0208	; 0x800208 <state.0>
+ 58c:	90 91 09 02 	lds	r25, 0x0209	; 0x800209 <state.0+0x1>
+ 590:	89 2b       	or	r24, r25
+ 592:	61 f4       	brne	.+24     	; 0x5ac <.L12>
 
-0000057a <.Loc.78>:
+00000594 <.Loc.78>:
         PORT_DIR_L |= (1<<DIRECTION_L);
- 57a:	e2 e0       	ldi	r30, 0x02	; 2
- 57c:	f1 e0       	ldi	r31, 0x01	; 1
- 57e:	80 81       	ld	r24, Z
+ 594:	e2 e0       	ldi	r30, 0x02	; 2
+ 596:	f1 e0       	ldi	r31, 0x01	; 1
+ 598:	80 81       	ld	r24, Z
 
-00000580 <.Loc.79>:
- 580:	80 61       	ori	r24, 0x10	; 16
- 582:	80 83       	st	Z, r24
+0000059a <.Loc.79>:
+ 59a:	80 61       	ori	r24, 0x10	; 16
+ 59c:	80 83       	st	Z, r24
 
-00000584 <.Loc.80>:
+0000059e <.Loc.80>:
         state = 1;
- 584:	81 e0       	ldi	r24, 0x01	; 1
- 586:	90 e0       	ldi	r25, 0x00	; 0
+ 59e:	81 e0       	ldi	r24, 0x01	; 1
+ 5a0:	90 e0       	ldi	r25, 0x00	; 0
 
-00000588 <.L13>:
- 588:	90 93 09 02 	sts	0x0209, r25	; 0x800209 <state.0+0x1>
- 58c:	80 93 08 02 	sts	0x0208, r24	; 0x800208 <state.0>
+000005a2 <.L13>:
+ 5a2:	90 93 09 02 	sts	0x0209, r25	; 0x800209 <state.0+0x1>
+ 5a6:	80 93 08 02 	sts	0x0208, r24	; 0x800208 <state.0>
 
-00000590 <.Loc.82>:
+000005aa <.Loc.82>:
     }
     else{
         PORT_DIR_L &= ~(1<<DIRECTION_L);
         state = 0;
     }
 }
- 590:	08 95       	ret
+ 5aa:	08 95       	ret
 
-00000592 <.L12>:
+000005ac <.L12>:
         PORT_DIR_L &= ~(1<<DIRECTION_L);
- 592:	e2 e0       	ldi	r30, 0x02	; 2
- 594:	f1 e0       	ldi	r31, 0x01	; 1
- 596:	80 81       	ld	r24, Z
- 598:	8f 7e       	andi	r24, 0xEF	; 239
- 59a:	80 83       	st	Z, r24
+ 5ac:	e2 e0       	ldi	r30, 0x02	; 2
+ 5ae:	f1 e0       	ldi	r31, 0x01	; 1
+ 5b0:	80 81       	ld	r24, Z
+ 5b2:	8f 7e       	andi	r24, 0xEF	; 239
+ 5b4:	80 83       	st	Z, r24
 
-0000059c <.Loc.85>:
- 59c:	80 e0       	ldi	r24, 0x00	; 0
- 59e:	90 e0       	ldi	r25, 0x00	; 0
- 5a0:	f3 cf       	rjmp	.-26     	; 0x588 <.L13>
+000005b6 <.Loc.85>:
+ 5b6:	80 e0       	ldi	r24, 0x00	; 0
+ 5b8:	90 e0       	ldi	r25, 0x00	; 0
+ 5ba:	f3 cf       	rjmp	.-26     	; 0x5a2 <.L13>
 
-000005a2 <__vector_45>:
+000005bc <__vector_45>:
 
 
 volatile unsigned int stepCounterLeft = 0;
 ISR(TIMER4_OVF_vect){
- 5a2:	8f 93       	push	r24
- 5a4:	8f b7       	in	r24, 0x3f	; 63
- 5a6:	8f 93       	push	r24
- 5a8:	9f 93       	push	r25
+ 5bc:	8f 93       	push	r24
+ 5be:	8f b7       	in	r24, 0x3f	; 63
+ 5c0:	8f 93       	push	r24
+ 5c2:	9f 93       	push	r25
 
-000005aa <.Loc.88>:
+000005c4 <.Loc.88>:
     stepCounterLeft++;
- 5aa:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
- 5ae:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
- 5b2:	01 96       	adiw	r24, 0x01	; 1
- 5b4:	90 93 07 02 	sts	0x0207, r25	; 0x800207 <stepCounterLeft+0x1>
- 5b8:	80 93 06 02 	sts	0x0206, r24	; 0x800206 <stepCounterLeft>
+ 5c4:	80 91 06 02 	lds	r24, 0x0206	; 0x800206 <stepCounterLeft>
+ 5c8:	90 91 07 02 	lds	r25, 0x0207	; 0x800207 <stepCounterLeft+0x1>
+ 5cc:	01 96       	adiw	r24, 0x01	; 1
+ 5ce:	90 93 07 02 	sts	0x0207, r25	; 0x800207 <stepCounterLeft+0x1>
+ 5d2:	80 93 06 02 	sts	0x0206, r24	; 0x800206 <stepCounterLeft>
 
-000005bc <.Loc.90>:
+000005d6 <.Loc.90>:
 }
- 5bc:	9f 91       	pop	r25
- 5be:	8f 91       	pop	r24
- 5c0:	8f bf       	out	0x3f, r24	; 63
- 5c2:	8f 91       	pop	r24
- 5c4:	18 95       	reti
+ 5d6:	9f 91       	pop	r25
+ 5d8:	8f 91       	pop	r24
+ 5da:	8f bf       	out	0x3f, r24	; 63
+ 5dc:	8f 91       	pop	r24
+ 5de:	18 95       	reti
 
-000005c6 <__vector_35>:
+000005e0 <__vector_35>:
 
 volatile unsigned int stepCounterRight = 0;
 ISR(TIMER3_OVF_vect){
- 5c6:	8f 93       	push	r24
- 5c8:	8f b7       	in	r24, 0x3f	; 63
- 5ca:	8f 93       	push	r24
- 5cc:	9f 93       	push	r25
+ 5e0:	8f 93       	push	r24
+ 5e2:	8f b7       	in	r24, 0x3f	; 63
+ 5e4:	8f 93       	push	r24
+ 5e6:	9f 93       	push	r25
 
-000005ce <.Loc.92>:
+000005e8 <.Loc.92>:
     stepCounterRight++;
- 5ce:	80 91 04 02 	lds	r24, 0x0204	; 0x800204 <stepCounterRight>
- 5d2:	90 91 05 02 	lds	r25, 0x0205	; 0x800205 <stepCounterRight+0x1>
- 5d6:	01 96       	adiw	r24, 0x01	; 1
- 5d8:	90 93 05 02 	sts	0x0205, r25	; 0x800205 <stepCounterRight+0x1>
- 5dc:	80 93 04 02 	sts	0x0204, r24	; 0x800204 <stepCounterRight>
+ 5e8:	80 91 04 02 	lds	r24, 0x0204	; 0x800204 <stepCounterRight>
+ 5ec:	90 91 05 02 	lds	r25, 0x0205	; 0x800205 <stepCounterRight+0x1>
+ 5f0:	01 96       	adiw	r24, 0x01	; 1
+ 5f2:	90 93 05 02 	sts	0x0205, r25	; 0x800205 <stepCounterRight+0x1>
+ 5f6:	80 93 04 02 	sts	0x0204, r24	; 0x800204 <stepCounterRight>
 
-000005e0 <.Loc.94>:
+000005fa <.Loc.94>:
 }
- 5e0:	9f 91       	pop	r25
- 5e2:	8f 91       	pop	r24
- 5e4:	8f bf       	out	0x3f, r24	; 63
- 5e6:	8f 91       	pop	r24
- 5e8:	18 95       	reti
+ 5fa:	9f 91       	pop	r25
+ 5fc:	8f 91       	pop	r24
+ 5fe:	8f bf       	out	0x3f, r24	; 63
+ 600:	8f 91       	pop	r24
+ 602:	18 95       	reti
 
-000005ea <clearStepCnt>:
+00000604 <clearStepCnt>:
 
 void clearStepCnt(void){
     stepCounterLeft = 0;
- 5ea:	10 92 07 02 	sts	0x0207, r1	; 0x800207 <stepCounterLeft+0x1>
- 5ee:	10 92 06 02 	sts	0x0206, r1	; 0x800206 <stepCounterLeft>
+ 604:	10 92 07 02 	sts	0x0207, r1	; 0x800207 <stepCounterLeft+0x1>
+ 608:	10 92 06 02 	sts	0x0206, r1	; 0x800206 <stepCounterLeft>
 
-000005f2 <.Loc.98>:
+0000060c <.Loc.98>:
     stepCounterRight = 0;
- 5f2:	10 92 05 02 	sts	0x0205, r1	; 0x800205 <stepCounterRight+0x1>
- 5f6:	10 92 04 02 	sts	0x0204, r1	; 0x800204 <stepCounterRight>
+ 60c:	10 92 05 02 	sts	0x0205, r1	; 0x800205 <stepCounterRight+0x1>
+ 610:	10 92 04 02 	sts	0x0204, r1	; 0x800204 <stepCounterRight>
 
-000005fa <.Loc.100>:
+00000614 <.Loc.100>:
 }
- 5fa:	08 95       	ret
+ 614:	08 95       	ret
 
-000005fc <enableStepCnt>:
+00000616 <enableStepCnt>:
 
 //these two functions should help improve performance
 void enableStepCnt(void){
     TIMSK4 |= (1<<TOIE4);
- 5fc:	e2 e7       	ldi	r30, 0x72	; 114
- 5fe:	f0 e0       	ldi	r31, 0x00	; 0
- 600:	80 81       	ld	r24, Z
+ 616:	e2 e7       	ldi	r30, 0x72	; 114
+ 618:	f0 e0       	ldi	r31, 0x00	; 0
+ 61a:	80 81       	ld	r24, Z
 
-00000602 <.Loc.103>:
- 602:	81 60       	ori	r24, 0x01	; 1
- 604:	80 83       	st	Z, r24
+0000061c <.Loc.103>:
+ 61c:	81 60       	ori	r24, 0x01	; 1
+ 61e:	80 83       	st	Z, r24
 
-00000606 <.Loc.104>:
+00000620 <.Loc.104>:
     TIMSK3 |= (1<<TOIE3);
- 606:	e1 e7       	ldi	r30, 0x71	; 113
- 608:	f0 e0       	ldi	r31, 0x00	; 0
- 60a:	80 81       	ld	r24, Z
+ 620:	e1 e7       	ldi	r30, 0x71	; 113
+ 622:	f0 e0       	ldi	r31, 0x00	; 0
+ 624:	80 81       	ld	r24, Z
 
-0000060c <.Loc.105>:
- 60c:	81 60       	ori	r24, 0x01	; 1
- 60e:	80 83       	st	Z, r24
+00000626 <.Loc.105>:
+ 626:	81 60       	ori	r24, 0x01	; 1
+ 628:	80 83       	st	Z, r24
 
-00000610 <.Loc.106>:
+0000062a <.Loc.106>:
 }
- 610:	08 95       	ret
+ 62a:	08 95       	ret
 
-00000612 <disableStepCnt>:
+0000062c <disableStepCnt>:
 
 void disableStepCnt(void){
     TIMSK4 &= ~(1<<TOIE4);
- 612:	e2 e7       	ldi	r30, 0x72	; 114
- 614:	f0 e0       	ldi	r31, 0x00	; 0
- 616:	80 81       	ld	r24, Z
- 618:	8e 7f       	andi	r24, 0xFE	; 254
- 61a:	80 83       	st	Z, r24
+ 62c:	e2 e7       	ldi	r30, 0x72	; 114
+ 62e:	f0 e0       	ldi	r31, 0x00	; 0
+ 630:	80 81       	ld	r24, Z
+ 632:	8e 7f       	andi	r24, 0xFE	; 254
+ 634:	80 83       	st	Z, r24
 
-0000061c <.Loc.110>:
+00000636 <.Loc.110>:
     TIMSK3 &= ~(1<<TOIE3);
- 61c:	e1 e7       	ldi	r30, 0x71	; 113
- 61e:	f0 e0       	ldi	r31, 0x00	; 0
- 620:	80 81       	ld	r24, Z
- 622:	8e 7f       	andi	r24, 0xFE	; 254
- 624:	80 83       	st	Z, r24
+ 636:	e1 e7       	ldi	r30, 0x71	; 113
+ 638:	f0 e0       	ldi	r31, 0x00	; 0
+ 63a:	80 81       	ld	r24, Z
+ 63c:	8e 7f       	andi	r24, 0xFE	; 254
+ 63e:	80 83       	st	Z, r24
 
-00000626 <.Loc.112>:
+00000640 <.Loc.112>:
 }
- 626:	08 95       	ret
+ 640:	08 95       	ret
 
-00000628 <initUsartReceive>:
+00000642 <initUsartReceive>:
 #include <util/delay.h>
 
 const uint16_t BRCR = 103; // BAUD rate 9600 omgerekent
 
 void initUsartReceive(void) {   // initializeren USART 2
   UBRR2H = ((uint8_t)(BRCR >> 8));   // USART 1 BAUD RATE HIGH instellen
- 628:	10 92 d5 00 	sts	0x00D5, r1	; 0x8000d5 <__TEXT_REGION_LENGTH__+0x7000d5>
+ 642:	10 92 d5 00 	sts	0x00D5, r1	; 0x8000d5 <__TEXT_REGION_LENGTH__+0x7000d5>
 
-0000062c <.Loc.3>:
+00000646 <.Loc.3>:
   UBRR2L = ((uint8_t)(BRCR & 0xFF)); // USART 1 BAUD RATE LOW instellen
- 62c:	87 e6       	ldi	r24, 0x67	; 103
- 62e:	80 93 d4 00 	sts	0x00D4, r24	; 0x8000d4 <__TEXT_REGION_LENGTH__+0x7000d4>
+ 646:	87 e6       	ldi	r24, 0x67	; 103
+ 648:	80 93 d4 00 	sts	0x00D4, r24	; 0x8000d4 <__TEXT_REGION_LENGTH__+0x7000d4>
 
-00000632 <.Loc.5>:
+0000064c <.Loc.5>:
   UCSR2B = (1 << RXEN2);    // ENABLE RX
- 632:	80 e1       	ldi	r24, 0x10	; 16
- 634:	80 93 d1 00 	sts	0x00D1, r24	; 0x8000d1 <__TEXT_REGION_LENGTH__+0x7000d1>
+ 64c:	80 e1       	ldi	r24, 0x10	; 16
+ 64e:	80 93 d1 00 	sts	0x00D1, r24	; 0x8000d1 <__TEXT_REGION_LENGTH__+0x7000d1>
 
-00000638 <.Loc.7>:
+00000652 <.Loc.7>:
   UCSR2C = (1 << UCSZ21) | (1 << UCSZ20);   // 8 bit (hex) sturen
- 638:	86 e0       	ldi	r24, 0x06	; 6
- 63a:	80 93 d2 00 	sts	0x00D2, r24	; 0x8000d2 <__TEXT_REGION_LENGTH__+0x7000d2>
+ 652:	86 e0       	ldi	r24, 0x06	; 6
+ 654:	80 93 d2 00 	sts	0x00D2, r24	; 0x8000d2 <__TEXT_REGION_LENGTH__+0x7000d2>
 
-0000063e <.Loc.9>:
+00000658 <.Loc.9>:
 }
- 63e:	08 95       	ret
+ 658:	08 95       	ret
 
-00000640 <flushUsart2Buffer>:
+0000065a <flushUsart2Buffer>:
 
 void flushUsart2Buffer(void) {
     unsigned char dummy;
     while (UCSR2A & (1 << RXC2)) {
- 640:	80 91 d0 00 	lds	r24, 0x00D0	; 0x8000d0 <__TEXT_REGION_LENGTH__+0x7000d0>
- 644:	88 23       	and	r24, r24
- 646:	44 f4       	brge	.+16     	; 0x658 <.L2>
+ 65a:	80 91 d0 00 	lds	r24, 0x00D0	; 0x8000d0 <__TEXT_REGION_LENGTH__+0x7000d0>
+ 65e:	88 23       	and	r24, r24
+ 660:	44 f4       	brge	.+16     	; 0x672 <.L2>
 
-00000648 <.Loc.14>:
+00000662 <.Loc.14>:
         dummy = UDR2; // Read and discard
- 648:	a6 ed       	ldi	r26, 0xD6	; 214
- 64a:	b0 e0       	ldi	r27, 0x00	; 0
+ 662:	a6 ed       	ldi	r26, 0xD6	; 214
+ 664:	b0 e0       	ldi	r27, 0x00	; 0
 
-0000064c <.Loc.15>:
+00000666 <.Loc.15>:
     while (UCSR2A & (1 << RXC2)) {
- 64c:	e0 ed       	ldi	r30, 0xD0	; 208
- 64e:	f0 e0       	ldi	r31, 0x00	; 0
+ 666:	e0 ed       	ldi	r30, 0xD0	; 208
+ 668:	f0 e0       	ldi	r31, 0x00	; 0
 
-00000650 <.L4>:
+0000066a <.L4>:
         dummy = UDR2; // Read and discard
- 650:	8c 91       	ld	r24, X
+ 66a:	8c 91       	ld	r24, X
 
-00000652 <.Loc.18>:
+0000066c <.Loc.18>:
     while (UCSR2A & (1 << RXC2)) {
- 652:	80 81       	ld	r24, Z
- 654:	88 23       	and	r24, r24
- 656:	e4 f3       	brlt	.-8      	; 0x650 <.L4>
+ 66c:	80 81       	ld	r24, Z
+ 66e:	88 23       	and	r24, r24
+ 670:	e4 f3       	brlt	.-8      	; 0x66a <.L4>
 
-00000658 <.L2>:
+00000672 <.L2>:
     }
     dummy--; //to avoid compiler warning "variable set but not used"
 }
- 658:	08 95       	ret
+ 672:	08 95       	ret
 
-0000065a <receiveByte>:
+00000674 <receiveByte>:
 
 int receiveByte() { //ontvangen van 1 hex getal
     while ( !(UCSR2A & (1<<RXC2))); //Wait for data to be received
- 65a:	e0 ed       	ldi	r30, 0xD0	; 208
- 65c:	f0 e0       	ldi	r31, 0x00	; 0
+ 674:	e0 ed       	ldi	r30, 0xD0	; 208
+ 676:	f0 e0       	ldi	r31, 0x00	; 0
 
-0000065e <.L7>:
- 65e:	80 81       	ld	r24, Z
+00000678 <.L7>:
+ 678:	80 81       	ld	r24, Z
 
-00000660 <.Loc.25>:
- 660:	88 23       	and	r24, r24
- 662:	ec f7       	brge	.-6      	; 0x65e <.L7>
+0000067a <.Loc.25>:
+ 67a:	88 23       	and	r24, r24
+ 67c:	ec f7       	brge	.-6      	; 0x678 <.L7>
 
-00000664 <.Loc.26>:
+0000067e <.Loc.26>:
     return UDR2;
- 664:	80 91 d6 00 	lds	r24, 0x00D6	; 0x8000d6 <__TEXT_REGION_LENGTH__+0x7000d6>
+ 67e:	80 91 d6 00 	lds	r24, 0x00D6	; 0x8000d6 <__TEXT_REGION_LENGTH__+0x7000d6>
 
-00000668 <.Loc.28>:
+00000682 <.Loc.28>:
 }
- 668:	90 e0       	ldi	r25, 0x00	; 0
- 66a:	08 95       	ret
+ 682:	90 e0       	ldi	r25, 0x00	; 0
+ 684:	08 95       	ret
 
-0000066c <receiveCommand>:
+00000686 <receiveCommand>:
 
 unsigned int serialOntvangen[4];
 
 void receiveCommand(){
- 66c:	0f 93       	push	r16
- 66e:	1f 93       	push	r17
- 670:	cf 93       	push	r28
- 672:	df 93       	push	r29
+ 686:	0f 93       	push	r16
+ 688:	1f 93       	push	r17
+ 68a:	cf 93       	push	r28
+ 68c:	df 93       	push	r29
 
-00000674 <.LBB2>:
+0000068e <.LBB2>:
     for(int i = 0; i<4; i++){
- 674:	cc e0       	ldi	r28, 0x0C	; 12
- 676:	d2 e0       	ldi	r29, 0x02	; 2
- 678:	04 e1       	ldi	r16, 0x14	; 20
- 67a:	12 e0       	ldi	r17, 0x02	; 2
+ 68e:	cc e0       	ldi	r28, 0x0C	; 12
+ 690:	d2 e0       	ldi	r29, 0x02	; 2
+ 692:	04 e1       	ldi	r16, 0x14	; 20
+ 694:	12 e0       	ldi	r17, 0x02	; 2
 
-0000067c <.L10>:
+00000696 <.L10>:
         serialOntvangen[i] = receiveByte();
- 67c:	0e 94 2d 03 	call	0x65a	; 0x65a <receiveByte>
+ 696:	0e 94 3a 03 	call	0x674	; 0x674 <receiveByte>
 
-00000680 <.LVL2>:
- 680:	89 93       	st	Y+, r24
- 682:	99 93       	st	Y+, r25
+0000069a <.LVL2>:
+ 69a:	89 93       	st	Y+, r24
+ 69c:	99 93       	st	Y+, r25
 
-00000684 <.Loc.36>:
+0000069e <.Loc.36>:
     for(int i = 0; i<4; i++){
- 684:	c0 17       	cp	r28, r16
- 686:	d1 07       	cpc	r29, r17
- 688:	c9 f7       	brne	.-14     	; 0x67c <.L10>
+ 69e:	c0 17       	cp	r28, r16
+ 6a0:	d1 07       	cpc	r29, r17
+ 6a2:	c9 f7       	brne	.-14     	; 0x696 <.L10>
 
-0000068a <.LBE2>:
+000006a4 <.LBE2>:
     }
 }
- 68a:	df 91       	pop	r29
- 68c:	cf 91       	pop	r28
- 68e:	1f 91       	pop	r17
- 690:	0f 91       	pop	r16
- 692:	08 95       	ret
+ 6a4:	df 91       	pop	r29
+ 6a6:	cf 91       	pop	r28
+ 6a8:	1f 91       	pop	r17
+ 6aa:	0f 91       	pop	r16
+ 6ac:	08 95       	ret
 
-00000694 <init_timer5>:
+000006ae <init_timer5>:
 #include <avr/interrupt.h>
 #include "ultrasoon.h"
 
 void init_timer5(void){
     //set timer mode 15
     TCCR5A = (1<<COM5B1) | (1<<COM5C1) | (1<<WGM51) | (1<<WGM50); //set output compare on B and C
- 694:	8b e2       	ldi	r24, 0x2B	; 43
- 696:	80 93 20 01 	sts	0x0120, r24	; 0x800120 <__TEXT_REGION_LENGTH__+0x700120>
+ 6ae:	8b e2       	ldi	r24, 0x2B	; 43
+ 6b0:	80 93 20 01 	sts	0x0120, r24	; 0x800120 <__TEXT_REGION_LENGTH__+0x700120>
 
-0000069a <.Loc.3>:
+000006b4 <.Loc.3>:
     TCCR5B = (1<<ICES5) | (1<<WGM53) | (1<<WGM52) | (1<<CS51);  //set input capture to rising edge and prescaler 8
- 69a:	8a e5       	ldi	r24, 0x5A	; 90
- 69c:	80 93 21 01 	sts	0x0121, r24	; 0x800121 <__TEXT_REGION_LENGTH__+0x700121>
+ 6b4:	8a e5       	ldi	r24, 0x5A	; 90
+ 6b6:	80 93 21 01 	sts	0x0121, r24	; 0x800121 <__TEXT_REGION_LENGTH__+0x700121>
 
-000006a0 <.Loc.5>:
+000006ba <.Loc.5>:
     //set interrupt register for input capture and overflow
     TIMSK5 = (1<<ICIE5) | (1<<TOIE5);
- 6a0:	81 e2       	ldi	r24, 0x21	; 33
- 6a2:	80 93 73 00 	sts	0x0073, r24	; 0x800073 <__TEXT_REGION_LENGTH__+0x700073>
+ 6ba:	81 e2       	ldi	r24, 0x21	; 33
+ 6bc:	80 93 73 00 	sts	0x0073, r24	; 0x800073 <__TEXT_REGION_LENGTH__+0x700073>
 
-000006a6 <.Loc.7>:
+000006c0 <.Loc.7>:
     //define top value
     OCR5A = 0XFFFF;
- 6a6:	8f ef       	ldi	r24, 0xFF	; 255
- 6a8:	9f ef       	ldi	r25, 0xFF	; 255
- 6aa:	90 93 29 01 	sts	0x0129, r25	; 0x800129 <__TEXT_REGION_LENGTH__+0x700129>
- 6ae:	80 93 28 01 	sts	0x0128, r24	; 0x800128 <__TEXT_REGION_LENGTH__+0x700128>
+ 6c0:	8f ef       	ldi	r24, 0xFF	; 255
+ 6c2:	9f ef       	ldi	r25, 0xFF	; 255
+ 6c4:	90 93 29 01 	sts	0x0129, r25	; 0x800129 <__TEXT_REGION_LENGTH__+0x700129>
+ 6c8:	80 93 28 01 	sts	0x0128, r24	; 0x800128 <__TEXT_REGION_LENGTH__+0x700128>
 
-000006b2 <.Loc.10>:
+000006cc <.Loc.10>:
     //set trigger start signal
     OCR5B = 20;
- 6b2:	84 e1       	ldi	r24, 0x14	; 20
- 6b4:	90 e0       	ldi	r25, 0x00	; 0
- 6b6:	90 93 2b 01 	sts	0x012B, r25	; 0x80012b <__TEXT_REGION_LENGTH__+0x70012b>
- 6ba:	80 93 2a 01 	sts	0x012A, r24	; 0x80012a <__TEXT_REGION_LENGTH__+0x70012a>
+ 6cc:	84 e1       	ldi	r24, 0x14	; 20
+ 6ce:	90 e0       	ldi	r25, 0x00	; 0
+ 6d0:	90 93 2b 01 	sts	0x012B, r25	; 0x80012b <__TEXT_REGION_LENGTH__+0x70012b>
+ 6d4:	80 93 2a 01 	sts	0x012A, r24	; 0x80012a <__TEXT_REGION_LENGTH__+0x70012a>
 
-000006be <.Loc.11>:
+000006d8 <.Loc.11>:
     OCR5C = 20;
- 6be:	90 93 2d 01 	sts	0x012D, r25	; 0x80012d <__TEXT_REGION_LENGTH__+0x70012d>
- 6c2:	80 93 2c 01 	sts	0x012C, r24	; 0x80012c <__TEXT_REGION_LENGTH__+0x70012c>
+ 6d8:	90 93 2d 01 	sts	0x012D, r25	; 0x80012d <__TEXT_REGION_LENGTH__+0x70012d>
+ 6dc:	80 93 2c 01 	sts	0x012C, r24	; 0x80012c <__TEXT_REGION_LENGTH__+0x70012c>
 
-000006c6 <.Loc.13>:
+000006e0 <.Loc.13>:
     //set enable interrupt
     sei();
- 6c6:	78 94       	sei
+ 6e0:	78 94       	sei
 
-000006c8 <.Loc.14>:
+000006e2 <.Loc.14>:
 }
- 6c8:	08 95       	ret
+ 6e2:	08 95       	ret
 
-000006ca <init_pins_ultrasoon>:
+000006e4 <init_pins_ultrasoon>:
 
 void init_pins_ultrasoon(void){
     //set trigger pins to output
     DDRL |= (1<<Pin_Trig_Left);
- 6ca:	ea e0       	ldi	r30, 0x0A	; 10
- 6cc:	f1 e0       	ldi	r31, 0x01	; 1
- 6ce:	80 81       	ld	r24, Z
+ 6e4:	ea e0       	ldi	r30, 0x0A	; 10
+ 6e6:	f1 e0       	ldi	r31, 0x01	; 1
+ 6e8:	80 81       	ld	r24, Z
 
-000006d0 <.Loc.17>:
- 6d0:	80 61       	ori	r24, 0x10	; 16
- 6d2:	80 83       	st	Z, r24
+000006ea <.Loc.17>:
+ 6ea:	80 61       	ori	r24, 0x10	; 16
+ 6ec:	80 83       	st	Z, r24
 
-000006d4 <.Loc.18>:
+000006ee <.Loc.18>:
     DDRL |= (1<<Pin_Trig_Right);
- 6d4:	80 81       	ld	r24, Z
+ 6ee:	80 81       	ld	r24, Z
 
-000006d6 <.Loc.19>:
- 6d6:	80 62       	ori	r24, 0x20	; 32
- 6d8:	80 83       	st	Z, r24
+000006f0 <.Loc.19>:
+ 6f0:	80 62       	ori	r24, 0x20	; 32
+ 6f2:	80 83       	st	Z, r24
 
-000006da <.Loc.20>:
+000006f4 <.Loc.20>:
     //set trigger pins to low
     PORTL &= ~(1<<Pin_Trig_Left);
- 6da:	ab e0       	ldi	r26, 0x0B	; 11
- 6dc:	b1 e0       	ldi	r27, 0x01	; 1
- 6de:	8c 91       	ld	r24, X
- 6e0:	8f 7e       	andi	r24, 0xEF	; 239
- 6e2:	8c 93       	st	X, r24
+ 6f4:	ab e0       	ldi	r26, 0x0B	; 11
+ 6f6:	b1 e0       	ldi	r27, 0x01	; 1
+ 6f8:	8c 91       	ld	r24, X
+ 6fa:	8f 7e       	andi	r24, 0xEF	; 239
+ 6fc:	8c 93       	st	X, r24
 
-000006e4 <.Loc.22>:
+000006fe <.Loc.22>:
     PORTL &= ~(1<<Pin_Trig_Right);
- 6e4:	8c 91       	ld	r24, X
- 6e6:	8f 7d       	andi	r24, 0xDF	; 223
- 6e8:	8c 93       	st	X, r24
+ 6fe:	8c 91       	ld	r24, X
+ 700:	8f 7d       	andi	r24, 0xDF	; 223
+ 702:	8c 93       	st	X, r24
 
-000006ea <.Loc.24>:
+00000704 <.Loc.24>:
     //set echo pin to input
     DDRL &= ~(1<<Pin_echo);
- 6ea:	80 81       	ld	r24, Z
- 6ec:	8d 7f       	andi	r24, 0xFD	; 253
- 6ee:	80 83       	st	Z, r24
+ 704:	80 81       	ld	r24, Z
+ 706:	8d 7f       	andi	r24, 0xFD	; 253
+ 708:	80 83       	st	Z, r24
 
-000006f0 <.Loc.26>:
+0000070a <.Loc.26>:
 }
- 6f0:	08 95       	ret
+ 70a:	08 95       	ret
 
-000006f2 <init_ultrasoon>:
+0000070c <init_ultrasoon>:
 
 void init_ultrasoon(void){
     init_pins_ultrasoon();
- 6f2:	0e 94 65 03 	call	0x6ca	; 0x6ca <init_pins_ultrasoon>
+ 70c:	0e 94 72 03 	call	0x6e4	; 0x6e4 <init_pins_ultrasoon>
 
-000006f6 <.LVL0>:
+00000710 <.LVL0>:
     init_timer5();
- 6f6:	0e 94 4a 03 	call	0x694	; 0x694 <init_timer5>
+ 710:	0e 94 57 03 	call	0x6ae	; 0x6ae <init_timer5>
 
-000006fa <.LVL1>:
+00000714 <.LVL1>:
 }
- 6fa:	08 95       	ret
+ 714:	08 95       	ret
 
-000006fc <__vector_50>:
+00000716 <__vector_50>:
 
 volatile int distance_right;
 volatile int distance_left;
 volatile int current_sensor=0;
 
 ISR(TIMER5_OVF_vect){
- 6fc:	8f 93       	push	r24
- 6fe:	8f b7       	in	r24, 0x3f	; 63
- 700:	8f 93       	push	r24
- 702:	8b b7       	in	r24, 0x3b	; 59
- 704:	8f 93       	push	r24
- 706:	ef 93       	push	r30
- 708:	ff 93       	push	r31
+ 716:	8f 93       	push	r24
+ 718:	8f b7       	in	r24, 0x3f	; 63
+ 71a:	8f 93       	push	r24
+ 71c:	8b b7       	in	r24, 0x3b	; 59
+ 71e:	8f 93       	push	r24
+ 720:	ef 93       	push	r30
+ 722:	ff 93       	push	r31
 
-0000070a <.Loc.32>:
+00000724 <.Loc.32>:
     //set input capture to rising edge
     TCCR5B |= (1<<ICES5);
- 70a:	e1 e2       	ldi	r30, 0x21	; 33
- 70c:	f1 e0       	ldi	r31, 0x01	; 1
- 70e:	80 81       	ld	r24, Z
+ 724:	e1 e2       	ldi	r30, 0x21	; 33
+ 726:	f1 e0       	ldi	r31, 0x01	; 1
+ 728:	80 81       	ld	r24, Z
 
-00000710 <.Loc.33>:
- 710:	80 64       	ori	r24, 0x40	; 64
- 712:	80 83       	st	Z, r24
+0000072a <.Loc.33>:
+ 72a:	80 64       	ori	r24, 0x40	; 64
+ 72c:	80 83       	st	Z, r24
 
-00000714 <.Loc.34>:
+0000072e <.Loc.34>:
 }
- 714:	ff 91       	pop	r31
- 716:	ef 91       	pop	r30
- 718:	8f 91       	pop	r24
- 71a:	8b bf       	out	0x3b, r24	; 59
- 71c:	8f 91       	pop	r24
- 71e:	8f bf       	out	0x3f, r24	; 63
- 720:	8f 91       	pop	r24
- 722:	18 95       	reti
+ 72e:	ff 91       	pop	r31
+ 730:	ef 91       	pop	r30
+ 732:	8f 91       	pop	r24
+ 734:	8b bf       	out	0x3b, r24	; 59
+ 736:	8f 91       	pop	r24
+ 738:	8f bf       	out	0x3f, r24	; 63
+ 73a:	8f 91       	pop	r24
+ 73c:	18 95       	reti
 
-00000724 <__vector_46>:
+0000073e <__vector_46>:
 
 ISR(TIMER5_CAPT_vect){
- 724:	0f 92       	push	r0
- 726:	0f b6       	in	r0, 0x3f	; 63
- 728:	0f 92       	push	r0
- 72a:	1f 92       	push	r1
- 72c:	11 24       	eor	r1, r1
- 72e:	2f 93       	push	r18
- 730:	2b b7       	in	r18, 0x3b	; 59
- 732:	2f 93       	push	r18
- 734:	3f 93       	push	r19
- 736:	6f 93       	push	r22
- 738:	7f 93       	push	r23
- 73a:	8f 93       	push	r24
- 73c:	9f 93       	push	r25
- 73e:	af 93       	push	r26
- 740:	bf 93       	push	r27
- 742:	ef 93       	push	r30
- 744:	ff 93       	push	r31
+ 73e:	0f 92       	push	r0
+ 740:	0f b6       	in	r0, 0x3f	; 63
+ 742:	0f 92       	push	r0
+ 744:	1f 92       	push	r1
+ 746:	11 24       	eor	r1, r1
+ 748:	2f 93       	push	r18
+ 74a:	2b b7       	in	r18, 0x3b	; 59
+ 74c:	2f 93       	push	r18
+ 74e:	3f 93       	push	r19
+ 750:	6f 93       	push	r22
+ 752:	7f 93       	push	r23
+ 754:	8f 93       	push	r24
+ 756:	9f 93       	push	r25
+ 758:	af 93       	push	r26
+ 75a:	bf 93       	push	r27
+ 75c:	ef 93       	push	r30
+ 75e:	ff 93       	push	r31
 
-00000746 <.Loc.36>:
+00000760 <.Loc.36>:
     static volatile int start_time;
     // If interrupt is set to rising edge
     if (TCCR5B & (1 << ICES5)) {
- 746:	80 91 21 01 	lds	r24, 0x0121	; 0x800121 <__TEXT_REGION_LENGTH__+0x700121>
+ 760:	80 91 21 01 	lds	r24, 0x0121	; 0x800121 <__TEXT_REGION_LENGTH__+0x700121>
 
-0000074a <.Loc.39>:
- 74a:	86 ff       	sbrs	r24, 6
- 74c:	1e c0       	rjmp	.+60     	; 0x78a <.L6>
+00000764 <.Loc.39>:
+ 764:	86 ff       	sbrs	r24, 6
+ 766:	1e c0       	rjmp	.+60     	; 0x7a4 <.L6>
 
-0000074e <.Loc.40>:
+00000768 <.Loc.40>:
         start_time = ICR5;
- 74e:	80 91 26 01 	lds	r24, 0x0126	; 0x800126 <__TEXT_REGION_LENGTH__+0x700126>
- 752:	90 91 27 01 	lds	r25, 0x0127	; 0x800127 <__TEXT_REGION_LENGTH__+0x700127>
+ 768:	80 91 26 01 	lds	r24, 0x0126	; 0x800126 <__TEXT_REGION_LENGTH__+0x700126>
+ 76c:	90 91 27 01 	lds	r25, 0x0127	; 0x800127 <__TEXT_REGION_LENGTH__+0x700127>
 
-00000756 <.Loc.42>:
- 756:	90 93 1b 02 	sts	0x021B, r25	; 0x80021b <start_time.0+0x1>
- 75a:	80 93 1a 02 	sts	0x021A, r24	; 0x80021a <start_time.0>
+00000770 <.Loc.42>:
+ 770:	90 93 1b 02 	sts	0x021B, r25	; 0x80021b <start_time.0+0x1>
+ 774:	80 93 1a 02 	sts	0x021A, r24	; 0x80021a <start_time.0>
 
-0000075e <.Loc.43>:
+00000778 <.Loc.43>:
         TCCR5B &= ~(1 << ICES5);  // Switch to falling edge
- 75e:	e1 e2       	ldi	r30, 0x21	; 33
- 760:	f1 e0       	ldi	r31, 0x01	; 1
- 762:	80 81       	ld	r24, Z
- 764:	8f 7b       	andi	r24, 0xBF	; 191
- 766:	80 83       	st	Z, r24
+ 778:	e1 e2       	ldi	r30, 0x21	; 33
+ 77a:	f1 e0       	ldi	r31, 0x01	; 1
+ 77c:	80 81       	ld	r24, Z
+ 77e:	8f 7b       	andi	r24, 0xBF	; 191
+ 780:	80 83       	st	Z, r24
 
-00000768 <.L5>:
+00000782 <.L5>:
             current_sensor = 0;  // Switch to Sensor A
             TCCR5A &= ~(1 << COM5B1);  // Turn off Sensor Right
             TCCR5A |= (1 << COM5C1);   // Turn on Sensor Left
         }
     }
 }
- 768:	ff 91       	pop	r31
- 76a:	ef 91       	pop	r30
- 76c:	bf 91       	pop	r27
- 76e:	af 91       	pop	r26
- 770:	9f 91       	pop	r25
- 772:	8f 91       	pop	r24
- 774:	7f 91       	pop	r23
- 776:	6f 91       	pop	r22
- 778:	3f 91       	pop	r19
- 77a:	2f 91       	pop	r18
- 77c:	2b bf       	out	0x3b, r18	; 59
- 77e:	2f 91       	pop	r18
- 780:	1f 90       	pop	r1
- 782:	0f 90       	pop	r0
- 784:	0f be       	out	0x3f, r0	; 63
- 786:	0f 90       	pop	r0
- 788:	18 95       	reti
+ 782:	ff 91       	pop	r31
+ 784:	ef 91       	pop	r30
+ 786:	bf 91       	pop	r27
+ 788:	af 91       	pop	r26
+ 78a:	9f 91       	pop	r25
+ 78c:	8f 91       	pop	r24
+ 78e:	7f 91       	pop	r23
+ 790:	6f 91       	pop	r22
+ 792:	3f 91       	pop	r19
+ 794:	2f 91       	pop	r18
+ 796:	2b bf       	out	0x3b, r18	; 59
+ 798:	2f 91       	pop	r18
+ 79a:	1f 90       	pop	r1
+ 79c:	0f 90       	pop	r0
+ 79e:	0f be       	out	0x3f, r0	; 63
+ 7a0:	0f 90       	pop	r0
+ 7a2:	18 95       	reti
 
-0000078a <.L6>:
+000007a4 <.L6>:
         int distance = (ICR5 - start_time) / 117;  // Calculate distance in cm
- 78a:	20 91 26 01 	lds	r18, 0x0126	; 0x800126 <__TEXT_REGION_LENGTH__+0x700126>
- 78e:	30 91 27 01 	lds	r19, 0x0127	; 0x800127 <__TEXT_REGION_LENGTH__+0x700127>
+ 7a4:	20 91 26 01 	lds	r18, 0x0126	; 0x800126 <__TEXT_REGION_LENGTH__+0x700126>
+ 7a8:	30 91 27 01 	lds	r19, 0x0127	; 0x800127 <__TEXT_REGION_LENGTH__+0x700127>
 
-00000792 <.Loc.48>:
- 792:	80 91 1a 02 	lds	r24, 0x021A	; 0x80021a <start_time.0>
- 796:	90 91 1b 02 	lds	r25, 0x021B	; 0x80021b <start_time.0+0x1>
- 79a:	28 1b       	sub	r18, r24
- 79c:	39 0b       	sbc	r19, r25
+000007ac <.Loc.48>:
+ 7ac:	80 91 1a 02 	lds	r24, 0x021A	; 0x80021a <start_time.0>
+ 7b0:	90 91 1b 02 	lds	r25, 0x021B	; 0x80021b <start_time.0+0x1>
+ 7b4:	28 1b       	sub	r18, r24
+ 7b6:	39 0b       	sbc	r19, r25
 
-0000079e <.Loc.49>:
- 79e:	a9 e0       	ldi	r26, 0x09	; 9
- 7a0:	bc e8       	ldi	r27, 0x8C	; 140
- 7a2:	0e 94 0d 04 	call	0x81a	; 0x81a <__umulhisi3>
- 7a6:	00 24       	eor	r0, r0
- 7a8:	88 0f       	add	r24, r24
- 7aa:	99 1f       	adc	r25, r25
- 7ac:	00 1c       	adc	r0, r0
- 7ae:	88 0f       	add	r24, r24
- 7b0:	99 1f       	adc	r25, r25
- 7b2:	00 1c       	adc	r0, r0
- 7b4:	89 2f       	mov	r24, r25
- 7b6:	90 2d       	mov	r25, r0
+000007b8 <.Loc.49>:
+ 7b8:	a9 e0       	ldi	r26, 0x09	; 9
+ 7ba:	bc e8       	ldi	r27, 0x8C	; 140
+ 7bc:	0e 94 1a 04 	call	0x834	; 0x834 <__umulhisi3>
+ 7c0:	00 24       	eor	r0, r0
+ 7c2:	88 0f       	add	r24, r24
+ 7c4:	99 1f       	adc	r25, r25
+ 7c6:	00 1c       	adc	r0, r0
+ 7c8:	88 0f       	add	r24, r24
+ 7ca:	99 1f       	adc	r25, r25
+ 7cc:	00 1c       	adc	r0, r0
+ 7ce:	89 2f       	mov	r24, r25
+ 7d0:	90 2d       	mov	r25, r0
 
-000007b8 <.Loc.50>:
+000007d2 <.Loc.50>:
         if (current_sensor == 0) {
- 7b8:	20 91 14 02 	lds	r18, 0x0214	; 0x800214 <current_sensor>
- 7bc:	30 91 15 02 	lds	r19, 0x0215	; 0x800215 <current_sensor+0x1>
+ 7d2:	20 91 14 02 	lds	r18, 0x0214	; 0x800214 <current_sensor>
+ 7d6:	30 91 15 02 	lds	r19, 0x0215	; 0x800215 <current_sensor+0x1>
 
-000007c0 <.Loc.52>:
- 7c0:	23 2b       	or	r18, r19
- 7c2:	c9 f4       	brne	.+50     	; 0x7f6 <.L8>
+000007da <.Loc.52>:
+ 7da:	23 2b       	or	r18, r19
+ 7dc:	c9 f4       	brne	.+50     	; 0x810 <.L8>
 
-000007c4 <.Loc.53>:
+000007de <.Loc.53>:
             distance_left = distance;  // Store distance for Sensor A
- 7c4:	90 93 17 02 	sts	0x0217, r25	; 0x800217 <distance_left+0x1>
- 7c8:	80 93 16 02 	sts	0x0216, r24	; 0x800216 <distance_left>
+ 7de:	90 93 17 02 	sts	0x0217, r25	; 0x800217 <distance_left+0x1>
+ 7e2:	80 93 16 02 	sts	0x0216, r24	; 0x800216 <distance_left>
 
-000007cc <.L9>:
+000007e6 <.L9>:
         if (current_sensor == 0) {
- 7cc:	80 91 14 02 	lds	r24, 0x0214	; 0x800214 <current_sensor>
- 7d0:	90 91 15 02 	lds	r25, 0x0215	; 0x800215 <current_sensor+0x1>
+ 7e6:	80 91 14 02 	lds	r24, 0x0214	; 0x800214 <current_sensor>
+ 7ea:	90 91 15 02 	lds	r25, 0x0215	; 0x800215 <current_sensor+0x1>
 
-000007d4 <.Loc.57>:
- 7d4:	89 2b       	or	r24, r25
- 7d6:	a1 f4       	brne	.+40     	; 0x800 <.L10>
+000007ee <.Loc.57>:
+ 7ee:	89 2b       	or	r24, r25
+ 7f0:	a1 f4       	brne	.+40     	; 0x81a <.L10>
 
-000007d8 <.Loc.58>:
+000007f2 <.Loc.58>:
             current_sensor = 1;  // Switch to Sensor B
- 7d8:	81 e0       	ldi	r24, 0x01	; 1
- 7da:	90 e0       	ldi	r25, 0x00	; 0
- 7dc:	90 93 15 02 	sts	0x0215, r25	; 0x800215 <current_sensor+0x1>
- 7e0:	80 93 14 02 	sts	0x0214, r24	; 0x800214 <current_sensor>
+ 7f2:	81 e0       	ldi	r24, 0x01	; 1
+ 7f4:	90 e0       	ldi	r25, 0x00	; 0
+ 7f6:	90 93 15 02 	sts	0x0215, r25	; 0x800215 <current_sensor+0x1>
+ 7fa:	80 93 14 02 	sts	0x0214, r24	; 0x800214 <current_sensor>
 
-000007e4 <.Loc.60>:
+000007fe <.Loc.60>:
             TCCR5A &= ~(1 << COM5C1);  // Turn off Sensor Left
- 7e4:	e0 e2       	ldi	r30, 0x20	; 32
- 7e6:	f1 e0       	ldi	r31, 0x01	; 1
- 7e8:	80 81       	ld	r24, Z
- 7ea:	87 7f       	andi	r24, 0xF7	; 247
- 7ec:	80 83       	st	Z, r24
+ 7fe:	e0 e2       	ldi	r30, 0x20	; 32
+ 800:	f1 e0       	ldi	r31, 0x01	; 1
+ 802:	80 81       	ld	r24, Z
+ 804:	87 7f       	andi	r24, 0xF7	; 247
+ 806:	80 83       	st	Z, r24
 
-000007ee <.Loc.62>:
+00000808 <.Loc.62>:
             TCCR5A |= (1 << COM5B1);   // Turn on Sensor Right
- 7ee:	80 81       	ld	r24, Z
+ 808:	80 81       	ld	r24, Z
 
-000007f0 <.Loc.63>:
- 7f0:	80 62       	ori	r24, 0x20	; 32
- 7f2:	80 83       	st	Z, r24
- 7f4:	b9 cf       	rjmp	.-142    	; 0x768 <.L5>
+0000080a <.Loc.63>:
+ 80a:	80 62       	ori	r24, 0x20	; 32
+ 80c:	80 83       	st	Z, r24
+ 80e:	b9 cf       	rjmp	.-142    	; 0x782 <.L5>
 
-000007f6 <.L8>:
+00000810 <.L8>:
             distance_right = distance;  // Store distance for Sensor B
- 7f6:	90 93 19 02 	sts	0x0219, r25	; 0x800219 <distance_right+0x1>
- 7fa:	80 93 18 02 	sts	0x0218, r24	; 0x800218 <distance_right>
- 7fe:	e6 cf       	rjmp	.-52     	; 0x7cc <.L9>
+ 810:	90 93 19 02 	sts	0x0219, r25	; 0x800219 <distance_right+0x1>
+ 814:	80 93 18 02 	sts	0x0218, r24	; 0x800218 <distance_right>
+ 818:	e6 cf       	rjmp	.-52     	; 0x7e6 <.L9>
 
-00000800 <.L10>:
+0000081a <.L10>:
             current_sensor = 0;  // Switch to Sensor A
- 800:	10 92 15 02 	sts	0x0215, r1	; 0x800215 <current_sensor+0x1>
- 804:	10 92 14 02 	sts	0x0214, r1	; 0x800214 <current_sensor>
+ 81a:	10 92 15 02 	sts	0x0215, r1	; 0x800215 <current_sensor+0x1>
+ 81e:	10 92 14 02 	sts	0x0214, r1	; 0x800214 <current_sensor>
 
-00000808 <.Loc.68>:
+00000822 <.Loc.68>:
             TCCR5A &= ~(1 << COM5B1);  // Turn off Sensor Right
- 808:	e0 e2       	ldi	r30, 0x20	; 32
- 80a:	f1 e0       	ldi	r31, 0x01	; 1
- 80c:	80 81       	ld	r24, Z
- 80e:	8f 7d       	andi	r24, 0xDF	; 223
- 810:	80 83       	st	Z, r24
+ 822:	e0 e2       	ldi	r30, 0x20	; 32
+ 824:	f1 e0       	ldi	r31, 0x01	; 1
+ 826:	80 81       	ld	r24, Z
+ 828:	8f 7d       	andi	r24, 0xDF	; 223
+ 82a:	80 83       	st	Z, r24
 
-00000812 <.Loc.70>:
+0000082c <.Loc.70>:
             TCCR5A |= (1 << COM5C1);   // Turn on Sensor Left
- 812:	80 81       	ld	r24, Z
+ 82c:	80 81       	ld	r24, Z
 
-00000814 <.Loc.71>:
- 814:	88 60       	ori	r24, 0x08	; 8
- 816:	80 83       	st	Z, r24
+0000082e <.Loc.71>:
+ 82e:	88 60       	ori	r24, 0x08	; 8
+ 830:	80 83       	st	Z, r24
 
-00000818 <.LBE2>:
+00000832 <.LBE2>:
 }
- 818:	a7 cf       	rjmp	.-178    	; 0x768 <.L5>
+ 832:	a7 cf       	rjmp	.-178    	; 0x782 <.L5>
 
-0000081a <__umulhisi3>:
- 81a:	a2 9f       	mul	r26, r18
+00000834 <__umulhisi3>:
+ 834:	a2 9f       	mul	r26, r18
 
-0000081c <.Loc.1>:
- 81c:	b0 01       	movw	r22, r0
+00000836 <.Loc.1>:
+ 836:	b0 01       	movw	r22, r0
 
-0000081e <.Loc.2>:
- 81e:	b3 9f       	mul	r27, r19
+00000838 <.Loc.2>:
+ 838:	b3 9f       	mul	r27, r19
 
-00000820 <.Loc.3>:
- 820:	c0 01       	movw	r24, r0
+0000083a <.Loc.3>:
+ 83a:	c0 01       	movw	r24, r0
 
-00000822 <.Loc.4>:
- 822:	a3 9f       	mul	r26, r19
+0000083c <.Loc.4>:
+ 83c:	a3 9f       	mul	r26, r19
 
-00000824 <.Loc.5>:
- 824:	70 0d       	add	r23, r0
+0000083e <.Loc.5>:
+ 83e:	70 0d       	add	r23, r0
 
-00000826 <.Loc.6>:
- 826:	81 1d       	adc	r24, r1
+00000840 <.Loc.6>:
+ 840:	81 1d       	adc	r24, r1
 
-00000828 <.Loc.7>:
- 828:	11 24       	eor	r1, r1
+00000842 <.Loc.7>:
+ 842:	11 24       	eor	r1, r1
 
-0000082a <.Loc.8>:
- 82a:	91 1d       	adc	r25, r1
+00000844 <.Loc.8>:
+ 844:	91 1d       	adc	r25, r1
 
-0000082c <.Loc.9>:
- 82c:	b2 9f       	mul	r27, r18
+00000846 <.Loc.9>:
+ 846:	b2 9f       	mul	r27, r18
 
-0000082e <.Loc.10>:
- 82e:	70 0d       	add	r23, r0
+00000848 <.Loc.10>:
+ 848:	70 0d       	add	r23, r0
 
-00000830 <.Loc.11>:
- 830:	81 1d       	adc	r24, r1
+0000084a <.Loc.11>:
+ 84a:	81 1d       	adc	r24, r1
 
-00000832 <.Loc.12>:
- 832:	11 24       	eor	r1, r1
+0000084c <.Loc.12>:
+ 84c:	11 24       	eor	r1, r1
 
-00000834 <.Loc.13>:
- 834:	91 1d       	adc	r25, r1
+0000084e <.Loc.13>:
+ 84e:	91 1d       	adc	r25, r1
 
-00000836 <.Loc.14>:
- 836:	08 95       	ret
+00000850 <.Loc.14>:
+ 850:	08 95       	ret
 
-00000838 <_exit>:
- 838:	f8 94       	cli
+00000852 <_exit>:
+ 852:	f8 94       	cli
 
-0000083a <__stop_program>:
- 83a:	ff cf       	rjmp	.-2      	; 0x83a <__stop_program>
+00000854 <__stop_program>:
+ 854:	ff cf       	rjmp	.-2      	; 0x854 <__stop_program>

@@ -55,3 +55,4 @@ void interpreter(){
             rechtsom();
     }
 }
+}//<--that bracket has no reason to exist but god has decided to toy with me today, anywho this is to fix a compiler error

@@ -18,7 +18,7 @@ void initPinsStepper (void){
 	// Output low
 	PORT_STEP_R &= ~(1<<STEPPER_RIGHT);
 	PORT_STEP_L &= ~(1<<STEPPER_LEFT);
-	PORT_DIR_R &= ~(1<<DIRECTION_R);
+	PORT_DIR_R |= (1<<DIRECTION_R);
 	PORT_DIR_L &= ~(1<<DIRECTION_L);
 }
 
@@ -69,11 +69,11 @@ void speedStepperLeft(int PWMLeft){
 void toggleStepperDirectionRight(void){
     static int state = 0;
     if(state == 0){
-        PORT_DIR_R |= (1<<DIRECTION_R);
+        PORT_DIR_R &= ~(1<<DIRECTION_R);
         state = 1;
     }
     else{
-        PORT_DIR_R &= ~(1<<DIRECTION_R);
+        PORT_DIR_R |= (1<<DIRECTION_R);
         state = 0;
     }
 }
