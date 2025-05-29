@@ -116,3 +116,13 @@ void disableStepCnt(void){
     TIMSK4 &= ~(1<<TOIE4);
     TIMSK3 &= ~(1<<TOIE3);
 }
+
+void stepperBackward(void){
+    PORT_DIR_R &= ~(1<<DIRECTION_R);
+	PORT_DIR_L |= (1<<DIRECTION_L);
+}
+
+void stepperForward(void){
+    PORT_DIR_R |= (1<<DIRECTION_R);
+	PORT_DIR_L &= ~(1<<DIRECTION_L);
+}

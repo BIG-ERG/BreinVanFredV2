@@ -7,15 +7,13 @@
 
 int main(void)
 {
-    //initNoodstop();
-    //initStepper();
-    //init_ultrasoon();
-    //initUsart();
+    initNoodstop();
+    initStepper();
+    init_ultrasoon();
+    initUsart();
+    flushUsart2Buffer();
 
-    //_delay_ms(2000);
-    while(1){
-        //interpreter();
-    }
+    while(1);       //everything is automated using interrupts so no need for a main loop
 
     return 0;
 }

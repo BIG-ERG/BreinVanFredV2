@@ -37,16 +37,13 @@ Signaal omhoog (vanuit AGV naar Module)
 */
 
 void interpreter(){
-    receiveCommand();   //this function may have to be called more often within the while to be able to update if any new information comes in
     if(serialOntvangen[0]==0x01){    //commmando bewegen
-        while((distance_right<30)||(distance_left<30)){ //while agv binnen pad
             if(serialOntvangen[1]>0x7F)
                 rechtdoor();
             if(serialOntvangen[1]<0x7F)
                 achteruit();
             if(serialOntvangen[1]==0x7F)
                 stop();
-        }
     }
     if(serialOntvangen[0]==0x02){
         if(serialOntvangen[1]==0x01)
@@ -55,4 +52,3 @@ void interpreter(){
             rechtsom();
     }
 }
-}//<--that bracket has no reason to exist but god has decided to toy with me today, anywho this is to fix a compiler error

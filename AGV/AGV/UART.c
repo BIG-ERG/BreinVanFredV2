@@ -52,8 +52,6 @@ void receiveCommand(){
 }
 
 ISR(USART1_RX_vect){
-    receiveCommand();
-    if(serialOntvangen[0]==0x01){
-        volgendeOpdracht();
-    }
+   receiveCommand();
+   interpreter();
 }

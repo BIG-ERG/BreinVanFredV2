@@ -2,7 +2,7 @@
 1746521420 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\fuse.c
 	<avr/io.h>
 
-1748457804 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\main.c
+1748529799 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\main.c
 	<avr/io.h>
 	<util/delay.h>
 	"main.h"
@@ -15,54 +15,53 @@
 1746522654 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\ultrasoon.h
 	"main.h"
 
-1746522613 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\main.h
+1748529322 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\main.h
 	"navigatieLogica.h"
 	"ultrasoon.h"
 	"noodstop.h"
 	"stepperDriver.h"
+	"UART.h"
+	"interface.h"
 
 1748091991 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\navigatielogica.h
 	"main.h"
 
-1748426133 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\stepperdriver.c
+1748529799 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\stepperdriver.c
 	<avr/io.h>
 	<avr/interrupt.h>
 	"stepperDriver.h"
 
-1746522655 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\stepperdriver.h
+1748529799 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\stepperdriver.h
 	"main.h"
 
 1746547441 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\noodstop.h
 	"main.h"
 
-1748091991 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\navigatielogica.c
+1748529799 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\navigatielogica.c
 	<avr/io.h>
 	<math.h>
 	<util/delay.h>
 	"navigatieLogica.h"
 
-1748457076 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\noodstop.c
+1748458227 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\noodstop.c
 	"noodstop.h"
 	"navigatieLogica.h"
 	<avr/interrupt.h>
 	<avr/io.h>
 
-1748087736 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\uart.c
-	"UART.h"
-	<avr/io.h>
-	<util/delay.h>
-
-1748456529 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\uart.h
+1748529520 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\uart.c
 	"UART.h"
 	"main.h"
 	<avr/io.h>
 	<avr/interrupt.h>
 
-1748456738 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\interface.c
+1748529222 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\uart.h
+
+1748529799 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\interface.c
 	"interface.h"
 	"ultrasoon.h"
 	"UART.h"
 	<avr/io.h>
 
-1748091991 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\interface.h
+1748529878 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\interface.h
 

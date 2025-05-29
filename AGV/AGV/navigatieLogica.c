@@ -34,26 +34,45 @@ int ramping(int originalValue , int value){
 }
 
 void rechtdoor(void){
-    //while agv binnen het pad is
-    if (distance_right==distance_left) {
-        speedStepperLeft(1150);
-        speedStepperRight(1150);
-    }
-    else{
-        if (distance_right < distance_left){
-            speedStepperLeft(ramping(1650, 1150));
-            speedStepperRight(ramping(1150, 1650));
+    stepperForward();
+    while((distance_right<30)||(distance_left<30)){ //while agv binnen pad
+        if (distance_right==distance_left) {
+            speedStepperLeft(1150);
+            speedStepperRight(1150);
         }
-        if(distance_left < distance_right){
-            speedStepperRight(ramping(1650, 1150));
-            speedStepperLeft(ramping(1150, 1650));
+        else{
+            if (distance_right < distance_left){
+                speedStepperLeft(ramping(1650, 1150));
+                speedStepperRight(ramping(1150, 1650));
+            }
+            if(distance_left < distance_right){
+                speedStepperRight(ramping(1650, 1150));
+                speedStepperLeft(ramping(1150, 1650));
+            }
         }
     }
-    //stop driving
+    sendCommand(0x01,0x00,0x00,0x00);   //send klaar met opdracht
 }
 
 void achteruit(void){
-
+    stepperBackward();
+    while((distance_right<30)||(distance_left<30)){ //while agv binnen pad
+        if (distance_right==distance_left) {
+            speedStepperLeft(1150);
+            speedStepperRight(1150);
+        }
+        else{
+            if (distance_right < distance_left){
+                speedStepperLeft(ramping(1650, 1150));
+                speedStepperRight(ramping(1150, 1650));
+            }
+            if(distance_left < distance_right){
+                speedStepperRight(ramping(1650, 1150));
+                speedStepperLeft(ramping(1150, 1650));
+            }
+        }
+    }
+    sendCommand(0x01,0x00,0x00,0x00);   //send klaar met opdracht
 }
 
 void linksom(void){
@@ -85,6 +104,7 @@ void linksom(void){
     }
     stop();
     disableStepCnt();
+    sendCommand(0x01,0x00,0x00,0x00);   //send klaar met opdracht
 }
 
 void rechtsom(void){
@@ -115,4 +135,5 @@ void rechtsom(void){
         vooruit();
     }
     stop();
+    sendCommand(0x01,0x00,0x00,0x00);   //send klaar met opdracht
 }

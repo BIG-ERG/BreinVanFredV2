@@ -44,6 +44,9 @@ void clearStepCnt(void);
 void enableStepCnt(void);
 void disableStepCnt(void);
 
+void stepperBackward(void);
+void stepperForward(void);
+
 
 
 #endif // STEPPER_DRIVER_H_INCLUDED
