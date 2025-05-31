@@ -12,6 +12,6 @@ void sendCommand(int command, int parameter, int snelheid, int acceleratie);
 void flushUsart2Buffer(void);
 int receiveByte(void);
 extern unsigned int serialOntvangen[4];
-void receiveCommand(void){
+void receiveCommand(void);
 
 #endif // UART_H_INCLUDED

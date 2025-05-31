@@ -5,5 +5,6 @@
 #include "metaalDetector.h"
 #include "interface.h"
 #include "donk.h"
+#include "segmentDisplay.h"
 
 #endif // MAIN_H_INCLUDED

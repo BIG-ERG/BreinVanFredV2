@@ -1,5 +1,6 @@
 /*
  */
+#include <util/delay.h>
 #include <avr/interrupt.h>
 #include <avr/io.h>
 #include "main.h"
@@ -9,14 +10,16 @@ int main(void){
     initUsart();
     flushUsart2Buffer();
     initDonkInterrupt();
+    display_init();
 
-    _delay_ms(2000); //genoeg tijd geven aan AVR om UART op te stellen
 
-    volgendeOpdracht();
+    int bitch = 0;
+    while(1){
+        display_number(bitch);
+        bitch++;
+        _delay_ms(500);
+    }
 
-    while(1)
-        _delay_ms(10);
 
     return 1;
-}
 }
