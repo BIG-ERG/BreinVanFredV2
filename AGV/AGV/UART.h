@@ -13,6 +13,7 @@ void flushUsart2Buffer(void);
 int receiveByte(void);
 extern unsigned int serialOntvangen[4];
 void receiveCommand(void);
+extern volatile int stopRequest;
 
 
 #endif // UART_H_INCLUDED

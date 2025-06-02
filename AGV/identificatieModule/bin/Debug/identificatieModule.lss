@@ -292,8 +292,8 @@ int main(void){
 
 	__builtin_avr_delay_cycles(__ticks_dc);
  180:	2f ef       	ldi	r18, 0xFF	; 255
- 182:	83 e2       	ldi	r24, 0x23	; 35
- 184:	94 ef       	ldi	r25, 0xF4	; 244
+ 182:	83 ed       	ldi	r24, 0xD3	; 211
+ 184:	90 e3       	ldi	r25, 0x30	; 48
 
 00000186 <.L1^B1>:
  186:	21 50       	subi	r18, 0x01	; 1
@@ -306,21 +306,20 @@ int main(void){
 	...
 
 00000192 <.LBE4>:
-    _delay_ms(5000);
-    //sendCommand(0x01,0x7F,0x00, 0x00);  //stop
-    //_delay_ms(1000);
-    sendCommand(0x01,0x00, 0x00, 0x00); //achteruit
+    _delay_ms(1000);
+    sendCommand(0x02,0x00, 0x00, 0x00); //achteruit
  192:	20 e0       	ldi	r18, 0x00	; 0
  194:	30 e0       	ldi	r19, 0x00	; 0
  196:	40 e0       	ldi	r20, 0x00	; 0
  198:	50 e0       	ldi	r21, 0x00	; 0
  19a:	60 e0       	ldi	r22, 0x00	; 0
  19c:	70 e0       	ldi	r23, 0x00	; 0
- 19e:	81 e0       	ldi	r24, 0x01	; 1
+ 19e:	82 e0       	ldi	r24, 0x02	; 2
  1a0:	90 e0       	ldi	r25, 0x00	; 0
  1a2:	0e 94 5b 03 	call	0x6b6	; 0x6b6 <sendCommand>
 
 000001a6 <.LVL6>:
+
 
     return 1;
 }

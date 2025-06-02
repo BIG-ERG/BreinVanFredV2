@@ -44,24 +44,24 @@ int receiveByte() { //ontvangen van 1 hex getal
 }
 
 unsigned int serialOntvangen[4];
-
-void receiveCommand(){
-    for(int i = 0; i<4; i++){
-        serialOntvangen[i] = receiveByte();
-    }
-    flushUsart2Buffer();
-}
-
-volatile uint8_t serialIndex = -1;
+volatile uint8_t serialBuffer[4];
+volatile uint8_t serialIndex = 0;
+volatile int stopRequest = 0;
 
 ISR(USART1_RX_vect) {
     uint8_t data = UDR1;
 
-    serialOntvangen[serialIndex++] = data;
-    if(serialIndex>=4){
+    serialBuffer[serialIndex++] = data;
+
+    if (serialIndex >= 4) {
         serialIndex = 0;
-        interpreter();
+        for (int i = 0; i < 4; i++) {
+            serialOntvangen[i] = serialBuffer[i];
+        }
+        interpreter();  // Process once full command is received
+    }
+    if(serialOntvangen[0]==0xFF){
+        stopRequest = 1;
     }
 }
-
 

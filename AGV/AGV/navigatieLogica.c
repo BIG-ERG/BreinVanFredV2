@@ -35,7 +35,7 @@ int ramping(int originalValue , int value){
 
 void rechtdoor(void){
     stepperForward();
-    while((distance_right<30)||(distance_left<30)){ //while agv binnen pad
+    while(((distance_right<30)||(distance_left<30))&&(stopRequest==0)){ //while agv binnen pad
         if (distance_right==distance_left) {
             speedStepperLeft(1150);
             speedStepperRight(1150);
@@ -51,12 +51,14 @@ void rechtdoor(void){
             }
         }
     }
+    stop();
+    stopRequest=0;
     sendCommand(0x01,0x00,0x00,0x00);   //send klaar met opdracht
 }
 
 void achteruit(void){
     stepperBackward();
-    while((distance_right<20)||(distance_left<20)){ //while agv binnen pad
+    while(((distance_right<30)||(distance_left<30))&&(stopRequest==0)){ //while agv binnen pad
         if (distance_right==distance_left) {
             speedStepperLeft(1150);
             speedStepperRight(1150);
@@ -72,6 +74,8 @@ void achteruit(void){
             }
         }
     }
+    stop();
+    stopRequest=0;
     sendCommand(0x01,0x00,0x00,0x00);   //send klaar met opdracht
 }
 
