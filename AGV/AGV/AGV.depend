@@ -2,12 +2,13 @@
 1746521420 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\fuse.c
 	<avr/io.h>
 
-1748529799 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\main.c
+1748868634 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\main.c
 	<avr/io.h>
 	<util/delay.h>
+	<avr/interrupt.h>
 	"main.h"
 
-1746521794 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\ultrasoon.c
+1748864164 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\ultrasoon.c
 	<avr/io.h>
 	<avr/interrupt.h>
 	"ultrasoon.h"
@@ -15,13 +16,14 @@
 1746522654 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\ultrasoon.h
 	"main.h"
 
-1748529322 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\main.h
+1748862102 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\main.h
 	"navigatieLogica.h"
 	"ultrasoon.h"
 	"noodstop.h"
 	"stepperDriver.h"
 	"UART.h"
 	"interface.h"
+	"display.h"
 
 1748091991 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\navigatielogica.h
 	"main.h"
@@ -37,7 +39,7 @@
 1746547441 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\noodstop.h
 	"main.h"
 
-1748529799 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\navigatielogica.c
+1748867647 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\navigatielogica.c
 	<avr/io.h>
 	<math.h>
 	<util/delay.h>
@@ -49,7 +51,7 @@
 	<avr/interrupt.h>
 	<avr/io.h>
 
-1748529520 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\uart.c
+1748868855 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\uart.c
 	"UART.h"
 	"main.h"
 	<avr/io.h>
@@ -64,4 +66,10 @@
 	<avr/io.h>
 
 1748529878 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\interface.h
+
+1748862022 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\display.c
+	<avr/io.h>
+	"display.h"
+
+1748863456 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\display.h
 

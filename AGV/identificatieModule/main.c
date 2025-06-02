@@ -12,14 +12,11 @@ int main(void){
     initDonkInterrupt();
     display_init();
 
-
-    int bitch = 0;
-    while(1){
-        display_number(bitch);
-        bitch++;
-        _delay_ms(500);
-    }
-
+    sendCommand(0x01,0xFF, 0x00, 0x00); //vooruit
+    _delay_ms(1000);
+    //sendCommand(0x01,0x7F,0x00, 0x00);  //stop
+    //_delay_ms(1000);
+    sendCommand(0x01,0x00, 0x00, 0x00); //achteruit
 
     return 1;
 }

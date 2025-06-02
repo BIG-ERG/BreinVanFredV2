@@ -49,9 +49,19 @@ void receiveCommand(){
     for(int i = 0; i<4; i++){
         serialOntvangen[i] = receiveByte();
     }
+    flushUsart2Buffer();
 }
 
-ISR(USART1_RX_vect){
-   receiveCommand();
-   interpreter();
+volatile uint8_t serialIndex = -1;
+
+ISR(USART1_RX_vect) {
+    uint8_t data = UDR1;
+
+    serialOntvangen[serialIndex++] = data;
+    if(serialIndex>=4){
+        serialIndex = 0;
+        interpreter();
+    }
 }
+
+

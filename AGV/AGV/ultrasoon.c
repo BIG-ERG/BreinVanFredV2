@@ -58,9 +58,9 @@ ISR(TIMER5_CAPT_vect){
         int distance = (ICR5 - start_time) / 117;  // Calculate distance in cm
 
         if (current_sensor == 0) {
-            distance_left = distance;  // Store distance for Sensor A
+            distance_right = distance;  // Store distance for Sensor A
         } else {
-            distance_right = distance;  // Store distance for Sensor B
+            distance_left = distance;  // Store distance for Sensor B
         }
 
         //switch between sensors

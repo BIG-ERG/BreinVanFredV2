@@ -7,5 +7,6 @@
 #include "stepperDriver.h"
 #include "UART.h"
 #include "interface.h"
+#include "display.h"
 
 #endif // MAIN_H_INCLUDED

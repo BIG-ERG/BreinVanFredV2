@@ -41,11 +41,11 @@ void rechtdoor(void){
             speedStepperRight(1150);
         }
         else{
-            if (distance_right < distance_left){
+            if (distance_right > distance_left){
                 speedStepperLeft(ramping(1650, 1150));
                 speedStepperRight(ramping(1150, 1650));
             }
-            if(distance_left < distance_right){
+            if(distance_left > distance_right){
                 speedStepperRight(ramping(1650, 1150));
                 speedStepperLeft(ramping(1150, 1650));
             }
@@ -56,7 +56,7 @@ void rechtdoor(void){
 
 void achteruit(void){
     stepperBackward();
-    while((distance_right<30)||(distance_left<30)){ //while agv binnen pad
+    while((distance_right<20)||(distance_left<20)){ //while agv binnen pad
         if (distance_right==distance_left) {
             speedStepperLeft(1150);
             speedStepperRight(1150);
@@ -78,12 +78,12 @@ void achteruit(void){
 void linksom(void){
     enableStepCnt();
     clearStepCnt();
-    while(stepCounterLeft<4100){      //agv rijdt ietsjes verder buiten het pad
+    while(stepCounterLeft<6100){      //agv rijdt ietsjes verder buiten het pad
         vooruit();
     }
     clearStepCnt();
     toggleStepperDirectionRight();
-    while(stepCounterLeft<2200){   //agv draait 90 graden
+    while(stepCounterLeft<2350){   //agv draait 90 graden
         vooruit();
     }
     toggleStepperDirectionRight();
@@ -93,7 +93,7 @@ void linksom(void){
     }
     toggleStepperDirectionRight();      //agv draati 90 graden
     clearStepCnt();
-    while(stepCounterLeft<(2200)){
+    while(stepCounterLeft<(2350)){
         vooruit();
     }
     toggleStepperDirectionRight();
@@ -110,12 +110,12 @@ void linksom(void){
 void rechtsom(void){
     enableStepCnt();
     clearStepCnt();
-    while(stepCounterLeft<4100){      //agv rijdt ietsjes verder buiten het pad
+    while(stepCounterLeft<6100){      //agv rijdt ietsjes verder buiten het pad
         vooruit();
     }
     clearStepCnt();
     toggleStepperDirectionLeft();
-    while(stepCounterLeft<2200){   //agv draait 90 graden
+    while(stepCounterLeft<2350){   //agv draait 90 graden
         vooruit();
     }
     toggleStepperDirectionLeft();
@@ -125,7 +125,7 @@ void rechtsom(void){
     }
     toggleStepperDirectionLeft();      //agv draati 90 graden
     clearStepCnt();
-    while(stepCounterLeft<(2200)){
+    while(stepCounterLeft<(2350)){
         vooruit();
     }
     toggleStepperDirectionLeft();
