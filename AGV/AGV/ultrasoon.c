@@ -6,6 +6,8 @@ zie elektrisch schema voor verdere uitleg
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include "ultrasoon.h"
+#include "Debugging.h"
+#include <stdlib.h>
 
 void init_timer5(void){
     //set timer mode 15

@@ -108,8 +108,6 @@ void display_letter(unsigned int letter, unsigned char position){
     display_stop();
 }
 
-
-
 // **Initialize TM1637**
 void display_init(void){
     DDR_DIO |= (1<<PIN_DIO);
@@ -117,101 +115,6 @@ void display_init(void){
     PORT_DIO |= (1<<PIN_DIO);
     PORT_CLK |= (1<<PIN_CLK);
     display_brightness(NORMAL_BRIGHTNESS); // 7 is max brightness
-}
-// Display package or following mode
-void display_mode(char mode){
-    if(mode){
-        display_fol();
-    }
-    else{
-        display_pac();
-    }
-}
-// Display left or right first turn direction
-void display_direction(char dir){
-    if(dir){
-        display_rght();
-    }
-    else{
-        display_left();
-    }
-}
-// --- Various things to display --- //
-void display_cfg(void){
-    display_letter(19, 0);
-    display_letter(3, 1);
-    display_letter(6, 2);
-    display_letter(7, 3);
-}
-
-void display_fol(void){
-    display_letter(19, 0);
-    display_letter(6, 1);
-    display_letter(13, 2);
-    display_letter(11, 3);
-}
-
-void display_cnt(void){
-    display_letter(19, 0);
-    display_letter(3, 1);
-    display_letter(12, 2);
-    display_letter(17, 3);
-}
-
-void display_turn(void){
-    display_letter(17, 0);
-    display_letter(18, 1);
-    display_letter(15, 2);
-    display_letter(12, 3);
-}
-
-void display_dist(void){
-    display_letter(4, 0);
-    display_letter(9, 1);
-    display_letter(16, 2);
-    display_letter(17, 3);
-}
-
-void display_pac(void){
-    display_letter(19, 0);
-    display_letter(14, 1);
-    display_letter(1, 2);
-    display_letter(3, 3);
-}
-
-void display_left(void){
-    display_letter(11, 0);
-    display_letter(5, 1);
-    display_letter(6, 2);
-    display_letter(17, 3);
-}
-
-void display_rght(void){
-    display_letter(15, 0);
-    display_letter(7, 1);
-    display_letter(8, 2);
-    display_letter(17, 3);
-}
-
-void display_go(void){
-    display_letter(19, 0);
-    display_letter(19, 1);
-    display_letter(7, 2);
-    display_letter(13, 3);
-}
-
-void display_end(void){
-    display_letter(19, 0);
-    display_letter(5, 1);
-    display_letter(12, 2);
-    display_letter(4, 3);
-}
-
-void display_srch(void){
-    display_letter(16, 0);
-    display_letter(15, 1);
-    display_letter(3, 2);
-    display_letter(8, 3);
 }
 
 void display_txt_stop(void){

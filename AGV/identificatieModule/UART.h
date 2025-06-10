@@ -6,12 +6,11 @@ void initUsart(void);
 
 //TRANSMIT
 void sendByte(int byte);
-void sendCommand(int command, int parameter, int snelheid, int acceleratie);
 
 //RECEIVE
 void flushUsart2Buffer(void);
-int receiveByte(void);
-extern unsigned int serialOntvangen[4];
-void receiveCommand(void);
+
+extern unsigned int serialData;
+extern unsigned int stopRequest;
 
 #endif // UART_H_INCLUDED

@@ -17,25 +17,9 @@ void display_start(void);
 void display_stop(void);
 void display_sendbyte(unsigned char data);
 void display_brightness(unsigned char brightness);
-void display_digits(unsigned char digits[4]);
 void display_number(int number);
 void display_letter(unsigned int letter, unsigned char position);
 void display_init(void);
-
-void display_mode(char mode);
-void display_direction(char dir);
-void display_cfg(void);
-void display_fol(void);
-void display_cnt(void);
-void display_turn(void);
-void display_dist(void);
-void display_pac(void);
-void display_left(void);
-void display_rght(void);
-void display_go(void);
-void display_end(void);
-void display_srch(void);
 void display_txt_stop(void);
-
 
 #endif // SEGMENTDISPLAY_H_INCLUDED

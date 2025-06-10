@@ -2,21 +2,23 @@
 1746521420 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\fuse.c
 	<avr/io.h>
 
-1748877660 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\main.c
+1749558776 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\main.c
 	<avr/io.h>
 	<util/delay.h>
 	<avr/interrupt.h>
 	"main.h"
 
-1748864164 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\ultrasoon.c
+1749558888 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\ultrasoon.c
 	<avr/io.h>
 	<avr/interrupt.h>
 	"ultrasoon.h"
+	"Debugging.h"
+	<stdlib.h>
 
 1746522654 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\ultrasoon.h
 	"main.h"
 
-1748877660 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\main.h
+1749550131 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\main.h
 	"navigatieLogica.h"
 	"ultrasoon.h"
 	"noodstop.h"
@@ -24,8 +26,10 @@
 	"UART.h"
 	"interface.h"
 	"display.h"
+	"knipperLicht.h"
+	"Debugging.h"
 
-1748091991 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\navigatielogica.h
+1749137709 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\navigatielogica.h
 	"main.h"
 
 1748529799 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\stepperdriver.c
@@ -39,27 +43,27 @@
 1746547441 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\noodstop.h
 	"main.h"
 
-1748877626 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\navigatielogica.c
+1749558987 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\navigatielogica.c
 	<avr/io.h>
 	<math.h>
 	<util/delay.h>
 	"navigatieLogica.h"
 
-1748458227 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\noodstop.c
+1749037529 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\noodstop.c
 	"noodstop.h"
 	"navigatieLogica.h"
 	<avr/interrupt.h>
 	<avr/io.h>
 
-1748877371 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\uart.c
+1749555604 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\uart.c
 	"UART.h"
 	"main.h"
 	<avr/io.h>
 	<avr/interrupt.h>
 
-1748877324 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\uart.h
+1749555130 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\uart.h
 
-1748529799 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\interface.c
+1749555378 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\interface.c
 	"interface.h"
 	"ultrasoon.h"
 	"UART.h"
@@ -72,4 +76,20 @@
 	"display.h"
 
 1748863456 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\display.h
+
+1749031540 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\knipperlicht.h
+
+1749037337 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\knipperlicht.c
+	<avr/io.h>
+	"main.h"
+	"knipperLicht.h"
+
+1749552558 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\debugging.c
+	<stdlib.h>
+	<avr/io.h>
+	<util/delay.h>
+	"main.h"
+	"Debugging.h"
+
+1749549980 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\agv\debugging.h
 

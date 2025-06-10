@@ -6,5 +6,6 @@
 #include "interface.h"
 #include "donk.h"
 #include "segmentDisplay.h"
+#include "noodstop.h"
 
 #endif // MAIN_H_INCLUDED

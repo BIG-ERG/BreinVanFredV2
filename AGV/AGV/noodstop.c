@@ -17,9 +17,11 @@ ISR(INT0_vect){
     while(1){
         while((PIN_NOOD & (1<<NOODKNOP))){//while noodknop ingedrukt en start niet ingedrukt is (twee handeling voor noodstop)
             stop();
+            toggleKnipperNood();
         }
         if(!(PIN_knop&(1<<start))){
             //uitvoer();
+            toggleKnipperNood();
             break;
         }
     }

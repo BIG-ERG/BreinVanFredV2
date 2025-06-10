@@ -1,5 +1,6 @@
 #include "UART.h"
 #include "main.h"
+#include "interface.h"
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
@@ -22,12 +23,6 @@ void sendByte(int byte) { // versturen van 1 HEX getal
   UDR1 = byte; // hex in verstuur box zetten
 }
 
-void sendCommand(int command, int parameter, int snelheid, int acceleratie){
-    int serialschrijven[4] = {command, parameter, snelheid, acceleratie}; // array serieel schrijven 0,1,2,3 (4 hex totaal)
-    for(int i = 0; i<4; i++){
-        sendByte(serialschrijven[i]);
-    }
-}
 
 //RECEIVE
 void flushUsart2Buffer(void) {
@@ -38,22 +33,12 @@ void flushUsart2Buffer(void) {
     dummy--; //to avoid compiler warning "variable set but not used"
 }
 
-int receiveByte() { //ontvangen van 1 hex getal
-    while ( !(UCSR1A & (1<<RXC1))); //Wait for data to be received
-    return UDR1;
-}
-
-unsigned int serialOntvangen[4];
-
-void receiveCommand(){
-    for(int i = 0; i<4; i++){
-        serialOntvangen[i] = receiveByte();
-    }
-}
+unsigned int serialData;
+unsigned int stopRequest = 0;
 
 ISR(USART1_RX_vect){
-    receiveCommand();
-    if(serialOntvangen[0]==0x01){
-        volgendeOpdracht();
+    serialData =UDR1;
+    if(serialData==0x01){
+        stopRequest = 1;
     }
 }

@@ -7,15 +7,22 @@
 
 int main(void){
     sei();
+    initNoodstop();
     initUsart();
     flushUsart2Buffer();
     initDonkInterrupt();
     display_init();
+    initStartKnop();
 
-    sendCommand(0x01,0xFF, 0x00, 0x00); //vooruit
-    _delay_ms(1000);
-    sendCommand(0x02,0x00, 0x00, 0x00); //achteruit
 
+    while(1){
+        display_number(0000);
+        if(!(PINA&(1<<PA6))){          //START CONDITION (start knop is pressed
+            _delay_ms(10);
+            volgendeOpdracht();
+        }
+
+    }
 
     return 1;
 }

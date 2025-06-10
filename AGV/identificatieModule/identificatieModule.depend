@@ -2,56 +2,68 @@
 1748091981 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\fuse.c
 	<avr/io.h>
 
-1748867824 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\main.c
+1749556763 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\main.c
 	<util/delay.h>
 	<avr/interrupt.h>
 	<avr/io.h>
 	"main.h"
 
-1748700301 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\main.h
+1749224095 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\main.h
 	"UART.h"
 	"metaalDetector.h"
 	"interface.h"
 	"donk.h"
 	"segmentDisplay.h"
+	"noodstop.h"
 
-1748699913 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\uart.h
+1749412269 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\uart.h
 
-1748096164 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\metaaldetector.h
+1749412220 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\metaaldetector.h
 
 1748699834 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\interface.h
 
-1748096164 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\donk.h
+1749412220 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\donk.h
 
-1748456106 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\uart.c
+1749556692 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\uart.c
 	"UART.h"
 	"main.h"
+	"interface.h"
 	<avr/io.h>
 	<avr/interrupt.h>
 
-1748457039 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\donk.c
+1749412220 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\donk.c
 	"donk.h"
-	<avr/io.h>
-
-1748096164 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\metaaldetector.c
+	"main.h"
 	"metaalDetector.h"
+	<avr/io.h>
+	<avr/interrupt.h>
+	<util/delay.h>
+
+1749412220 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\metaaldetector.c
+	"metaalDetector.h"
+	"main.h"
+	<stdlib.h>
 	<avr/io.h>
 	<util/delay.h>
 
-1748700002 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\segmentendisplay.c
+1749387033 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\segmentendisplay.c
 	<avr/io.h>
 	"segmentDisplay.h"
 
-1748456106 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\interface.c
+1749558782 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\interface.c
 	"interface.h"
+	"main.h"
+	"UART.h"
 	<avr/io.h>
+	<util/delay.h>
 
-1748456106 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\noodstop.c
+1749555399 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\noodstop.c
 	"noodstop.h"
+	"main.h"
 	<avr/interrupt.h>
 	<avr/io.h>
 
-1748096164 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\noodstop.h
+1749224971 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\noodstop.h
 
-1748700056 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\segmentdisplay.h
+1749387145 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\segmentdisplay.h
 

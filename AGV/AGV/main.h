@@ -8,5 +8,7 @@
 #include "UART.h"
 #include "interface.h"
 #include "display.h"
+#include "knipperLicht.h"
+#include "Debugging.h"
 
 #endif // MAIN_H_INCLUDED

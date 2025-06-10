@@ -22,13 +22,6 @@ void sendByte(int byte) { // versturen van 1 HEX getal
   UDR1 = byte; // hex in verstuur box zetten
 }
 
-void sendCommand(int command, int parameter, int snelheid, int acceleratie){
-    int serialschrijven[4] = {command, parameter, snelheid, acceleratie}; // array serieel schrijven 0,1,2,3 (4 hex totaal)
-    for(int i = 0; i<4; i++){
-        sendByte(serialschrijven[i]);
-    }
-}
-
 //RECEIVE
 void flushUsart2Buffer(void) {
     unsigned char dummy;
@@ -38,29 +31,13 @@ void flushUsart2Buffer(void) {
     dummy--; //to avoid compiler warning "variable set but not used"
 }
 
-int receiveByte() { //ontvangen van 1 hex getal
-    while ( !(UCSR1A & (1<<RXC1))); //Wait for data to be received
-    return UDR1;
-}
-
-unsigned int serialOntvangen[4];
-volatile uint8_t serialBuffer[4];
-volatile uint8_t serialIndex = 0;
+unsigned int serialData;
 volatile int stopRequest = 0;
 
 ISR(USART1_RX_vect) {
-    uint8_t data = UDR1;
+    serialData = UDR1;
 
-    serialBuffer[serialIndex++] = data;
-
-    if (serialIndex >= 4) {
-        serialIndex = 0;
-        for (int i = 0; i < 4; i++) {
-            serialOntvangen[i] = serialBuffer[i];
-        }
-        interpreter();  // Process once full command is received
-    }
-    if(serialOntvangen[0]==0xFF){
+    if(serialData==0xFF){
         stopRequest = 1;
     }
 }

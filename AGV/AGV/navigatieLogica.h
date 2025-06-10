@@ -12,4 +12,8 @@ void linksom(void);
 void metingPadbreedte(void);
 int ramping(int originalValue , int value);
 
+void kwartslagDraaienRechts(void);
+void kwartslagDraaienLinks(void);
+void Pirouette(void);
+
 #endif // NAVIGATIELOGICA_H_INCLUDED

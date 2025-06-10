@@ -4,51 +4,43 @@
 
 #include <avr/io.h>
 
-//serialOntvangen[4];
-//void receiveCommand();
 /*
-Hex 1: commando
-Hex 2: parameter
-Hex 3: Snelheid (indien nodig kan ook genegeerd worden door de AGV, schrijf dan 0xFF).
-Hex 4: Acceleratie (indien nodig kan ook genegeerd worden door AGV, schrijf dan 0xFF).
-
-Signaal omlaag (vanuit module naar AGV)
-COMMANDO:
-0x01: Rechtuit bewegen
-Parameter:
-1.	0x00 = langzaam achteruit
-2.	0x7E = snel achteruit
-3.	0X7F = stop (precies het midden)
-4.	0x80 = langzaam vooruit
-5.	0xFF = snel vooruit
-
-0x02: Keer bocht R/L
-Parameter:
-1.	0x01 = Linksom
-2.	0x02 = Rechtsom
-
-0x03: Opdracht ga van duwblokje 1 naar duwblokje 2
-Parameter:
-1.	0x01 =naar links 1 vak opschuiven
-2.	0x02 =naar rechts 1 vak opschuiven
-
-Signaal omhoog (vanuit AGV naar Module)
-0x01: Klaar met opdracht, einde pad of einde bocht geen parameters nodig.
+commmandos die ontvangen kunnen worden
+0x01 = vooruit
+0xA1 = achteruit
+0xB1 = bocht rechts
+0xB2 = bocht links
+0xFF = stop
+0xD1 = draai 90 graden naar rechts --->> moet nog geprogrameerd worden
+0xD2 = draai 90 graden naar links --->> moet nog geprogrameerd worden
+0xD3 = draai 180 graden --->> moet nog geprogrameerd worden
 */
 
+
+
 void interpreter(){
-    if(serialOntvangen[0]==0x01){    //commmando bewegen
-            if(serialOntvangen[1]>0x7F)
-                rechtdoor();
-            if(serialOntvangen[1]<0x7F)
-                achteruit();
-            if(serialOntvangen[1]==0x7F)
-                stop();
+    if(serialData==0x01){    //commmando bewegen
+        rechtdoor();
     }
-    if(serialOntvangen[0]==0x02){
-        if(serialOntvangen[1]==0x01)
-            linksom();
-        if(serialOntvangen[1]==0x02)
-            rechtsom();
+    if(serialData==0xA1){
+        achteruit();
+    }
+    if(serialData==0xB1){
+        rechtsom();
+    }
+    if(serialData==0xB2){
+        linksom();
+    }
+    if(serialData==0xD1){
+        kwartslagDraaienRechts();
+    }
+    if(serialData==0xD2){
+        kwartslagDraaienLinks();
+    }
+    if(serialData==0xD3){
+        Pirouette();
+    }
+    if(serialData==0xFF){
+        stop();
     }
 }

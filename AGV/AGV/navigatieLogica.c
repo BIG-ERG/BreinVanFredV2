@@ -35,12 +35,16 @@ int ramping(int originalValue , int value){
 
 void rechtdoor(void){
     stepperForward();
-    while(((distance_right<30)||(distance_left<30))&&(stopRequest==0)){ //while agv binnen pad
-        if (distance_right==distance_left) {
-            speedStepperLeft(1150);
-            speedStepperRight(1150);
+    while((stopRequest==0)){
+        if((distance_left>25)||(distance_right>25)){  //als agv buiten pad is
+            sendByte(0x01); //stuur klaar met opdracht
+            stopRequest=1;
         }
         else{
+            if (distance_right==distance_left) {
+            speedStepperLeft(1150);
+            speedStepperRight(1150);
+            }
             if (distance_right > distance_left){
                 speedStepperLeft(ramping(1650, 1150));
                 speedStepperRight(ramping(1150, 1650));
@@ -53,12 +57,11 @@ void rechtdoor(void){
     }
     stop();
     stopRequest=0;
-    sendCommand(0x01,0x00,0x00,0x00);   //send klaar met opdracht
 }
 
 void achteruit(void){
     stepperBackward();
-    while(((distance_right<30)||(distance_left<30))&&(stopRequest==0)){ //while agv binnen pad
+    while(((distance_right<30)||(distance_left<30))||(stopRequest==0)){ //while agv binnen pad
         if (distance_right==distance_left) {
             speedStepperLeft(1150);
             speedStepperRight(1150);
@@ -76,10 +79,11 @@ void achteruit(void){
     }
     stop();
     stopRequest=0;
-    sendCommand(0x01,0x00,0x00,0x00);   //send klaar met opdracht
+    sendByte(0x01);   //send klaar met opdracht
 }
 
 void linksom(void){
+    toggleKnipperRechts();
     enableStepCnt();
     clearStepCnt();
     while(stepCounterLeft<6100){      //agv rijdt ietsjes verder buiten het pad
@@ -108,10 +112,12 @@ void linksom(void){
     }
     stop();
     disableStepCnt();
-    sendCommand(0x01,0x00,0x00,0x00);   //send klaar met opdracht
+    sendByte(0x01);   //send klaar met opdracht
+    toggleKnipperRechts();
 }
 
 void rechtsom(void){
+    toggleKnipperLinks();
     enableStepCnt();
     clearStepCnt();
     while(stepCounterLeft<6100){      //agv rijdt ietsjes verder buiten het pad
@@ -119,25 +125,66 @@ void rechtsom(void){
     }
     clearStepCnt();
     toggleStepperDirectionLeft();
-    while(stepCounterLeft<2350){   //agv draait 90 graden
+    while(stepCounterLeft<2250){   //agv draait 90 graden
         vooruit();
     }
     toggleStepperDirectionLeft();
     clearStepCnt();
-    while(stepCounterLeft<(5500)){    //agv rijdt naar volgende pad
+    while(stepCounterLeft<(5600)){    //agv rijdt naar volgende pad
         vooruit();
     }
     toggleStepperDirectionLeft();      //agv draati 90 graden
     clearStepCnt();
-    while(stepCounterLeft<(2350)){
+    while(stepCounterLeft<(2250)){
         vooruit();
     }
     toggleStepperDirectionLeft();
     disableStepCnt();
     vooruit();
-    while(distance_left>15){           //agv is in het volgende pad
-        vooruit();
+    if(distance_left<15){           //agv is in het volgende pad
+        stop();
     }
     stop();
-    sendCommand(0x01,0x00,0x00,0x00);   //send klaar met opdracht
+    sendByte(0x01);      //send klaar met opdracht
+    toggleKnipperLinks();
+}
+
+void kwartslagDraaienRechts(void){
+    toggleKnipperRechts();
+    enableStepCnt();
+    clearStepCnt();
+    toggleStepperDirectionLeft();
+    while(stepCounterLeft<2350){   //agv draait 90 graden
+        vooruit();
+    }
+    toggleStepperDirectionLeft();
+    disableStepCnt();
+    toggleKnipperRechts();
+
+}
+
+void kwartslagDraaienLinks(void){
+    toggleKnipperLinks();
+    enableStepCnt();
+    clearStepCnt();
+    toggleStepperDirectionRight();
+    while(stepCounterLeft<2350){   //agv draait 90 graden
+        vooruit();
+    }
+    toggleStepperDirectionRight();
+    disableStepCnt();
+    toggleKnipperLinks();
+}
+
+void Pirouette(void){
+        toggleKnipperLinks();
+    enableStepCnt();
+    clearStepCnt();
+    toggleStepperDirectionRight();
+    while(stepCounterLeft<4700){   //agv draait 90 graden
+        vooruit();
+    }
+    toggleStepperDirectionRight();
+    disableStepCnt();
+    toggleKnipperLinks();
 }
