@@ -6,6 +6,7 @@
 void vooruit(void);
 void stop(void);
 void rechtdoor(void);
+void rechtdoorAnd(void);
 void achteruit(void);
 void rechtsom(void);
 void linksom(void);

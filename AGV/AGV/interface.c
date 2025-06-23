@@ -6,7 +6,8 @@
 
 /*
 commmandos die ontvangen kunnen worden
-0x01 = vooruit
+0x01 = vooruit or
+0x02 = vooruit and
 0xA1 = achteruit
 0xB1 = bocht rechts
 0xB2 = bocht links
@@ -21,6 +22,9 @@ commmandos die ontvangen kunnen worden
 void interpreter(){
     if(serialData==0x01){    //commmando bewegen
         rechtdoor();
+    }
+    if(serialData==0x02){    //commmando bewegen
+        rechtdoorAnd();
     }
     if(serialData==0xA1){
         achteruit();

@@ -12,8 +12,9 @@ void volgendeOpdracht(){
         while(stopRequest!=1){
             sendByte(0x01);  //navigeer, detecteer, identificeer
             if(irDetect()==0){  //als de agv iets detecteerd stop 1 seconde
+                    _delay_ms(1000);     //rij ietsjes verder
                     sendByte(0xFF);  //stop agv
-                    _delay_ms(1000);
+                    _delay_ms(1000);    //wacht 1 seconde
             }
             display_number(aantalGedectecteerd);
         }

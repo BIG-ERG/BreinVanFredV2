@@ -59,6 +59,32 @@ void rechtdoor(void){
     stopRequest=0;
 }
 
+void rechtdoorAnd(void){
+    stepperForward();
+    while((stopRequest==0)){
+        if((distance_left>25)&&(distance_right>25)){  //als agv buiten pad is
+            sendByte(0x01); //stuur klaar met opdracht
+            stopRequest=1;
+        }
+        else{
+            if (distance_right==distance_left) {
+            speedStepperLeft(1150);
+            speedStepperRight(1150);
+            }
+            if (distance_right > distance_left){
+                speedStepperLeft(ramping(1650, 1150));
+                speedStepperRight(ramping(1150, 1650));
+            }
+            if(distance_left > distance_right){
+                speedStepperRight(ramping(1650, 1150));
+                speedStepperLeft(ramping(1150, 1650));
+            }
+        }
+    }
+    stop();
+    stopRequest=0;
+}
+
 void achteruit(void){
     stepperBackward();
     while(((distance_right<30)||(distance_left<30))||(stopRequest==0)){ //while agv binnen pad
