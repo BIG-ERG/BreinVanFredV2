@@ -50,7 +50,7 @@
 	<avr/io.h>
 	"segmentDisplay.h"
 
-1750756049 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\interface.c
+1750857549 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\interface.c
 	"interface.h"
 	"main.h"
 	"UART.h"

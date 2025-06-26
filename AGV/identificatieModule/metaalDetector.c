@@ -77,7 +77,7 @@ int detectMetaalRechts(void) {
         DDRCapRechts &= ~(1<<pinCapRechts); //input
 
         // Pulsen geven
-        for (int j = 0; j < 16; j++) {//aantal pulsen per meting
+        for (int j = 0; j < 8; j++) {//aantal pulsen per meting
             PORTPulseRechts |= (1<<pinPulseRechts); //pin hoog
             _delay_us(pulseWidth);
             PORTPulseRechts &= ~(1<<pinPulseRechts); //pin low

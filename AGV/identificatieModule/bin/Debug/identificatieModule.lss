@@ -907,7 +907,7 @@ int detectMetaalRechts(void) {
  40a:	80 98       	cbi	0x10, 0	; 16
 
 0000040c <.Loc.81>:
- 40c:	80 e1       	ldi	r24, 0x10	; 16
+ 40c:	88 e0       	ldi	r24, 0x08	; 8
  40e:	90 e0       	ldi	r25, 0x00	; 0
 
 00000410 <.L12>:
@@ -943,7 +943,7 @@ int detectMetaalRechts(void) {
 	...
 
 0000042c <.LBE35>:
-        for (int j = 0; j < 16; j++) {//aantal pulsen per meting
+        for (int j = 0; j < 8; j++) {//aantal pulsen per meting
  42c:	01 97       	sbiw	r24, 0x01	; 1
 
 0000042e <.Loc.109>:
