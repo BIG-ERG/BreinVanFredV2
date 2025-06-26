@@ -1,4 +1,4 @@
-/*
+
 #ifndef FLYINGFISCHIR_H_INCLUDED
 #define FLYINGFISCHIR_H_INCLUDED
 
@@ -14,4 +14,4 @@ void IR_init();
 void IR_RUN();
 
 #endif // FLYINGFISCHIR_H_INCLUDED
-*/
+

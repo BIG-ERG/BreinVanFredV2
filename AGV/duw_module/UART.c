@@ -13,7 +13,7 @@ commmandos die gestuurd kunnen worden
 om een commando te sturen stuur doe je bijvoorbeeld: sendByte(0x01); //rechtdoor
 */
 
-/*
+
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include"UART.h"
@@ -54,4 +54,4 @@ ISR(USART1_RX_vect){
         stopRequest = 1;
     }
 }
-*/
+

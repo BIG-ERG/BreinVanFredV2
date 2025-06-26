@@ -3,6 +3,7 @@
 #include "UART.h"
 
 #include <avr/io.h>
+#include <util/delay.h>
 
 /*
 commmandos die ontvangen kunnen worden
@@ -15,6 +16,7 @@ commmandos die ontvangen kunnen worden
 0xD1 = draai 90 graden naar rechts --->> moet nog geprogrameerd worden
 0xD2 = draai 90 graden naar links --->> moet nog geprogrameerd worden
 0xD3 = draai 180 graden --->> moet nog geprogrameerd worden
+0xD4 = draai 180 graden 2
 */
 
 
@@ -44,7 +46,30 @@ void interpreter(){
     if(serialData==0xD3){
         Pirouette();
     }
+    if(serialData==0xD4){
+        Pirouette2();
+    }
     if(serialData==0xFF){
+        stop();
+    }
+    if(serialData==0xEF){
+        serialData=0x00;
+        ongecontroleerdVooruit();
+        Pirouette();
+        ongecontroleerdAchteruit();
+        ongecontroleerdVooruit2();
+        kleinBeetjeVooruit();
+        kwartslagDraaienRechts();
+        minderBeetjeVooruit();
+        Pirouette2();
+        kleinBeetjeAchteruit();
+        kwartslagDraaienRechts();
+        kleinBeetjeAchteruit();
+        kleinBeetjeAchteruit();
+        kleinBeetjeAchteruit();
+        kleinBeetjeAchteruit();
+        ongecontroleerdAchteruit();
+        grootBeetjeVooruit();
         stop();
     }
 }

@@ -19,10 +19,6 @@ ISR(INT0_vect){
             stop();
             toggleKnipperNood();
         }
-        if(!(PIN_knop&(1<<start))){
-            //uitvoer();
-            toggleKnipperNood();
-            break;
-        }
+        toggleKnipperNood();
     }
 }

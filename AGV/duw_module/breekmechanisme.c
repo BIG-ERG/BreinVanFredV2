@@ -12,25 +12,23 @@ void initinterface()
 void interfacerun()
 {
 
-    if ((PIN_switch&(1<<endswitch))==0)
+    if ((PIN_switch&(1<<endswitch))!=0)
     {
         _delay_ms(20);
-        //port_led2&=~(1<<led2);
-
         if ((PIN_switch&(1<<endswitch))==0)
         {
             port_led2|=(1<<led2);
+            _delay_ms(5000);
         }
 
     }
     else
     {
          _delay_ms(20);
-        if ((PIN_switch&(1<<endswitch))!=0)
+        if ((PIN_switch&(1<<endswitch))==0)
         {
             port_led2&=~(1<<led2);
 
         }
     }
 }
-

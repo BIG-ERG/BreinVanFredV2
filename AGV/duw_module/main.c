@@ -11,14 +11,16 @@
 
 int main(void)
 {
-
-//  IR_init();
-//    initUsart();
+    initstart();
+    IR_init();
+    initUsart();
+    flushUsart2Buffer();
     initinterface();
     while(1)
     {
-  //  IR_RUN();
-    interfacerun();
+        start();
+        IR_RUN();
+        interfacerun();
     }
 
     return 0;

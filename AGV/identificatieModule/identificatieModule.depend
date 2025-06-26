@@ -2,7 +2,7 @@
 1748091981 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\fuse.c
 	<avr/io.h>
 
-1750682784 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\main.c
+1750856108 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\main.c
 	<util/delay.h>
 	<avr/interrupt.h>
 	<avr/io.h>
@@ -50,7 +50,7 @@
 	<avr/io.h>
 	"segmentDisplay.h"
 
-1750678511 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\interface.c
+1750756049 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\identificatiemodule\interface.c
 	"interface.h"
 	"main.h"
 	"UART.h"

@@ -16,5 +16,14 @@ int ramping(int originalValue , int value);
 void kwartslagDraaienRechts(void);
 void kwartslagDraaienLinks(void);
 void Pirouette(void);
+void Pirouette2(void);
+void calibrate(void);
+void ongecontroleerdAchteruit(void);
+void ongecontroleerdVooruit(void);
+void ongecontroleerdVooruit2(void);
+void kleinBeetjeVooruit(void);
+void kleinBeetjeAchteruit(void);
+void minderBeetjeVooruit(void);
+void grootBeetjeVooruit(void);
 
 #endif // NAVIGATIELOGICA_H_INCLUDED

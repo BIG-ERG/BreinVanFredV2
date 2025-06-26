@@ -1,4 +1,4 @@
-/*
+
 #ifndef UART_H_INCLUDED
 #define UART_H_INCLUDED
 
@@ -15,4 +15,4 @@ extern unsigned int serialData;
 extern unsigned int stopRequest;
 
 #endif // UART_H_INCLUDED
-*/
+

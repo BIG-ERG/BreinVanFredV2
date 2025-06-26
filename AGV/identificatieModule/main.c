@@ -21,7 +21,7 @@ int main(void){
             _delay_ms(10);
             volgendeOpdracht();
         }
-        ///irDetect();
+        irDetect();
     }
 
     return 1;

@@ -1,21 +1,20 @@
 # depslib dependency file v1.0
-1750679983 source:c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\duw_module.c
+1750770685 source:c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\duw_module.c
 	"duw_module.h"
 	<avr/io.h>
 	"UART.h"
-	"flyingfischIR.h"
 	<util/delay.h>
 	"noodstop.h"
 
-1750679983 c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\duw_module.h
+1750769488 c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\duw_module.h
 
-1750680364 c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\uart.h
+1750752920 c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\uart.h
 
-1750682835 c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\flyingfischir.h
+1750770772 c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\flyingfischir.h
 
-1750680364 c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\noodstop.h
+1750752934 c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\noodstop.h
 
-1750682835 source:c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\flyingfischir.c
+1750773291 source:c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\flyingfischir.c
 	"flyingfischIR.h"
 	<avr/io.h>
 	<util/delay.h>
@@ -23,7 +22,7 @@
 1750676702 source:c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\fuse.c
 	<avr/io.h>
 
-1750683612 source:c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\main.c
+1750773291 source:c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\main.c
 	<avr/io.h>
 	"flyingfischIR.h"
 	"UART.h"
@@ -32,21 +31,21 @@
 	"breekmechanisme.h"
 	<util/delay.h>
 
-1750683731 c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\breekmechanisme.h
+1750773291 c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\breekmechanisme.h
 
-1750680364 source:c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\noodstop.c
+1750770772 source:c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\noodstop.c
 	"noodstop.h"
 	"noodstop.h"
 	"UART.h"
 	<avr/interrupt.h>
 	<avr/io.h>
 
-1750680364 source:c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\uart.c
+1750752973 source:c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\uart.c
 	<avr/io.h>
 	<avr/interrupt.h>
 	"UART.h"
 
-1750683608 source:c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\breekmechanisme.c
+1750773291 source:c:\users\sophi\onedrive - de haagse hogeschool\project avg\deel 2\code\breinvanfredv2\agv\duw_module\breekmechanisme.c
 	"breekmechanisme.h"
 	<avr/io.h>
 	<util/delay.h>
@@ -56,25 +55,25 @@
 	<avr/io.h>
 	<util/delay.h>
 
-1750677320 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\duw_module\breekmechanisme.h
+1750773291 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\duw_module\breekmechanisme.h
 
-1750677320 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\duw_module\duw_module.c
+1750842536 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\duw_module\duw_module.c
 	"duw_module.h"
 	<avr/io.h>
 	"UART.h"
-	"flyingfischIR.h"
 	<util/delay.h>
 	"noodstop.h"
+	"breekmechanisme.h"
 
-1750677320 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\duw_module\duw_module.h
+1750769488 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\duw_module\duw_module.h
 
-1750678248 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\duw_module\uart.h
+1750752920 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\duw_module\uart.h
 
-1750677320 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\duw_module\flyingfischir.h
+1750770772 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\duw_module\flyingfischir.h
 
-1750677320 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\duw_module\noodstop.h
+1750752934 c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\duw_module\noodstop.h
 
-1750677320 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\duw_module\flyingfischir.c
+1750773291 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\duw_module\flyingfischir.c
 	"flyingfischIR.h"
 	<avr/io.h>
 	<util/delay.h>
@@ -82,16 +81,24 @@
 1750676702 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\duw_module\fuse.c
 	<avr/io.h>
 
-1750677320 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\duw_module\main.c
+1750773291 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\duw_module\main.c
 	<avr/io.h>
 	"flyingfischIR.h"
 	"UART.h"
 	"duw_module.h"
 	"noodstop.h"
 	"breekmechanisme.h"
+	<util/delay.h>
 
-1750677320 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\duw_module\uart.c
+1750752973 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\duw_module\uart.c
 	<avr/io.h>
 	<avr/interrupt.h>
 	"UART.h"
+
+1750770772 source:c:\users\alecl\de haagse hogeschool\sophia elzinga (24022772) - project avg\deel 2\code\breinvanfredv2\agv\duw_module\noodstop.c
+	"noodstop.h"
+	"noodstop.h"
+	"UART.h"
+	<avr/interrupt.h>
+	<avr/io.h>
 

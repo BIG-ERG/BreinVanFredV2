@@ -1,4 +1,4 @@
-/*
+
 #include "flyingfischIR.h"
 #include <avr/io.h>
 #include<util/delay.h>
@@ -37,4 +37,4 @@ void IR_RUN()// check of pin hoog of laag is
         }
     }
 }
-*/
+

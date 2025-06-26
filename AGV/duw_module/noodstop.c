@@ -1,4 +1,4 @@
-/*
+
 #include "noodstop.h"
 #include "noodstop.h"
 #include "UART.h"
@@ -41,4 +41,4 @@ void initStartKnop(void){
     DDR_start &= ~(1<<startknop);
     PORT_start|= (1<<startknop);
 }
-*/
+
